@@ -4,7 +4,7 @@ Nate's Skyblock Mod is a Quality of Life Mod Created by Nat3zDev.
 * [Installation](#Installation)
 * [Contributing](#Contributing)
 * [License](#license)
-* [Helpful sources] (#Helpful Sources)
+
 # Installation
 If you want to get the latest STABLE release, go to the releases tab on the right, however if you want the latest Commit Release, do the Following.
 Make sure you have Java installed and you are using JDK build 1.6-1.9
@@ -13,7 +13,7 @@ Type the following into the Command line:
 ```bash
 gradlew build
 ```
-ALTERNATIVE: Open "build.bat"
+### ALTERNATIVE: Open "build.bat"
 
 If any errors occur, make sure you are using the proper JDK Build and if you have set your environment variables correctly.
 You will see in the "build/libs" folder two .jar files, one with the name
