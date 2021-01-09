@@ -1,0 +1,1633 @@
+Symbol range map extraction starting
+Processing 14 files
+processing com\nat3z\skyqol\Config.java
+@|com\nat3z\skyqol\Config.java|8|24|com.nat3z.skyqol|package|com.nat3z.skyqol|(file)
+Class Start: com.nat3z.skyqol.Config
+   @|com\nat3z\skyqol\Config.java|626|642|stopclickenchant|field|com.nat3z.skyqol.Config|stopclickenchant|
+   @|com\nat3z\skyqol\Config.java|910|929|dungeonsprofitcheck|field|com.nat3z.skyqol.Config|dungeonsprofitcheck|
+   Method Start: Config()V
+      @|com\nat3z\skyqol\Config.java|1498|1504|Config|method|com.nat3z.skyqol.Config|Config|()V
+      @|com\nat3z\skyqol\Config.java|1527|1531|File|class|java.io.File
+      @|com\nat3z\skyqol\Config.java|1575|1585|initialize|method|club.sk1er.vigilance.Vigilant|initialize|()V
+   Method End: Config()V
+Class End  : com.nat3z.skyqol.Config
+endProcessing com\nat3z\skyqol\Config.java
+
+processing com\nat3z\skyqol\Main.java
+@|com\nat3z\skyqol\Main.java|134|150|com.nat3z.skyqol|package|com.nat3z.skyqol|(file)
+Class Start: com.nat3z.skyqol.Main
+   @|com\nat3z\skyqol\Main.java|988|995|guiOpen|field|com.nat3z.skyqol.Main|guiOpen|
+   @|com\nat3z\skyqol\Main.java|1052|1056|Main|class|com.nat3z.skyqol.Main
+   @|com\nat3z\skyqol\Main.java|1057|1065|INSTANCE|field|com.nat3z.skyqol.Main|INSTANCE|
+   @|com\nat3z\skyqol\Main.java|1086|1093|enabled|field|com.nat3z.skyqol.Main|enabled|
+   @|com\nat3z\skyqol\Main.java|1120|1126|Config|class|com.nat3z.skyqol.Config
+   @|com\nat3z\skyqol\Main.java|1127|1133|config|field|com.nat3z.skyqol.Main|config|
+   @|com\nat3z\skyqol\Main.java|1140|1146|Config|class|com.nat3z.skyqol.Config
+   @|com\nat3z\skyqol\Main.java|1169|1181|stopDropping|field|com.nat3z.skyqol.Main|stopDropping|
+   Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\nat3z\skyqol\Main.java|1225|1232|preInit|method|com.nat3z.skyqol.Main|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\nat3z\skyqol\Main.java|1273|1284|IOException|class|java.io.IOException
+      @|com\nat3z\skyqol\Main.java|1233|1258|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+      @|com\nat3z\skyqol\Main.java|1259|1264|event|param|com.nat3z.skyqol.Main|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com\nat3z\skyqol\Main.java|1299|1305|System|class|java.lang.System
+      @|com\nat3z\skyqol\Main.java|1306|1309|out|field|java.lang.System|out
+      @|com\nat3z\skyqol\Main.java|1310|1317|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com\nat3z\skyqol\Main.java|1348|1354|System|class|java.lang.System
+      @|com\nat3z\skyqol\Main.java|1355|1358|out|field|java.lang.System|out
+      @|com\nat3z\skyqol\Main.java|1359|1366|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com\nat3z\skyqol\Main.java|1399|1405|System|class|java.lang.System
+      @|com\nat3z\skyqol\Main.java|1406|1409|out|field|java.lang.System|out
+      @|com\nat3z\skyqol\Main.java|1410|1417|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com\nat3z\skyqol\Main.java|1450|1456|System|class|java.lang.System
+      @|com\nat3z\skyqol\Main.java|1457|1460|out|field|java.lang.System|out
+      @|com\nat3z\skyqol\Main.java|1461|1468|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+   Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\nat3z\skyqol\Main.java|1797|1801|init|method|com.nat3z.skyqol.Main|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\nat3z\skyqol\Main.java|1802|1824|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|com\nat3z\skyqol\Main.java|1825|1830|event|param|com.nat3z.skyqol.Main|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com\nat3z\skyqol\Main.java|1846|1852|System|class|java.lang.System
+      @|com\nat3z\skyqol\Main.java|1853|1856|out|field|java.lang.System|out
+      @|com\nat3z\skyqol\Main.java|1857|1864|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com\nat3z\skyqol\Main.java|1895|1901|System|class|java.lang.System
+      @|com\nat3z\skyqol\Main.java|1902|1905|out|field|java.lang.System|out
+      @|com\nat3z\skyqol\Main.java|1906|1913|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com\nat3z\skyqol\Main.java|1946|1952|System|class|java.lang.System
+      @|com\nat3z\skyqol\Main.java|1953|1956|out|field|java.lang.System|out
+      @|com\nat3z\skyqol\Main.java|1957|1964|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com\nat3z\skyqol\Main.java|1993|1999|System|class|java.lang.System
+      @|com\nat3z\skyqol\Main.java|2000|2003|out|field|java.lang.System|out
+      @|com\nat3z\skyqol\Main.java|2004|2011|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com\nat3z\skyqol\Main.java|2107|2121|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com\nat3z\skyqol\Main.java|2122|2131|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com\nat3z\skyqol\Main.java|2132|2140|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com\nat3z\skyqol\Main.java|2145|2158|BasicListener|class|com.nat3z.skyqol.listeners.BasicListener
+      @|com\nat3z\skyqol\Main.java|2171|2185|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com\nat3z\skyqol\Main.java|2186|2195|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com\nat3z\skyqol\Main.java|2196|2204|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com\nat3z\skyqol\Main.java|2209|2225|AntiNonEnchanted|class|com.nat3z.skyqol.listeners.AntiNonEnchanted
+      @|com\nat3z\skyqol\Main.java|2238|2258|ClientCommandHandler|class|net.minecraftforge.client.ClientCommandHandler
+      @|com\nat3z\skyqol\Main.java|2259|2267|instance|field|net.minecraftforge.client.ClientCommandHandler|instance
+      @|com\nat3z\skyqol\Main.java|2268|2283|registerCommand|method|net.minecraft.command.CommandHandler|registerCommand|(Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;
+      @|com\nat3z\skyqol\Main.java|2288|2296|Commands|class|com.nat3z.skyqol.gui.Commands
+      @|com\nat3z\skyqol\Main.java|2351|2367|ModCoreInstaller|class|com.nat3z.skyqol.ModCoreInstaller
+      @|com\nat3z\skyqol\Main.java|2368|2385|initializeModCore|method|com.nat3z.skyqol.ModCoreInstaller|initializeModCore|(Ljava/io/File;)V
+      @|com\nat3z\skyqol\Main.java|2386|2395|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\nat3z\skyqol\Main.java|2396|2408|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\nat3z\skyqol\Main.java|2411|2420|mcDataDir|field|net.minecraft.client.Minecraft|mcDataDir
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+   Method Start: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\nat3z\skyqol\Main.java|2463|2471|postInit|method|com.nat3z.skyqol.Main|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\nat3z\skyqol\Main.java|2472|2498|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+      @|com\nat3z\skyqol\Main.java|2499|2504|event|param|com.nat3z.skyqol.Main|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+   Method End: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+   Method Start: openGUI()V
+      @|com\nat3z\skyqol\Main.java|2532|2539|openGUI|method|com.nat3z.skyqol.Main|openGUI|()V
+      @|com\nat3z\skyqol\Main.java|2551|2558|guiOpen|field|com.nat3z.skyqol.Main|guiOpen
+   Method End: openGUI()V
+   Method Start: getMessage()Ljava/lang/String;
+      @|com\nat3z\skyqol\Main.java|2587|2597|getMessage|method|com.nat3z.skyqol.Main|getMessage|()Ljava/lang/String;
+      @|com\nat3z\skyqol\Main.java|2580|2586|String|class|java.lang.String
+      @|com\nat3z\skyqol\Main.java|2611|2629|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|com\nat3z\skyqol\Main.java|2630|2634|BLUE|field|net.minecraft.util.EnumChatFormatting|BLUE
+   Method End: getMessage()Ljava/lang/String;
+   Method Start: getConfig()Lcom/nat3z/skyqol/Config;
+      @|com\nat3z\skyqol\Main.java|2676|2685|getConfig|method|com.nat3z.skyqol.Main|getConfig|()Lcom/nat3z/skyqol/Config;
+      @|com\nat3z\skyqol\Main.java|2669|2675|Config|class|com.nat3z.skyqol.Config
+      @|com\nat3z\skyqol\Main.java|2705|2711|config|field|com.nat3z.skyqol.Main|config
+   Method End: getConfig()Lcom/nat3z/skyqol/Config;
+Class End  : com.nat3z.skyqol.Main
+endProcessing com\nat3z\skyqol\Main.java
+
+processing com\nat3z\skyqol\ModCoreInstaller.java
+@|com\nat3z\skyqol\ModCoreInstaller.java|8|24|com.nat3z.skyqol|package|com.nat3z.skyqol|(file)
+Class Start: com.nat3z.skyqol.ModCoreInstaller
+   @|com\nat3z\skyqol\ModCoreInstaller.java|1177|1183|String|class|java.lang.String
+   @|com\nat3z\skyqol\ModCoreInstaller.java|1184|1195|VERSION_URL|field|com.nat3z.skyqol.ModCoreInstaller|VERSION_URL|
+   @|com\nat3z\skyqol\ModCoreInstaller.java|1266|1272|String|class|java.lang.String
+   @|com\nat3z\skyqol\ModCoreInstaller.java|1273|1282|className|field|com.nat3z.skyqol.ModCoreInstaller|className|
+   @|com\nat3z\skyqol\ModCoreInstaller.java|1344|1351|errored|field|com.nat3z.skyqol.ModCoreInstaller|errored|
+   @|com\nat3z\skyqol\ModCoreInstaller.java|1380|1386|String|class|java.lang.String
+   @|com\nat3z\skyqol\ModCoreInstaller.java|1387|1392|error|field|com.nat3z.skyqol.ModCoreInstaller|error|
+   @|com\nat3z\skyqol\ModCoreInstaller.java|1413|1417|File|class|java.io.File
+   @|com\nat3z\skyqol\ModCoreInstaller.java|1418|1425|dataDir|field|com.nat3z.skyqol.ModCoreInstaller|dataDir|
+   @|com\nat3z\skyqol\ModCoreInstaller.java|1461|1477|isRunningModCore|field|com.nat3z.skyqol.ModCoreInstaller|isRunningModCore|
+   Method Start: isIsRunningModCore()Z
+      @|com\nat3z\skyqol\ModCoreInstaller.java|1514|1532|isIsRunningModCore|method|com.nat3z.skyqol.ModCoreInstaller|isIsRunningModCore|()Z
+      @|com\nat3z\skyqol\ModCoreInstaller.java|1552|1568|isRunningModCore|field|com.nat3z.skyqol.ModCoreInstaller|isRunningModCore
+   Method End: isIsRunningModCore()Z
+   Method Start: isInitalized()Z
+      @|com\nat3z\skyqol\ModCoreInstaller.java|1604|1616|isInitalized|method|com.nat3z.skyqol.ModCoreInstaller|isInitalized|()Z
+      @|com\nat3z\skyqol\ModCoreInstaller.java|1647|1660|LinkedHashSet|class|java.util.LinkedHashSet
+      @|com\nat3z\skyqol\ModCoreInstaller.java|1661|1667|String|class|java.lang.String
+      @|com\nat3z\skyqol\ModCoreInstaller.java|1683|1696|LinkedHashSet|class|java.util.LinkedHashSet
+      @|com\nat3z\skyqol\ModCoreInstaller.java|1697|1703|String|class|java.lang.String
+      @|com\nat3z\skyqol\ModCoreInstaller.java|1728|1731|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\nat3z\skyqol\ModCoreInstaller.java|1732|1741|className|field|com.nat3z.skyqol.ModCoreInstaller|className
+      @|com\nat3z\skyqol\ModCoreInstaller.java|1756|1762|Launch|class|net.minecraft.launchwrapper.Launch
+      @|com\nat3z\skyqol\ModCoreInstaller.java|1763|1774|classLoader|field|net.minecraft.launchwrapper.Launch|classLoader
+      @|com\nat3z\skyqol\ModCoreInstaller.java|1775|1795|clearNegativeEntries|method|net.minecraft.launchwrapper.LaunchClassLoader|clearNegativeEntries|(Ljava/util/Set;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|1818|1823|Field|class|java.lang.reflect.Field
+      @|com\nat3z\skyqol\ModCoreInstaller.java|1841|1858|LaunchClassLoader|class|net.minecraft.launchwrapper.LaunchClassLoader
+      @|com\nat3z\skyqol\ModCoreInstaller.java|1865|1881|getDeclaredField|method|java.lang.Class|getDeclaredField|(Ljava/lang/String;)Ljava/lang/reflect/Field;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|1928|1941|setAccessible|method|java.lang.reflect.AccessibleObject|setAccessible|(Z)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|1961|1967|Object|class|java.lang.Object
+      @|com\nat3z\skyqol\ModCoreInstaller.java|1989|1992|get|method|java.lang.reflect.Field|get|(Ljava/lang/Object;)Ljava/lang/Object;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|1993|2009|ModCoreInstaller|class|com.nat3z.skyqol.ModCoreInstaller
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2016|2030|getClassLoader|method|java.lang.Class|getClassLoader|()Ljava/lang/ClassLoader;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2049|2052|Set|class|java.util.Set
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2053|2059|String|class|java.lang.String
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2067|2073|remove|method|java.util.Collection|remove|(Ljava/lang/Object;)Z
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2074|2083|className|field|com.nat3z.skyqol.ModCoreInstaller|className
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2105|2110|Class|class|java.lang.Class
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2111|2118|forName|method|java.lang.Class|forName|(Ljava/lang/String;)Ljava/lang/Class;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2177|2186|Exception|class|java.lang.Exception
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2218|2233|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+   Method End: isInitalized()Z
+   Method Start: isErrored()Z
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2302|2311|isErrored|method|com.nat3z.skyqol.ModCoreInstaller|isErrored|()Z
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2331|2338|errored|field|com.nat3z.skyqol.ModCoreInstaller|errored
+   Method End: isErrored()Z
+   Method Start: getError()Ljava/lang/String;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2372|2380|getError|method|com.nat3z.skyqol.ModCoreInstaller|getError|()Ljava/lang/String;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2365|2371|String|class|java.lang.String
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2400|2405|error|field|com.nat3z.skyqol.ModCoreInstaller|error
+   Method End: getError()Ljava/lang/String;
+   Method Start: bail(Ljava/lang/String;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2438|2442|bail|method|com.nat3z.skyqol.ModCoreInstaller|bail|(Ljava/lang/String;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2443|2449|String|class|java.lang.String
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2450|2455|error|param|com.nat3z.skyqol.ModCoreInstaller|bail|(Ljava/lang/String;)V|error|0
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2467|2474|errored|field|com.nat3z.skyqol.ModCoreInstaller|errored
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2491|2507|ModCoreInstaller|class|com.nat3z.skyqol.ModCoreInstaller
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2508|2513|error|field|com.nat3z.skyqol.ModCoreInstaller|error
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2516|2521|error|param|com.nat3z.skyqol.ModCoreInstaller|bail|(Ljava/lang/String;)V|error|0
+   Method End: bail(Ljava/lang/String;)V
+   Method Start: readFile(Ljava/io/File;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2560|2568|readFile|method|com.nat3z.skyqol.ModCoreInstaller|readFile|(Ljava/io/File;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2549|2559|JsonHolder|class|com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2569|2573|File|class|java.io.File
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2574|2576|in|param|com.nat3z.skyqol.ModCoreInstaller|readFile|(Ljava/io/File;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|in|0
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2617|2627|JsonHolder|class|com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2628|2637|FileUtils|class|org.apache.commons.io.FileUtils
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2638|2654|readFileToString|method|org.apache.commons.io.FileUtils|readFileToString|(Ljava/io/File;)Ljava/lang/String;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2655|2657|in|param|com.nat3z.skyqol.ModCoreInstaller|readFile|(Ljava/io/File;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|in|0
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2678|2689|IOException|class|java.io.IOException
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2731|2741|JsonHolder|class|com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+   Method End: readFile(Ljava/io/File;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+   Method Start: initializeModCore(Ljava/io/File;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2775|2792|initializeModCore|method|com.nat3z.skyqol.ModCoreInstaller|initializeModCore|(Ljava/io/File;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2793|2797|File|class|java.io.File
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2798|2805|gameDir|param|com.nat3z.skyqol.ModCoreInstaller|initializeModCore|(Ljava/io/File;)V|gameDir|0
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2822|2840|isIsRunningModCore|method|com.nat3z.skyqol.ModCoreInstaller|isIsRunningModCore|()Z
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2902|2907|Class|class|java.lang.Class
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2921|2926|Class|class|java.lang.Class
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2927|2934|forName|method|java.lang.Class|forName|(Ljava/lang/String;)Ljava/lang/Class;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2935|2944|className|field|com.nat3z.skyqol.ModCoreInstaller|className
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2959|2965|Method|class|java.lang.reflect.Method
+      @|com\nat3z\skyqol\ModCoreInstaller.java|2991|3000|getMethod|method|java.lang.Class|getMethod|(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3029|3035|Method|class|java.lang.reflect.Method
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3057|3066|getMethod|method|java.lang.Class|getMethod|(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3081|3085|File|class|java.io.File
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3106|3112|Object|class|java.lang.Object
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3144|3150|invoke|method|java.lang.reflect.Method|invoke|(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3181|3187|invoke|method|java.lang.reflect.Method|invoke|(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3203|3210|gameDir|param|com.nat3z.skyqol.ModCoreInstaller|initializeModCore|(Ljava/io/File;)V|gameDir|0
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3225|3231|System|class|java.lang.System
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3232|3235|out|field|java.lang.System|out
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3236|3243|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3313|3322|Exception|class|java.lang.Exception
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3342|3357|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3379|3385|System|class|java.lang.System
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3386|3389|out|field|java.lang.System|out
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3390|3397|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+   Method End: initializeModCore(Ljava/io/File;)V
+   Method Start: initialize(Ljava/io/File;Ljava/lang/String;)I
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3460|3470|initialize|method|com.nat3z.skyqol.ModCoreInstaller|initialize|(Ljava/io/File;Ljava/lang/String;)I
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3471|3475|File|class|java.io.File
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3476|3483|gameDir|param|com.nat3z.skyqol.ModCoreInstaller|initialize|(Ljava/io/File;Ljava/lang/String;)I|gameDir|0
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3485|3491|String|class|java.lang.String
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3492|3508|minecraftVersion|param|com.nat3z.skyqol.ModCoreInstaller|initialize|(Ljava/io/File;Ljava/lang/String;)I|minecraftVersion|1
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3524|3536|isInitalized|method|com.nat3z.skyqol.ModCoreInstaller|isInitalized|()Z
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3559|3566|dataDir|field|com.nat3z.skyqol.ModCoreInstaller|dataDir
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3573|3577|File|class|java.io.File
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3578|3585|gameDir|param|com.nat3z.skyqol.ModCoreInstaller|initialize|(Ljava/io/File;Ljava/lang/String;)I|gameDir|0
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3612|3619|dataDir|field|com.nat3z.skyqol.ModCoreInstaller|dataDir
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3620|3626|exists|method|java.io.File|exists|()Z
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3649|3656|dataDir|field|com.nat3z.skyqol.ModCoreInstaller|dataDir
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3657|3663|mkdirs|method|java.io.File|mkdirs|()Z
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3685|3689|bail|method|com.nat3z.skyqol.ModCoreInstaller|bail|(Ljava/lang/String;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3785|3795|JsonHolder|class|com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3809|3818|fetchJSON|method|com.nat3z.skyqol.ModCoreInstaller|fetchJSON|(Ljava/lang/String;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3819|3830|VERSION_URL|field|com.nat3z.skyqol.ModCoreInstaller|VERSION_URL
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3841|3847|String|class|java.lang.String
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3874|3883|optString|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optString|(Ljava/lang/String;)Ljava/lang/String;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3884|3900|minecraftVersion|param|com.nat3z.skyqol.ModCoreInstaller|initialize|(Ljava/io/File;Ljava/lang/String;)I|minecraftVersion|1
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3939|3946|getKeys|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|getKeys|()Ljava/util/List;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3949|3953|size|method|java.util.Collection|size|()I
+      @|com\nat3z\skyqol\ModCoreInstaller.java|3976|3979|has|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|has|(Ljava/lang/String;)Z
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4006|4016|optBoolean|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optBoolean|(Ljava/lang/String;)Z
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4039|4043|File|class|java.io.File
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4063|4067|File|class|java.io.File
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4068|4075|dataDir|field|com.nat3z.skyqol.ModCoreInstaller|dataDir
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4103|4113|JsonHolder|class|com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4130|4138|readFile|method|com.nat3z.skyqol.ModCoreInstaller|readFile|(Ljava/io/File;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4203|4212|optString|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optString|(Ljava/lang/String;)Ljava/lang/String;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4213|4229|minecraftVersion|param|com.nat3z.skyqol.ModCoreInstaller|initialize|(Ljava/io/File;Ljava/lang/String;)I|minecraftVersion|1
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4240|4244|File|class|java.io.File
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4263|4267|File|class|java.io.File
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4268|4275|dataDir|field|com.nat3z.skyqol.ModCoreInstaller|dataDir
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4318|4334|minecraftVersion|param|com.nat3z.skyqol.ModCoreInstaller|initialize|(Ljava/io/File;Ljava/lang/String;)I|minecraftVersion|1
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4373|4379|exists|method|java.io.File|exists|()Z
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4400|4409|optString|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optString|(Ljava/lang/String;)Ljava/lang/String;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4410|4426|minecraftVersion|param|com.nat3z.skyqol.ModCoreInstaller|initialize|(Ljava/io/File;Ljava/lang/String;)I|minecraftVersion|1
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4428|4444|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4551|4555|File|class|java.io.File
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4566|4570|File|class|java.io.File
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4571|4578|dataDir|field|com.nat3z.skyqol.ModCoreInstaller|dataDir
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4613|4622|optString|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optString|(Ljava/lang/String;)Ljava/lang/String;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4623|4639|minecraftVersion|param|com.nat3z.skyqol.ModCoreInstaller|initialize|(Ljava/io/File;Ljava/lang/String;)I|minecraftVersion|1
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4650|4666|minecraftVersion|param|com.nat3z.skyqol.ModCoreInstaller|initialize|(Ljava/io/File;Ljava/lang/String;)I|minecraftVersion|1
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4699|4705|exists|method|java.io.File|exists|()Z
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4713|4719|delete|method|java.io.File|delete|()Z
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4741|4749|download|method|com.nat3z.skyqol.ModCoreInstaller|download|(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Z
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4820|4836|minecraftVersion|param|com.nat3z.skyqol.ModCoreInstaller|initialize|(Ljava/io/File;Ljava/lang/String;)I|minecraftVersion|1
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4875|4891|minecraftVersion|param|com.nat3z.skyqol.ModCoreInstaller|initialize|(Ljava/io/File;Ljava/lang/String;)I|minecraftVersion|1
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4930|4946|minecraftVersion|param|com.nat3z.skyqol.ModCoreInstaller|initialize|(Ljava/io/File;Ljava/lang/String;)I|minecraftVersion|1
+      @|com\nat3z\skyqol\ModCoreInstaller.java|4982|4986|bail|method|com.nat3z.skyqol.ModCoreInstaller|bail|(Ljava/lang/String;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5070|5084|addToClasspath|method|com.nat3z.skyqol.ModCoreInstaller|addToClasspath|(Ljava/io/File;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5113|5125|isInitalized|method|com.nat3z.skyqol.ModCoreInstaller|isInitalized|()Z
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5143|5147|bail|method|com.nat3z.skyqol.ModCoreInstaller|bail|(Ljava/lang/String;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5251|5257|exists|method|java.io.File|exists|()Z
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5302|5318|isRunningModCore|field|com.nat3z.skyqol.ModCoreInstaller|isRunningModCore
+   Method End: initialize(Ljava/io/File;Ljava/lang/String;)I
+   Method Start: addToClasspath(Ljava/io/File;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5376|5390|addToClasspath|method|com.nat3z.skyqol.ModCoreInstaller|addToClasspath|(Ljava/io/File;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5391|5395|File|class|java.io.File
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5396|5400|file|param|com.nat3z.skyqol.ModCoreInstaller|addToClasspath|(Ljava/io/File;)V|file|0
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5430|5433|URL|class|java.net.URL
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5440|5444|file|param|com.nat3z.skyqol.ModCoreInstaller|addToClasspath|(Ljava/io/File;)V|file|0
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5445|5450|toURI|method|java.io.File|toURI|()Ljava/net/URI;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5453|5458|toURL|method|java.net.URI|toURL|()Ljava/net/URL;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5475|5486|ClassLoader|class|java.lang.ClassLoader
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5501|5517|ModCoreInstaller|class|com.nat3z.skyqol.ModCoreInstaller
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5524|5538|getClassLoader|method|java.lang.Class|getClassLoader|()Ljava/lang/ClassLoader;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5554|5560|Method|class|java.lang.reflect.Method
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5582|5590|getClass|method|java.lang.Object|getClass|()Ljava/lang/Class;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5593|5610|getDeclaredMethod|method|java.lang.Class|getDeclaredMethod|(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5621|5624|URL|class|java.net.URL
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5652|5665|setAccessible|method|java.lang.reflect.AccessibleObject|setAccessible|(Z)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5692|5698|invoke|method|java.lang.reflect.Method|invoke|(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5735|5744|Exception|class|java.lang.Exception
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5772|5788|RuntimeException|class|java.lang.RuntimeException
+   Method End: addToClasspath(Ljava/io/File;)V
+   Method Start: download(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Z
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5861|5869|download|method|com.nat3z.skyqol.ModCoreInstaller|download|(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Z
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5870|5876|String|class|java.lang.String
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5877|5880|url|param|com.nat3z.skyqol.ModCoreInstaller|download|(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Z|url|0
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5882|5888|String|class|java.lang.String
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5889|5896|version|param|com.nat3z.skyqol.ModCoreInstaller|download|(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Z|version|1
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5898|5902|File|class|java.io.File
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5903|5907|file|param|com.nat3z.skyqol.ModCoreInstaller|download|(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Z|file|2
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5909|5915|String|class|java.lang.String
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5916|5921|mcver|param|com.nat3z.skyqol.ModCoreInstaller|download|(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Z|mcver|3
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5923|5933|JsonHolder|class|com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5934|5945|versionData|param|com.nat3z.skyqol.ModCoreInstaller|download|(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Z|versionData|4
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5957|5960|url|param|com.nat3z.skyqol.ModCoreInstaller|download|(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Z|url|0
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5963|5966|url|param|com.nat3z.skyqol.ModCoreInstaller|download|(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Z|url|0
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5967|5974|replace|method|java.lang.String|replace|(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|5996|6002|System|class|java.lang.System
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6003|6006|out|field|java.lang.System|out
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6007|6014|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6054|6061|version|param|com.nat3z.skyqol.ModCoreInstaller|download|(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Z|version|1
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6076|6079|url|param|com.nat3z.skyqol.ModCoreInstaller|download|(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Z|url|0
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6109|6118|UIManager|class|javax.swing.UIManager
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6119|6133|setLookAndFeel|method|javax.swing.UIManager|setLookAndFeel|(Ljava/lang/String;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6134|6143|UIManager|class|javax.swing.UIManager
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6144|6173|getSystemLookAndFeelClassName|method|javax.swing.UIManager|getSystemLookAndFeelClassName|()Ljava/lang/String;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6195|6204|Exception|class|java.lang.Exception
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6224|6239|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6262|6268|JFrame|class|javax.swing.JFrame
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6281|6287|JFrame|class|javax.swing.JFrame
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6320|6332|JProgressBar|class|javax.swing.JProgressBar
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6343|6355|JProgressBar|class|javax.swing.JProgressBar
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6367|6373|JLabel|class|javax.swing.JLabel
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6386|6392|JLabel|class|javax.swing.JLabel
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6418|6425|version|param|com.nat3z.skyqol.ModCoreInstaller|download|(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Z|version|1
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6427|6441|SwingConstants|class|javax.swing.SwingConstants
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6442|6448|CENTER|field|javax.swing.SwingConstants|CENTER
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6465|6472|setSize|method|java.awt.Component|setSize|(II)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6498|6512|getContentPane|method|javax.swing.RootPaneContainer|getContentPane|()Ljava/awt/Container;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6515|6518|add|method|java.awt.Container|add|(Ljava/awt/Component;)Ljava/awt/Component;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6541|6555|getContentPane|method|javax.swing.RootPaneContainer|getContentPane|()Ljava/awt/Container;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6558|6561|add|method|java.awt.Container|add|(Ljava/awt/Component;)Ljava/awt/Component;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6576|6587|GroupLayout|class|javax.swing.GroupLayout
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6601|6612|GroupLayout|class|javax.swing.GroupLayout
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6619|6633|getContentPane|method|javax.swing.RootPaneContainer|getContentPane|()Ljava/awt/Container;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6652|6666|getContentPane|method|javax.swing.RootPaneContainer|getContentPane|()Ljava/awt/Container;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6669|6678|setLayout|method|java.awt.Container|setLayout|(Ljava/awt/LayoutManager;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6703|6721|setHorizontalGroup|method|javax.swing.GroupLayout|setHorizontalGroup|(Ljavax/swing/GroupLayout$Group;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6729|6748|createParallelGroup|method|javax.swing.GroupLayout|createParallelGroup|(Ljavax/swing/GroupLayout$Alignment;)Ljavax/swing/GroupLayout$ParallelGroup;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6749|6770|GroupLayout.Alignment|class|javax.swing.GroupLayout.Alignment
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6771|6778|LEADING|field|javax.swing.GroupLayout.Alignment|LEADING
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6793|6801|addGroup|method|javax.swing.GroupLayout.Group|addGroup|(Ljavax/swing/GroupLayout$Group;)Ljavax/swing/GroupLayout$Group;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6809|6830|createSequentialGroup|method|javax.swing.GroupLayout|createSequentialGroup|()Ljavax/swing/GroupLayout$SequentialGroup;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6850|6865|addContainerGap|method|javax.swing.GroupLayout.SequentialGroup|addContainerGap|()Ljavax/swing/GroupLayout$SequentialGroup;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6885|6893|addGroup|method|javax.swing.GroupLayout.Group|addGroup|(Ljavax/swing/GroupLayout$Group;)Ljavax/swing/GroupLayout$Group;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6901|6920|createParallelGroup|method|javax.swing.GroupLayout|createParallelGroup|(Ljavax/swing/GroupLayout$Alignment;)Ljavax/swing/GroupLayout$ParallelGroup;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6921|6942|GroupLayout.Alignment|class|javax.swing.GroupLayout.Alignment
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6943|6950|LEADING|field|javax.swing.GroupLayout.Alignment|LEADING
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6973|6985|addComponent|method|javax.swing.GroupLayout.ParallelGroup|addComponent|(Ljava/awt/Component;Ljavax/swing/GroupLayout$Alignment;III)Ljavax/swing/GroupLayout$ParallelGroup;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|6993|7014|GroupLayout.Alignment|class|javax.swing.GroupLayout.Alignment
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7015|7023|TRAILING|field|javax.swing.GroupLayout.Alignment|TRAILING
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7025|7036|GroupLayout|class|javax.swing.GroupLayout
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7037|7049|DEFAULT_SIZE|field|javax.swing.GroupLayout|DEFAULT_SIZE
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7056|7061|Short|class|java.lang.Short
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7062|7071|MAX_VALUE|field|java.lang.Short|MAX_VALUE
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7094|7106|addComponent|method|javax.swing.GroupLayout.ParallelGroup|addComponent|(Ljava/awt/Component;Ljavax/swing/GroupLayout$Alignment;III)Ljavax/swing/GroupLayout$ParallelGroup;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7112|7133|GroupLayout.Alignment|class|javax.swing.GroupLayout.Alignment
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7134|7142|TRAILING|field|javax.swing.GroupLayout.Alignment|TRAILING
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7144|7155|GroupLayout|class|javax.swing.GroupLayout
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7156|7168|DEFAULT_SIZE|field|javax.swing.GroupLayout|DEFAULT_SIZE
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7170|7181|GroupLayout|class|javax.swing.GroupLayout
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7182|7194|DEFAULT_SIZE|field|javax.swing.GroupLayout|DEFAULT_SIZE
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7196|7201|Short|class|java.lang.Short
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7202|7211|MAX_VALUE|field|java.lang.Short|MAX_VALUE
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7231|7246|addContainerGap|method|javax.swing.GroupLayout.SequentialGroup|addContainerGap|()Ljavax/swing/GroupLayout$SequentialGroup;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7267|7283|setVerticalGroup|method|javax.swing.GroupLayout|setVerticalGroup|(Ljavax/swing/GroupLayout$Group;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7291|7310|createParallelGroup|method|javax.swing.GroupLayout|createParallelGroup|(Ljavax/swing/GroupLayout$Alignment;)Ljavax/swing/GroupLayout$ParallelGroup;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7311|7332|GroupLayout.Alignment|class|javax.swing.GroupLayout.Alignment
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7333|7340|LEADING|field|javax.swing.GroupLayout.Alignment|LEADING
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7355|7363|addGroup|method|javax.swing.GroupLayout.Group|addGroup|(Ljavax/swing/GroupLayout$Group;)Ljavax/swing/GroupLayout$Group;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7371|7392|createSequentialGroup|method|javax.swing.GroupLayout|createSequentialGroup|()Ljavax/swing/GroupLayout$SequentialGroup;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7412|7427|addContainerGap|method|javax.swing.GroupLayout.SequentialGroup|addContainerGap|()Ljavax/swing/GroupLayout$SequentialGroup;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7447|7459|addComponent|method|javax.swing.GroupLayout.Group|addComponent|(Ljava/awt/Component;III)Ljavax/swing/GroupLayout$Group;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7467|7478|GroupLayout|class|javax.swing.GroupLayout
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7479|7493|PREFERRED_SIZE|field|javax.swing.GroupLayout|PREFERRED_SIZE
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7499|7510|GroupLayout|class|javax.swing.GroupLayout
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7511|7525|PREFERRED_SIZE|field|javax.swing.GroupLayout|PREFERRED_SIZE
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7544|7559|addPreferredGap|method|javax.swing.GroupLayout.SequentialGroup|addPreferredGap|(Ljavax/swing/LayoutStyle$ComponentPlacement;)Ljavax/swing/GroupLayout$SequentialGroup;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7560|7590|LayoutStyle.ComponentPlacement|class|javax.swing.LayoutStyle.ComponentPlacement
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7591|7598|RELATED|field|javax.swing.LayoutStyle.ComponentPlacement|RELATED
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7617|7629|addComponent|method|javax.swing.GroupLayout.Group|addComponent|(Ljava/awt/Component;III)Ljavax/swing/GroupLayout$Group;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7635|7646|GroupLayout|class|javax.swing.GroupLayout
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7647|7661|PREFERRED_SIZE|field|javax.swing.GroupLayout|PREFERRED_SIZE
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7667|7678|GroupLayout|class|javax.swing.GroupLayout
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7679|7693|PREFERRED_SIZE|field|javax.swing.GroupLayout|PREFERRED_SIZE
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7712|7727|addContainerGap|method|javax.swing.GroupLayout.SequentialGroup|addContainerGap|(II)Ljavax/swing/GroupLayout$SequentialGroup;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7728|7739|GroupLayout|class|javax.swing.GroupLayout
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7740|7752|DEFAULT_SIZE|field|javax.swing.GroupLayout|DEFAULT_SIZE
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7754|7759|Short|class|java.lang.Short
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7760|7769|MAX_VALUE|field|java.lang.Short|MAX_VALUE
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7788|7800|setResizable|method|java.awt.Frame|setResizable|(Z)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7821|7837|setBorderPainted|method|javax.swing.JProgressBar|setBorderPainted|(Z)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7857|7867|setMinimum|method|javax.swing.JProgressBar|setMinimum|(I)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7884|7900|setStringPainted|method|javax.swing.JProgressBar|setStringPainted|(Z)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7916|7920|Font|class|java.awt.Font
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7932|7939|getFont|method|java.awt.MenuContainer|getFont|()Ljava/awt/Font;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7955|7962|setFont|method|java.awt.Component|setFont|(Ljava/awt/Font;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7967|7971|Font|class|java.awt.Font
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7977|7984|getName|method|java.awt.Font|getName|()Ljava/lang/String;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|7993|8001|getStyle|method|java.awt.Font|getStyle|()I
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8010|8017|getSize|method|java.awt.Font|getSize|()I
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8041|8048|setFont|method|java.awt.Component|setFont|(Ljava/awt/Font;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8053|8057|Font|class|java.awt.Font
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8063|8070|getName|method|java.awt.Font|getName|()Ljava/lang/String;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8079|8087|getStyle|method|java.awt.Font|getStyle|()I
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8096|8103|getSize|method|java.awt.Font|getSize|()I
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8127|8131|pack|method|java.awt.Window|pack|()V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8149|8170|setLocationRelativeTo|method|java.awt.Window|setLocationRelativeTo|(Ljava/awt/Component;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8192|8202|setVisible|method|java.awt.Component|setVisible|(Z)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8219|8236|HttpURLConnection|class|java.net.HttpURLConnection
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8264|8275|InputStream|class|java.io.InputStream
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8310|8326|FileOutputStream|class|java.io.FileOutputStream
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8346|8362|FileOutputStream|class|java.io.FileOutputStream
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8363|8367|file|param|com.nat3z.skyqol.ModCoreInstaller|download|(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Z|file|2
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8382|8385|URL|class|java.net.URL
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8394|8397|URL|class|java.net.URL
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8398|8401|url|param|com.nat3z.skyqol.ModCoreInstaller|download|(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Z|url|0
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8430|8447|HttpURLConnection|class|java.net.HttpURLConnection
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8451|8465|openConnection|method|java.net.URL|openConnection|()Ljava/net/URLConnection;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8492|8508|setRequestMethod|method|java.net.HttpURLConnection|setRequestMethod|(Ljava/lang/String;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8540|8552|setUseCaches|method|java.net.URLConnection|setUseCaches|(Z)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8583|8601|addRequestProperty|method|java.net.URLConnection|addRequestProperty|(Ljava/lang/String;Ljava/lang/String;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8684|8698|setReadTimeout|method|java.net.URLConnection|setReadTimeout|(I)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8730|8747|setConnectTimeout|method|java.net.URLConnection|setConnectTimeout|(I)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8779|8790|setDoOutput|method|java.net.URLConnection|setDoOutput|(Z)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8826|8840|getInputStream|method|java.net.URLConnection|getInputStream|()Ljava/io/InputStream;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8887|8903|getContentLength|method|java.net.URLConnection|getContentLength|()I
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8963|8969|System|class|java.lang.System
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8970|8973|out|field|java.lang.System|out
+      @|com\nat3z\skyqol\ModCoreInstaller.java|8974|8981|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9024|9034|setMaximum|method|javax.swing.JProgressBar|setMaximum|(I)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9089|9097|setValue|method|javax.swing.JProgressBar|setValue|(I)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9132|9136|read|method|java.io.InputStream|read|([B)I
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9182|9187|write|method|java.io.OutputStream|write|([BII)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9226|9234|setValue|method|javax.swing.JProgressBar|setValue|(I)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9239|9247|getValue|method|javax.swing.JProgressBar|getValue|()I
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9285|9294|FileUtils|class|org.apache.commons.io.FileUtils
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9295|9300|write|method|org.apache.commons.io.FileUtils|write|(Ljava/io/File;Ljava/lang/CharSequence;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9305|9309|File|class|java.io.File
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9310|9317|dataDir|field|com.nat3z.skyqol.ModCoreInstaller|dataDir
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9337|9348|versionData|param|com.nat3z.skyqol.ModCoreInstaller|download|(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Z|versionData|4
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9349|9352|put|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Ljava/lang/String;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9353|9358|mcver|param|com.nat3z.skyqol.ModCoreInstaller|download|(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Z|mcver|3
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9360|9367|version|param|com.nat3z.skyqol.ModCoreInstaller|download|(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Z|version|1
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9369|9377|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9399|9408|Exception|class|java.lang.Exception
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9428|9443|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9465|9472|dispose|method|java.awt.Window|dispose|()V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9613|9623|disconnect|method|java.net.HttpURLConnection|disconnect|()V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9703|9708|close|method|java.lang.AutoCloseable|close|()V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9751|9760|Exception|class|java.lang.Exception
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9782|9788|System|class|java.lang.System
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9789|9792|out|field|java.lang.System|out
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9793|9800|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9868|9883|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9926|9933|dispose|method|java.awt.Window|dispose|()V
+   Method End: download(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Z
+   Method Start: fetchJSON(Ljava/lang/String;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9994|10003|fetchJSON|method|com.nat3z.skyqol.ModCoreInstaller|fetchJSON|(Ljava/lang/String;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|9983|9993|JsonHolder|class|com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10004|10010|String|class|java.lang.String
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10011|10014|url|param|com.nat3z.skyqol.ModCoreInstaller|fetchJSON|(Ljava/lang/String;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|url|0
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10037|10047|JsonHolder|class|com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10048|10059|fetchString|method|com.nat3z.skyqol.ModCoreInstaller|fetchString|(Ljava/lang/String;)Ljava/lang/String;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10060|10063|url|param|com.nat3z.skyqol.ModCoreInstaller|fetchJSON|(Ljava/lang/String;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|url|0
+   Method End: fetchJSON(Ljava/lang/String;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+   Method Start: fetchString(Ljava/lang/String;)Ljava/lang/String;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10099|10110|fetchString|method|com.nat3z.skyqol.ModCoreInstaller|fetchString|(Ljava/lang/String;)Ljava/lang/String;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10092|10098|String|class|java.lang.String
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10111|10117|String|class|java.lang.String
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10118|10121|url|param|com.nat3z.skyqol.ModCoreInstaller|fetchString|(Ljava/lang/String;)Ljava/lang/String;|url|0
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10133|10136|url|param|com.nat3z.skyqol.ModCoreInstaller|fetchString|(Ljava/lang/String;)Ljava/lang/String;|url|0
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10139|10142|url|param|com.nat3z.skyqol.ModCoreInstaller|fetchString|(Ljava/lang/String;)Ljava/lang/String;|url|0
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10143|10150|replace|method|java.lang.String|replace|(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10172|10178|System|class|java.lang.System
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10179|10182|out|field|java.lang.System|out
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10183|10190|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10205|10208|url|param|com.nat3z.skyqol.ModCoreInstaller|fetchString|(Ljava/lang/String;)Ljava/lang/String;|url|0
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10220|10237|HttpURLConnection|class|java.net.HttpURLConnection
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10265|10276|InputStream|class|java.io.InputStream
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10314|10317|URL|class|java.net.URL
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10326|10329|URL|class|java.net.URL
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10330|10333|url|param|com.nat3z.skyqol.ModCoreInstaller|fetchString|(Ljava/lang/String;)Ljava/lang/String;|url|0
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10362|10379|HttpURLConnection|class|java.net.HttpURLConnection
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10383|10397|openConnection|method|java.net.URL|openConnection|()Ljava/net/URLConnection;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10424|10440|setRequestMethod|method|java.net.HttpURLConnection|setRequestMethod|(Ljava/lang/String;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10472|10484|setUseCaches|method|java.net.URLConnection|setUseCaches|(Z)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10515|10533|addRequestProperty|method|java.net.URLConnection|addRequestProperty|(Ljava/lang/String;Ljava/lang/String;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10604|10618|setReadTimeout|method|java.net.URLConnection|setReadTimeout|(I)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10650|10667|setConnectTimeout|method|java.net.URLConnection|setConnectTimeout|(I)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10699|10710|setDoOutput|method|java.net.URLConnection|setDoOutput|(Z)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10746|10760|getInputStream|method|java.net.URLConnection|getInputStream|()Ljava/io/InputStream;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10783|10790|IOUtils|class|org.apache.commons.io.IOUtils
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10791|10799|toString|method|org.apache.commons.io.IOUtils|toString|(Ljava/io/InputStream;Ljava/nio/charset/Charset;)Ljava/lang/String;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10804|10811|Charset|class|java.nio.charset.Charset
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10812|10826|defaultCharset|method|java.nio.charset.Charset|defaultCharset|()Ljava/nio/charset/Charset;
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10848|10857|Exception|class|java.lang.Exception
+      @|com\nat3z\skyqol\ModCoreInstaller.java|10877|10892|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|11007|11017|disconnect|method|java.net.HttpURLConnection|disconnect|()V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|11097|11102|close|method|java.lang.AutoCloseable|close|()V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|11145|11154|Exception|class|java.lang.Exception
+      @|com\nat3z\skyqol\ModCoreInstaller.java|11176|11182|System|class|java.lang.System
+      @|com\nat3z\skyqol\ModCoreInstaller.java|11183|11186|out|field|java.lang.System|out
+      @|com\nat3z\skyqol\ModCoreInstaller.java|11187|11194|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com\nat3z\skyqol\ModCoreInstaller.java|11265|11280|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+   Method End: fetchString(Ljava/lang/String;)Ljava/lang/String;
+   Class Start: com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+      @|com\nat3z\skyqol\ModCoreInstaller.java|11457|11467|JsonObject|class|com.google.gson.JsonObject
+      @|com\nat3z\skyqol\ModCoreInstaller.java|11468|11474|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object|
+      Method Start: JsonHolder(Lcom/google/gson/JsonObject;)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|11492|11502|JsonHolder|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|JsonHolder|(Lcom/google/gson/JsonObject;)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|11503|11513|JsonObject|class|com.google.gson.JsonObject
+         @|com\nat3z\skyqol\ModCoreInstaller.java|11514|11520|object|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|JsonHolder|(Lcom/google/gson/JsonObject;)V|object|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|11541|11547|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|11550|11556|object|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|JsonHolder|(Lcom/google/gson/JsonObject;)V|object|0
+      Method End: JsonHolder(Lcom/google/gson/JsonObject;)V
+      Method Start: JsonHolder(Ljava/lang/String;)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|11584|11594|JsonHolder|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|JsonHolder|(Ljava/lang/String;)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|11595|11601|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|11602|11605|raw|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|JsonHolder|(Ljava/lang/String;)V|raw|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|11625|11628|raw|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|JsonHolder|(Ljava/lang/String;)V|raw|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|11654|11660|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|11667|11677|JsonObject|class|com.google.gson.JsonObject
+         @|com\nat3z\skyqol\ModCoreInstaller.java|11745|11751|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|11758|11768|JsonParser|class|com.google.gson.JsonParser
+         @|com\nat3z\skyqol\ModCoreInstaller.java|11771|11776|parse|method|com.google.gson.JsonParser|parse|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|11777|11780|raw|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|JsonHolder|(Ljava/lang/String;)V|raw|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|11782|11797|getAsJsonObject|method|com.google.gson.JsonElement|getAsJsonObject|()Lcom/google/gson/JsonObject;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|11826|11835|Exception|class|java.lang.Exception
+         @|com\nat3z\skyqol\ModCoreInstaller.java|11866|11872|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|11879|11889|JsonObject|class|com.google.gson.JsonObject
+         @|com\nat3z\skyqol\ModCoreInstaller.java|11915|11930|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+      Method End: JsonHolder(Ljava/lang/String;)V
+      Method Start: JsonHolder()V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|11978|11988|JsonHolder|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|JsonHolder|()V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12014|12024|JsonObject|class|com.google.gson.JsonObject
+      Method End: JsonHolder()V
+      Method Start: toString()Ljava/lang/String;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12080|12088|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12073|12079|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12109|12115|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12148|12154|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12155|12163|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      Method End: toString()Ljava/lang/String;
+      Method Start: put(Ljava/lang/String;Z)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12229|12232|put|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Z)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12218|12228|JsonHolder|class|com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12233|12239|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12240|12243|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Z)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12253|12258|value|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Z)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|value|1
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12274|12280|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12281|12292|addProperty|method|com.google.gson.JsonObject|addProperty|(Ljava/lang/String;Ljava/lang/Boolean;)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12293|12296|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Z)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12298|12303|value|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Z)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|value|1
+      Method End: put(Ljava/lang/String;Z)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+      Method Start: mergeNotOverride(Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12362|12378|mergeNotOverride|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|mergeNotOverride|(Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12379|12389|JsonHolder|class|com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12390|12395|merge|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|mergeNotOverride|(Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)V|merge|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12411|12416|merge|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|merge|(Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;Z)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12417|12422|merge|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|mergeNotOverride|(Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)V|merge|0
+      Method End: mergeNotOverride(Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)V
+      Method Start: mergeOverride(Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12463|12476|mergeOverride|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|mergeOverride|(Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12477|12487|JsonHolder|class|com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12488|12493|merge|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|mergeOverride|(Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)V|merge|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12509|12514|merge|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|merge|(Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;Z)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12515|12520|merge|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|mergeOverride|(Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)V|merge|0
+      Method End: mergeOverride(Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)V
+      Method Start: merge(Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;Z)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12560|12565|merge|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|merge|(Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;Z)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12566|12576|JsonHolder|class|com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12577|12582|merge|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|merge|(Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;Z)V|merge|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12592|12600|override|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|merge|(Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;Z)V|override|1
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12616|12626|JsonObject|class|com.google.gson.JsonObject
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12636|12641|merge|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|merge|(Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;Z)V|merge|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12642|12651|getObject|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|getObject|()Lcom/google/gson/JsonObject;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12672|12678|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12683|12688|merge|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|merge|(Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;Z)V|merge|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12689|12696|getKeys|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|getKeys|()Ljava/util/List;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12722|12730|override|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|merge|(Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;Z)V|override|1
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12740|12743|has|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|has|(Ljava/lang/String;)Z
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12768|12771|put|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12782|12785|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      Method End: merge(Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;Z)V
+      Method Start: put(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12837|12840|put|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12841|12847|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12848|12849|s|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Lcom/google/gson/JsonElement;)V|s|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12851|12862|JsonElement|class|com.google.gson.JsonElement
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12863|12870|element|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Lcom/google/gson/JsonElement;)V|element|1
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12891|12897|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12898|12901|add|method|com.google.gson.JsonObject|add|(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12902|12903|s|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Lcom/google/gson/JsonElement;)V|s|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12905|12912|element|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Lcom/google/gson/JsonElement;)V|element|1
+      Method End: put(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+      Method Start: put(Ljava/lang/String;Ljava/lang/String;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12952|12955|put|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Ljava/lang/String;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12941|12951|JsonHolder|class|com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12956|12962|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12963|12966|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Ljava/lang/String;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12968|12974|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12975|12980|value|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Ljava/lang/String;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|value|1
+         @|com\nat3z\skyqol\ModCoreInstaller.java|12996|13002|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13003|13014|addProperty|method|com.google.gson.JsonObject|addProperty|(Ljava/lang/String;Ljava/lang/String;)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13015|13018|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Ljava/lang/String;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13020|13025|value|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Ljava/lang/String;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|value|1
+      Method End: put(Ljava/lang/String;Ljava/lang/String;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+      Method Start: put(Ljava/lang/String;I)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13090|13093|put|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;I)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13079|13089|JsonHolder|class|com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13094|13100|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13101|13104|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;I)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13110|13115|value|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;I)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|value|1
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13131|13137|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13138|13149|addProperty|method|com.google.gson.JsonObject|addProperty|(Ljava/lang/String;Ljava/lang/Number;)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13150|13153|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;I)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13155|13160|value|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;I)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|value|1
+      Method End: put(Ljava/lang/String;I)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+      Method Start: put(Ljava/lang/String;D)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13225|13228|put|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;D)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13214|13224|JsonHolder|class|com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13229|13235|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13236|13239|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;D)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13248|13253|value|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;D)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|value|1
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13269|13275|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13276|13287|addProperty|method|com.google.gson.JsonObject|addProperty|(Ljava/lang/String;Ljava/lang/Number;)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13288|13291|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;D)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13293|13298|value|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;D)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|value|1
+      Method End: put(Ljava/lang/String;D)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+      Method Start: put(Ljava/lang/String;J)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13363|13366|put|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;J)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13352|13362|JsonHolder|class|com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13367|13373|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13374|13377|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;J)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13384|13389|value|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;J)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|value|1
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13405|13411|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13412|13423|addProperty|method|com.google.gson.JsonObject|addProperty|(Ljava/lang/String;Ljava/lang/Number;)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13424|13427|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;J)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13429|13434|value|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;J)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|value|1
+      Method End: put(Ljava/lang/String;J)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+      Method Start: defaultOptJSONObject(Ljava/lang/String;Lcom/google/gson/JsonObject;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13500|13520|defaultOptJSONObject|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|defaultOptJSONObject|(Ljava/lang/String;Lcom/google/gson/JsonObject;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13489|13499|JsonHolder|class|com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13521|13527|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13528|13531|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|defaultOptJSONObject|(Ljava/lang/String;Lcom/google/gson/JsonObject;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13533|13543|JsonObject|class|com.google.gson.JsonObject
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13544|13552|fallBack|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|defaultOptJSONObject|(Ljava/lang/String;Lcom/google/gson/JsonObject;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|fallBack|1
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13601|13611|JsonHolder|class|com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13612|13618|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13619|13622|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13623|13626|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|defaultOptJSONObject|(Ljava/lang/String;Lcom/google/gson/JsonObject;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13628|13643|getAsJsonObject|method|com.google.gson.JsonElement|getAsJsonObject|()Lcom/google/gson/JsonObject;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13669|13678|Exception|class|java.lang.Exception
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13711|13721|JsonHolder|class|com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13722|13730|fallBack|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|defaultOptJSONObject|(Ljava/lang/String;Lcom/google/gson/JsonObject;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|fallBack|1
+      Method End: defaultOptJSONObject(Ljava/lang/String;Lcom/google/gson/JsonObject;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+      Method Start: defaultOptJSONArray(Ljava/lang/String;Lcom/google/gson/JsonArray;)Lcom/google/gson/JsonArray;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13783|13802|defaultOptJSONArray|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|defaultOptJSONArray|(Ljava/lang/String;Lcom/google/gson/JsonArray;)Lcom/google/gson/JsonArray;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13773|13782|JsonArray|class|com.google.gson.JsonArray
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13803|13809|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13810|13813|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|defaultOptJSONArray|(Ljava/lang/String;Lcom/google/gson/JsonArray;)Lcom/google/gson/JsonArray;|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13815|13824|JsonArray|class|com.google.gson.JsonArray
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13825|13833|fallback|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|defaultOptJSONArray|(Ljava/lang/String;Lcom/google/gson/JsonArray;)Lcom/google/gson/JsonArray;|fallback|1
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13878|13884|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13885|13888|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13889|13892|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|defaultOptJSONArray|(Ljava/lang/String;Lcom/google/gson/JsonArray;)Lcom/google/gson/JsonArray;|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13894|13908|getAsJsonArray|method|com.google.gson.JsonElement|getAsJsonArray|()Lcom/google/gson/JsonArray;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13933|13942|Exception|class|java.lang.Exception
+         @|com\nat3z\skyqol\ModCoreInstaller.java|13971|13979|fallback|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|defaultOptJSONArray|(Ljava/lang/String;Lcom/google/gson/JsonArray;)Lcom/google/gson/JsonArray;|fallback|1
+      Method End: defaultOptJSONArray(Ljava/lang/String;Lcom/google/gson/JsonArray;)Lcom/google/gson/JsonArray;
+      Method Start: optJSONArray(Ljava/lang/String;)Lcom/google/gson/JsonArray;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14031|14043|optJSONArray|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optJSONArray|(Ljava/lang/String;)Lcom/google/gson/JsonArray;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14021|14030|JsonArray|class|com.google.gson.JsonArray
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14044|14050|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14051|14054|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optJSONArray|(Ljava/lang/String;)Lcom/google/gson/JsonArray;|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14077|14096|defaultOptJSONArray|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|defaultOptJSONArray|(Ljava/lang/String;Lcom/google/gson/JsonArray;)Lcom/google/gson/JsonArray;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14097|14100|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optJSONArray|(Ljava/lang/String;)Lcom/google/gson/JsonArray;|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14106|14115|JsonArray|class|com.google.gson.JsonArray
+      Method End: optJSONArray(Ljava/lang/String;)Lcom/google/gson/JsonArray;
+      Method Start: has(Ljava/lang/String;)Z
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14155|14158|has|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|has|(Ljava/lang/String;)Z
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14159|14165|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14166|14169|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|has|(Ljava/lang/String;)Z|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14192|14198|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14199|14202|has|method|com.google.gson.JsonObject|has|(Ljava/lang/String;)Z
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14203|14206|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|has|(Ljava/lang/String;)Z|key|0
+      Method End: has(Ljava/lang/String;)Z
+      Method Start: optLong(Ljava/lang/String;J)J
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14240|14247|optLong|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optLong|(Ljava/lang/String;J)J
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14248|14254|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14255|14258|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optLong|(Ljava/lang/String;J)J|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14265|14273|fallback|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optLong|(Ljava/lang/String;J)J|fallback|1
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14318|14324|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14325|14328|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14329|14332|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optLong|(Ljava/lang/String;J)J|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14334|14343|getAsLong|method|com.google.gson.JsonElement|getAsLong|()J
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14368|14377|Exception|class|java.lang.Exception
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14406|14414|fallback|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optLong|(Ljava/lang/String;J)J|fallback|1
+      Method End: optLong(Ljava/lang/String;J)J
+      Method Start: optLong(Ljava/lang/String;)J
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14461|14468|optLong|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optLong|(Ljava/lang/String;)J
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14469|14475|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14476|14479|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optLong|(Ljava/lang/String;)J|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14502|14509|optLong|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optLong|(Ljava/lang/String;J)J
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14510|14513|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optLong|(Ljava/lang/String;)J|key|0
+      Method End: optLong(Ljava/lang/String;)J
+      Method Start: optBoolean(Ljava/lang/String;Z)Z
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14553|14563|optBoolean|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optBoolean|(Ljava/lang/String;Z)Z
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14564|14570|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14571|14574|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optBoolean|(Ljava/lang/String;Z)Z|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14584|14592|fallback|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optBoolean|(Ljava/lang/String;Z)Z|fallback|1
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14637|14643|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14644|14647|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14648|14651|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optBoolean|(Ljava/lang/String;Z)Z|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14653|14665|getAsBoolean|method|com.google.gson.JsonElement|getAsBoolean|()Z
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14690|14699|Exception|class|java.lang.Exception
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14728|14736|fallback|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optBoolean|(Ljava/lang/String;Z)Z|fallback|1
+      Method End: optBoolean(Ljava/lang/String;Z)Z
+      Method Start: optBoolean(Ljava/lang/String;)Z
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14786|14796|optBoolean|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optBoolean|(Ljava/lang/String;)Z
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14797|14803|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14804|14807|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optBoolean|(Ljava/lang/String;)Z|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14830|14840|optBoolean|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optBoolean|(Ljava/lang/String;Z)Z
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14841|14844|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optBoolean|(Ljava/lang/String;)Z|key|0
+      Method End: optBoolean(Ljava/lang/String;)Z
+      Method Start: optActualJSONObject(Ljava/lang/String;)Lcom/google/gson/JsonObject;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14891|14910|optActualJSONObject|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optActualJSONObject|(Ljava/lang/String;)Lcom/google/gson/JsonObject;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14880|14890|JsonObject|class|com.google.gson.JsonObject
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14911|14917|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14918|14921|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optActualJSONObject|(Ljava/lang/String;)Lcom/google/gson/JsonObject;|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14966|14972|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14973|14976|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14977|14980|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optActualJSONObject|(Ljava/lang/String;)Lcom/google/gson/JsonObject;|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|14982|14997|getAsJsonObject|method|com.google.gson.JsonElement|getAsJsonObject|()Lcom/google/gson/JsonObject;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15022|15031|Exception|class|java.lang.Exception
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15064|15074|JsonObject|class|com.google.gson.JsonObject
+      Method End: optActualJSONObject(Ljava/lang/String;)Lcom/google/gson/JsonObject;
+      Method Start: optJSONObject(Ljava/lang/String;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15129|15142|optJSONObject|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optJSONObject|(Ljava/lang/String;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15118|15128|JsonHolder|class|com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15143|15149|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15150|15153|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optJSONObject|(Ljava/lang/String;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15176|15196|defaultOptJSONObject|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|defaultOptJSONObject|(Ljava/lang/String;Lcom/google/gson/JsonObject;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15197|15200|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optJSONObject|(Ljava/lang/String;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15206|15216|JsonObject|class|com.google.gson.JsonObject
+      Method End: optJSONObject(Ljava/lang/String;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+      Method Start: optInt(Ljava/lang/String;I)I
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15252|15258|optInt|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optInt|(Ljava/lang/String;I)I
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15259|15265|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15266|15269|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optInt|(Ljava/lang/String;I)I|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15275|15283|fallBack|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optInt|(Ljava/lang/String;I)I|fallBack|1
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15328|15334|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15335|15338|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15339|15342|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optInt|(Ljava/lang/String;I)I|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15344|15352|getAsInt|method|com.google.gson.JsonElement|getAsInt|()I
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15377|15386|Exception|class|java.lang.Exception
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15415|15423|fallBack|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optInt|(Ljava/lang/String;I)I|fallBack|1
+      Method End: optInt(Ljava/lang/String;I)I
+      Method Start: optInt(Ljava/lang/String;)I
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15469|15475|optInt|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optInt|(Ljava/lang/String;)I
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15476|15482|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15483|15486|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optInt|(Ljava/lang/String;)I|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15509|15515|optInt|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optInt|(Ljava/lang/String;I)I
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15516|15519|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optInt|(Ljava/lang/String;)I|key|0
+      Method End: optInt(Ljava/lang/String;)I
+      Method Start: defaultOptString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15559|15575|defaultOptString|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|defaultOptString|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15552|15558|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15576|15582|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15583|15586|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|defaultOptString|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15588|15594|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15595|15603|fallBack|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|defaultOptString|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;|fallBack|1
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15648|15654|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15655|15658|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15659|15662|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|defaultOptString|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15664|15675|getAsString|method|com.google.gson.JsonElement|getAsString|()Ljava/lang/String;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15700|15709|Exception|class|java.lang.Exception
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15738|15746|fallBack|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|defaultOptString|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;|fallBack|1
+      Method End: defaultOptString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      Method Start: optString(Ljava/lang/String;)Ljava/lang/String;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15795|15804|optString|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optString|(Ljava/lang/String;)Ljava/lang/String;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15788|15794|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15805|15811|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15812|15815|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optString|(Ljava/lang/String;)Ljava/lang/String;|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15838|15854|defaultOptString|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|defaultOptString|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15855|15858|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optString|(Ljava/lang/String;)Ljava/lang/String;|key|0
+      Method End: optString(Ljava/lang/String;)Ljava/lang/String;
+      Method Start: optDouble(Ljava/lang/String;D)D
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15899|15908|optDouble|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optDouble|(Ljava/lang/String;D)D
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15909|15915|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15916|15919|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optDouble|(Ljava/lang/String;D)D|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15928|15936|fallBack|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optDouble|(Ljava/lang/String;D)D|fallBack|1
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15981|15987|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15988|15991|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15992|15995|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optDouble|(Ljava/lang/String;D)D|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|15997|16008|getAsDouble|method|com.google.gson.JsonElement|getAsDouble|()D
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16033|16042|Exception|class|java.lang.Exception
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16071|16079|fallBack|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optDouble|(Ljava/lang/String;D)D|fallBack|1
+      Method End: optDouble(Ljava/lang/String;D)D
+      Method Start: getKeys()Ljava/util/List;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16134|16141|getKeys|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|getKeys|()Ljava/util/List;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16126|16132|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16121|16125|List|class|java.util.List
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16158|16162|List|class|java.util.List
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16163|16169|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16181|16190|ArrayList|class|java.util.ArrayList
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16191|16197|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16219|16228|Map.Entry|class|java.util.Map.Entry
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16229|16235|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16237|16248|JsonElement|class|com.google.gson.JsonElement
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16254|16260|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16261|16269|entrySet|method|com.google.gson.JsonObject|entrySet|()Ljava/util/Set;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16295|16298|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16301|16307|getKey|method|java.util.Map.Entry|getKey|()Ljava/lang/Object;
+      Method End: getKeys()Ljava/util/List;
+      Method Start: optDouble(Ljava/lang/String;)D
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16383|16392|optDouble|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optDouble|(Ljava/lang/String;)D
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16393|16399|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16400|16403|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optDouble|(Ljava/lang/String;)D|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16426|16435|optDouble|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optDouble|(Ljava/lang/String;D)D
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16436|16439|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|optDouble|(Ljava/lang/String;)D|key|0
+      Method End: optDouble(Ljava/lang/String;)D
+      Method Start: getObject()Lcom/google/gson/JsonObject;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16485|16494|getObject|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|getObject|()Lcom/google/gson/JsonObject;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16474|16484|JsonObject|class|com.google.gson.JsonObject
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16518|16524|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+      Method End: getObject()Lcom/google/gson/JsonObject;
+      Method Start: isNull(Ljava/lang/String;)Z
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16560|16566|isNull|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|isNull|(Ljava/lang/String;)Z
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16567|16573|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16574|16577|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|isNull|(Ljava/lang/String;)Z|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16600|16606|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16607|16610|has|method|com.google.gson.JsonObject|has|(Ljava/lang/String;)Z
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16611|16614|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|isNull|(Ljava/lang/String;)Z|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16619|16625|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16626|16629|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16630|16633|key|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|isNull|(Ljava/lang/String;)Z|key|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16635|16645|isJsonNull|method|com.google.gson.JsonElement|isJsonNull|()Z
+      Method End: isNull(Ljava/lang/String;)Z
+      Method Start: put(Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16686|16689|put|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16675|16685|JsonHolder|class|com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16690|16696|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16697|16703|values|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|values|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16705|16715|JsonHolder|class|com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16716|16723|values1|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|values1|1
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16746|16749|put|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Lcom/google/gson/JsonObject;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16750|16756|values|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|values|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16758|16765|values1|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|values1|1
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16766|16775|getObject|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|getObject|()Lcom/google/gson/JsonObject;
+      Method End: put(Ljava/lang/String;Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+      Method Start: put(Ljava/lang/String;Lcom/google/gson/JsonObject;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16817|16820|put|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Lcom/google/gson/JsonObject;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16806|16816|JsonHolder|class|com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16821|16827|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16828|16834|values|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Lcom/google/gson/JsonObject;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|values|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16836|16846|JsonObject|class|com.google.gson.JsonObject
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16847|16853|object|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Lcom/google/gson/JsonObject;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|object|1
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16874|16880|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16881|16884|add|method|com.google.gson.JsonObject|add|(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16885|16891|values|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Lcom/google/gson/JsonObject;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|values|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16893|16899|object|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Lcom/google/gson/JsonObject;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;|object|1
+      Method End: put(Ljava/lang/String;Lcom/google/gson/JsonObject;)Lcom/nat3z/skyqol/ModCoreInstaller$JsonHolder;
+      Method Start: put(Ljava/lang/String;Lcom/google/gson/JsonArray;)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16958|16961|put|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Lcom/google/gson/JsonArray;)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16962|16968|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16969|16980|blacklisted|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Lcom/google/gson/JsonArray;)V|blacklisted|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16982|16991|JsonArray|class|com.google.gson.JsonArray
+         @|com\nat3z\skyqol\ModCoreInstaller.java|16992|17004|jsonElements|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Lcom/google/gson/JsonArray;)V|jsonElements|1
+         @|com\nat3z\skyqol\ModCoreInstaller.java|17025|17031|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|17032|17035|add|method|com.google.gson.JsonObject|add|(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|17036|17047|blacklisted|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Lcom/google/gson/JsonArray;)V|blacklisted|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|17049|17061|jsonElements|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|put|(Ljava/lang/String;Lcom/google/gson/JsonArray;)V|jsonElements|1
+      Method End: put(Ljava/lang/String;Lcom/google/gson/JsonArray;)V
+      Method Start: remove(Ljava/lang/String;)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|17095|17101|remove|method|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|remove|(Ljava/lang/String;)V
+         @|com\nat3z\skyqol\ModCoreInstaller.java|17102|17108|String|class|java.lang.String
+         @|com\nat3z\skyqol\ModCoreInstaller.java|17109|17115|header|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|remove|(Ljava/lang/String;)V|header|0
+         @|com\nat3z\skyqol\ModCoreInstaller.java|17131|17137|object|field|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|object
+         @|com\nat3z\skyqol\ModCoreInstaller.java|17138|17144|remove|method|com.google.gson.JsonObject|remove|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+         @|com\nat3z\skyqol\ModCoreInstaller.java|17145|17151|header|param|com.nat3z.skyqol.ModCoreInstaller.JsonHolder|remove|(Ljava/lang/String;)V|header|0
+      Method End: remove(Ljava/lang/String;)V
+   Class End  : com.nat3z.skyqol.ModCoreInstaller.JsonHolder
+Class End  : com.nat3z.skyqol.ModCoreInstaller
+endProcessing com\nat3z\skyqol\ModCoreInstaller.java
+
+processing com\nat3z\skyqol\forge\FMLLoadingPlugin.java
+@|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|8|30|com.nat3z.skyqol.forge|package|com.nat3z.skyqol.forge|(file)
+Class Start: com.nat3z.skyqol.forge.FMLLoadingPlugin
+   Method Start: getASMTransformerClass()[Ljava/lang/String;
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|297|319|getASMTransformerClass|method|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin|getASMTransformerClass|()[Ljava/lang/String;
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|288|294|String|class|java.lang.String
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|349|365|ModCoreInstaller|class|com.nat3z.skyqol.ModCoreInstaller
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|366|376|initialize|method|com.nat3z.skyqol.ModCoreInstaller|initialize|(Ljava/io/File;Ljava/lang/String;)I
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|377|383|Launch|class|net.minecraft.launchwrapper.Launch
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|384|397|minecraftHome|field|net.minecraft.launchwrapper.Launch|minecraftHome
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|422|438|ModCoreInstaller|class|com.nat3z.skyqol.ModCoreInstaller
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|439|448|isErrored|method|com.nat3z.skyqol.ModCoreInstaller|isErrored|()Z
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|505|511|System|class|java.lang.System
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|512|515|out|field|java.lang.System|out
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|516|523|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|581|597|ModCoreInstaller|class|com.nat3z.skyqol.ModCoreInstaller
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|598|606|getError|method|com.nat3z.skyqol.ModCoreInstaller|getError|()Ljava/lang/String;
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|675|691|ModCoreInstaller|class|com.nat3z.skyqol.ModCoreInstaller
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|692|710|isIsRunningModCore|method|com.nat3z.skyqol.ModCoreInstaller|isIsRunningModCore|()Z
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|791|797|String|class|java.lang.String
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|878|884|String|class|java.lang.String
+   Method End: getASMTransformerClass()[Ljava/lang/String;
+   Method Start: getModContainerClass()Ljava/lang/String;
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|929|949|getModContainerClass|method|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin|getModContainerClass|()Ljava/lang/String;
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|922|928|String|class|java.lang.String
+   Method End: getModContainerClass()Ljava/lang/String;
+   Method Start: getSetupClass()Ljava/lang/String;
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|1014|1027|getSetupClass|method|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin|getSetupClass|()Ljava/lang/String;
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|1007|1013|String|class|java.lang.String
+   Method End: getSetupClass()Ljava/lang/String;
+   Method Start: injectData(Ljava/util/Map;)V
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|1090|1100|injectData|method|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin|injectData|(Ljava/util/Map;)V
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|1105|1111|String|class|java.lang.String
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|1113|1119|Object|class|java.lang.Object
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|1101|1104|Map|class|java.util.Map
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|1121|1125|data|param|com.nat3z.skyqol.forge.FMLLoadingPlugin|injectData|(Ljava/util/Map;)V|data|0
+   Method End: injectData(Ljava/util/Map;)V
+   Method Start: getAccessTransformerClass()Ljava/lang/String;
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|1169|1194|getAccessTransformerClass|method|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin|getAccessTransformerClass|()Ljava/lang/String;
+      @|com\nat3z\skyqol\forge\FMLLoadingPlugin.java|1162|1168|String|class|java.lang.String
+   Method End: getAccessTransformerClass()Ljava/lang/String;
+Class End  : com.nat3z.skyqol.forge.FMLLoadingPlugin
+endProcessing com\nat3z\skyqol\forge\FMLLoadingPlugin.java
+
+processing com\nat3z\skyqol\gui\Commands.java
+@|com\nat3z\skyqol\gui\Commands.java|8|28|com.nat3z.skyqol.gui|package|com.nat3z.skyqol.gui|(file)
+Class Start: com.nat3z.skyqol.gui.Commands
+   @|com\nat3z\skyqol\gui\Commands.java|291|295|Main|class|com.nat3z.skyqol.Main
+   @|com\nat3z\skyqol\gui\Commands.java|296|299|mod|field|com.nat3z.skyqol.gui.Commands|mod|
+   Method Start: Commands(Lcom/nat3z/skyqol/Main;)V
+      @|com\nat3z\skyqol\gui\Commands.java|313|321|Commands|method|com.nat3z.skyqol.gui.Commands|Commands|(Lcom/nat3z/skyqol/Main;)V
+      @|com\nat3z\skyqol\gui\Commands.java|322|326|Main|class|com.nat3z.skyqol.Main
+      @|com\nat3z\skyqol\gui\Commands.java|327|330|mod|param|com.nat3z.skyqol.gui.Commands|Commands|(Lcom/nat3z/skyqol/Main;)V|mod|0
+      @|com\nat3z\skyqol\gui\Commands.java|347|350|mod|field|com.nat3z.skyqol.gui.Commands|mod
+      @|com\nat3z\skyqol\gui\Commands.java|353|356|mod|param|com.nat3z.skyqol.gui.Commands|Commands|(Lcom/nat3z/skyqol/Main;)V|mod|0
+   Method End: Commands(Lcom/nat3z/skyqol/Main;)V
+   Method Start: getCommandName()Ljava/lang/String;
+      @|com\nat3z\skyqol\gui\Commands.java|397|411|getCommandName|method|net.minecraft.command.ICommand|getCommandName|()Ljava/lang/String;
+      @|com\nat3z\skyqol\gui\Commands.java|390|396|String|class|java.lang.String
+   Method End: getCommandName()Ljava/lang/String;
+   Method Start: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|com\nat3z\skyqol\gui\Commands.java|477|492|getCommandUsage|method|net.minecraft.command.ICommand|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|com\nat3z\skyqol\gui\Commands.java|470|476|String|class|java.lang.String
+      @|com\nat3z\skyqol\gui\Commands.java|493|507|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|com\nat3z\skyqol\gui\Commands.java|508|514|sender|param|com.nat3z.skyqol.gui.Commands|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;|sender|0
+   Method End: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+   Method Start: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|com\nat3z\skyqol\gui\Commands.java|578|592|processCommand|method|net.minecraft.command.ICommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|com\nat3z\skyqol\gui\Commands.java|638|654|CommandException|class|net.minecraft.command.CommandException
+      @|com\nat3z\skyqol\gui\Commands.java|593|607|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|com\nat3z\skyqol\gui\Commands.java|608|614|sender|param|com.nat3z.skyqol.gui.Commands|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|sender|0
+      @|com\nat3z\skyqol\gui\Commands.java|616|622|String|class|java.lang.String
+      @|com\nat3z\skyqol\gui\Commands.java|625|629|args|param|com.nat3z.skyqol.gui.Commands|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|com\nat3z\skyqol\gui\Commands.java|665|672|ModCore|class|club.sk1er.mods.core.ModCore
+      @|com\nat3z\skyqol\gui\Commands.java|673|684|getInstance|method|club.sk1er.mods.core.ModCore|getInstance|()Lclub/sk1er/mods/core/ModCore;
+      @|com\nat3z\skyqol\gui\Commands.java|687|700|getGuiHandler|method|club.sk1er.mods.core.ModCore|getGuiHandler|()Lclub/sk1er/mods/core/gui/GuiHandler;
+      @|com\nat3z\skyqol\gui\Commands.java|703|707|open|method|club.sk1er.mods.core.gui.GuiHandler|open|(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|com\nat3z\skyqol\gui\Commands.java|708|712|Main|class|com.nat3z.skyqol.Main
+      @|com\nat3z\skyqol\gui\Commands.java|713|721|INSTANCE|field|com.nat3z.skyqol.Main|INSTANCE
+      @|com\nat3z\skyqol\gui\Commands.java|722|731|getConfig|method|com.nat3z.skyqol.Main|getConfig|()Lcom/nat3z/skyqol/Config;
+      @|com\nat3z\skyqol\gui\Commands.java|734|737|gui|method|club.sk1er.vigilance.Vigilant|gui|()Lclub/sk1er/vigilance/gui/SettingsGui;
+   Method End: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+   Method Start: getRequiredPermissionLevel()I
+      @|com\nat3z\skyqol\gui\Commands.java|764|790|getRequiredPermissionLevel|method|net.minecraft.command.CommandBase|getRequiredPermissionLevel|()I
+   Method End: getRequiredPermissionLevel()I
+   Method Start: canCommandSenderUseCommand(Lnet/minecraft/command/ICommandSender;)Z
+      @|com\nat3z\skyqol\gui\Commands.java|839|865|canCommandSenderUseCommand|method|net.minecraft.command.ICommand|canCommandSenderUseCommand|(Lnet/minecraft/command/ICommandSender;)Z
+      @|com\nat3z\skyqol\gui\Commands.java|872|886|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|com\nat3z\skyqol\gui\Commands.java|887|893|sender|param|com.nat3z.skyqol.gui.Commands|canCommandSenderUseCommand|(Lnet/minecraft/command/ICommandSender;)Z|sender|0
+   Method End: canCommandSenderUseCommand(Lnet/minecraft/command/ICommandSender;)Z
+Class End  : com.nat3z.skyqol.gui.Commands
+endProcessing com\nat3z\skyqol\gui\Commands.java
+
+processing com\nat3z\skyqol\gui\GUI.java
+@|com\nat3z\skyqol\gui\GUI.java|207|227|com.nat3z.skyqol.gui|package|com.nat3z.skyqol.gui|(file)
+Class Start: com.nat3z.skyqol.gui.GUI
+   @|com\nat3z\skyqol\gui\GUI.java|464|473|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|com\nat3z\skyqol\gui\GUI.java|474|481|button1|field|com.nat3z.skyqol.gui.GUI|button1|
+   @|com\nat3z\skyqol\gui\GUI.java|500|505|byte0|field|com.nat3z.skyqol.gui.GUI|byte0|
+   Method Start: initGui()V
+      @|com\nat3z\skyqol\gui\GUI.java|543|550|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|com\nat3z\skyqol\gui\GUI.java|566|573|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|com\nat3z\skyqol\gui\GUI.java|582|589|button1|field|com.nat3z.skyqol.gui.GUI|button1
+      @|com\nat3z\skyqol\gui\GUI.java|596|605|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\nat3z\skyqol\gui\GUI.java|614|623|getCenter|method|com.nat3z.skyqol.gui.GUI|getCenter|()I
+      @|com\nat3z\skyqol\gui\GUI.java|638|647|getRowPos|method|com.nat3z.skyqol.gui.GUI|getRowPos|(I)I
+      @|com\nat3z\skyqol\gui\GUI.java|661|679|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|com\nat3z\skyqol\gui\GUI.java|680|683|RED|field|net.minecraft.util.EnumChatFormatting|RED
+      @|com\nat3z\skyqol\gui\GUI.java|709|719|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\nat3z\skyqol\gui\GUI.java|720|723|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\nat3z\skyqol\gui\GUI.java|724|731|button1|field|com.nat3z.skyqol.gui.GUI|button1
+   Method End: initGui()V
+   Method Start: drawScreen(IIF)V
+      @|com\nat3z\skyqol\gui\GUI.java|771|781|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com\nat3z\skyqol\gui\GUI.java|792|793|x|param|com.nat3z.skyqol.gui.GUI|drawScreen|(IIF)V|x|0
+      @|com\nat3z\skyqol\gui\GUI.java|805|806|y|param|com.nat3z.skyqol.gui.GUI|drawScreen|(IIF)V|y|1
+      @|com\nat3z\skyqol\gui\GUI.java|820|832|partialTicks|param|com.nat3z.skyqol.gui.GUI|drawScreen|(IIF)V|partialTicks|2
+      @|com\nat3z\skyqol\gui\GUI.java|877|898|drawDefaultBackground|method|net.minecraft.client.gui.GuiScreen|drawDefaultBackground|()V
+      @|com\nat3z\skyqol\gui\GUI.java|915|930|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\nat3z\skyqol\gui\GUI.java|931|941|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|com\nat3z\skyqol\gui\GUI.java|970|979|getCenter|method|com.nat3z.skyqol.gui.GUI|getCenter|()I
+      @|com\nat3z\skyqol\gui\GUI.java|993|1002|getRowPos|method|com.nat3z.skyqol.gui.GUI|getRowPos|(I)I
+      @|com\nat3z\skyqol\gui\GUI.java|1007|1021|getChromaColor|method|com.nat3z.skyqol.gui.GUI|getChromaColor|()I
+      @|com\nat3z\skyqol\gui\GUI.java|1040|1050|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com\nat3z\skyqol\gui\GUI.java|1051|1052|x|param|com.nat3z.skyqol.gui.GUI|drawScreen|(IIF)V|x|0
+      @|com\nat3z\skyqol\gui\GUI.java|1054|1055|y|param|com.nat3z.skyqol.gui.GUI|drawScreen|(IIF)V|y|1
+      @|com\nat3z\skyqol\gui\GUI.java|1057|1069|partialTicks|param|com.nat3z.skyqol.gui.GUI|drawScreen|(IIF)V|partialTicks|2
+   Method End: drawScreen(IIF)V
+   Method Start: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+      @|com\nat3z\skyqol\gui\GUI.java|1098|1113|actionPerformed|method|net.minecraft.client.gui.GuiScreen|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V
+      @|com\nat3z\skyqol\gui\GUI.java|1120|1129|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\nat3z\skyqol\gui\GUI.java|1130|1139|guiButton|param|com.nat3z.skyqol.gui.GUI|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|guiButton|0
+      @|com\nat3z\skyqol\gui\GUI.java|1155|1164|guiButton|param|com.nat3z.skyqol.gui.GUI|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|guiButton|0
+      @|com\nat3z\skyqol\gui\GUI.java|1165|1172|enabled|field|net.minecraft.client.gui.GuiButton|enabled
+      @|com\nat3z\skyqol\gui\GUI.java|1196|1205|guiButton|param|com.nat3z.skyqol.gui.GUI|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|guiButton|0
+      @|com\nat3z\skyqol\gui\GUI.java|1206|1208|id|field|net.minecraft.client.gui.GuiButton|id
+      @|com\nat3z\skyqol\gui\GUI.java|1255|1264|guiButton|param|com.nat3z.skyqol.gui.GUI|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|guiButton|0
+      @|com\nat3z\skyqol\gui\GUI.java|1265|1278|displayString|field|net.minecraft.client.gui.GuiButton|displayString
+      @|com\nat3z\skyqol\gui\GUI.java|1281|1299|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|com\nat3z\skyqol\gui\GUI.java|1300|1305|GREEN|field|net.minecraft.util.EnumChatFormatting|GREEN
+      @|com\nat3z\skyqol\gui\GUI.java|1342|1351|Utilities|class|me.nat3z.Utilities
+      @|com\nat3z\skyqol\gui\GUI.java|1352|1363|sendMessage|method|me.nat3z.Utilities|sendMessage|(Ljava/lang/String;)V
+      @|com\nat3z\skyqol\gui\GUI.java|1364|1382|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|com\nat3z\skyqol\gui\GUI.java|1383|1388|GREEN|field|net.minecraft.util.EnumChatFormatting|GREEN
+   Method End: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+   Method Start: getRowPos(I)I
+      @|com\nat3z\skyqol\gui\GUI.java|1498|1507|getRowPos|method|com.nat3z.skyqol.gui.GUI|getRowPos|(I)I
+      @|com\nat3z\skyqol\gui\GUI.java|1518|1527|rowNumber|param|com.nat3z.skyqol.gui.GUI|getRowPos|(I)I|rowNumber|0
+      @|com\nat3z\skyqol\gui\GUI.java|1551|1557|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\nat3z\skyqol\gui\GUI.java|1570|1579|rowNumber|param|com.nat3z.skyqol.gui.GUI|getRowPos|(I)I|rowNumber|0
+      @|com\nat3z\skyqol\gui\GUI.java|1593|1598|byte0|field|com.nat3z.skyqol.gui.GUI|byte0
+   Method End: getRowPos(I)I
+   Method Start: getCenter()I
+      @|com\nat3z\skyqol\gui\GUI.java|1622|1631|getCenter|method|com.nat3z.skyqol.gui.GUI|getCenter|()I
+      @|com\nat3z\skyqol\gui\GUI.java|1656|1661|width|field|net.minecraft.client.gui.GuiScreen|width
+   Method End: getCenter()I
+   Method Start: getChromaColor()I
+      @|com\nat3z\skyqol\gui\GUI.java|1696|1710|getChromaColor|method|com.nat3z.skyqol.gui.GUI|getChromaColor|()I
+      @|com\nat3z\skyqol\gui\GUI.java|1730|1735|Color|class|java.awt.Color
+      @|com\nat3z\skyqol\gui\GUI.java|1736|1744|HSBtoRGB|method|java.awt.Color|HSBtoRGB|(FFF)I
+      @|com\nat3z\skyqol\gui\GUI.java|1745|1751|System|class|java.lang.System
+      @|com\nat3z\skyqol\gui\GUI.java|1752|1769|currentTimeMillis|method|java.lang.System|currentTimeMillis|()J
+   Method End: getChromaColor()I
+Class End  : com.nat3z.skyqol.gui.GUI
+endProcessing com\nat3z\skyqol\gui\GUI.java
+
+processing com\nat3z\skyqol\listeners\AntiNonEnchanted.java
+@|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|8|34|com.nat3z.skyqol.listeners|package|com.nat3z.skyqol.listeners|(file)
+Class Start: com.nat3z.skyqol.listeners.AntiNonEnchanted
+   Method Start: containerevent(Lnet/minecraftforge/client/event/GuiScreenEvent$MouseInputEvent$Pre;)V
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|551|565|containerevent|method|com.nat3z.skyqol.listeners.AntiNonEnchanted|containerevent|(Lnet/minecraftforge/client/event/GuiScreenEvent$MouseInputEvent$Pre;)V
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|566|585|MouseInputEvent.Pre|class|net.minecraftforge.client.event.GuiScreenEvent.MouseInputEvent.Pre
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|586|591|event|param|com.nat3z.skyqol.listeners.AntiNonEnchanted|containerevent|(Lnet/minecraftforge/client/event/GuiScreenEvent$MouseInputEvent$Pre;)V|event|0
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|605|611|Config|class|com.nat3z.skyqol.Config
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|612|628|stopclickenchant|field|com.nat3z.skyqol.Config|stopclickenchant
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|659|664|event|param|com.nat3z.skyqol.listeners.AntiNonEnchanted|containerevent|(Lnet/minecraftforge/client/event/GuiScreenEvent$MouseInputEvent$Pre;)V|event|0
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|665|668|gui|field|net.minecraftforge.client.event.GuiScreenEvent|gui
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|680|692|GuiContainer|class|net.minecraft.client.gui.inventory.GuiContainer
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|793|805|GuiContainer|class|net.minecraft.client.gui.inventory.GuiContainer
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|819|831|GuiContainer|class|net.minecraft.client.gui.inventory.GuiContainer
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|833|838|event|param|com.nat3z.skyqol.listeners.AntiNonEnchanted|containerevent|(Lnet/minecraftforge/client/event/GuiScreenEvent$MouseInputEvent$Pre;)V|event|0
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|839|842|gui|field|net.minecraftforge.client.event.GuiScreenEvent|gui
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|851|860|Container|class|net.minecraft.inventory.Container
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|868|877|Container|class|net.minecraft.inventory.Container
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|889|903|inventorySlots|field|net.minecraft.client.gui.inventory.GuiContainer|inventorySlots
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|921|928|getSlot|method|net.minecraft.inventory.Container|getSlot|(I)Lnet/minecraft/inventory/Slot;
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|932|940|getStack|method|net.minecraft.inventory.Slot|getStack|()Lnet/minecraft/item/ItemStack;
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|943|957|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|960|971|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|974|982|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1017|1021|Slot|class|net.minecraft.inventory.Slot
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1039|1056|getSlotUnderMouse|method|net.minecraft.client.gui.inventory.GuiContainer|getSlotUnderMouse|()Lnet/minecraft/inventory/Slot;
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1101|1110|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1124|1132|getStack|method|net.minecraft.inventory.Slot|getStack|()Lnet/minecraft/item/ItemStack;
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1159|1165|String|class|java.lang.String
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1180|1198|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1199|1228|getTextWithoutFormattingCodes|method|net.minecraft.util.EnumChatFormatting|getTextWithoutFormattingCodes|(Ljava/lang/String;)Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1235|1249|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1281|1287|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1327|1333|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1383|1389|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1424|1430|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1473|1479|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1511|1517|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1555|1561|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1597|1603|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1639|1647|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1675|1681|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1726|1734|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1760|1768|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1794|1800|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1844|1850|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1880|1886|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1918|1924|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|1965|1971|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|2003|2009|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|2040|2046|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|2086|2092|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|2132|2138|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|2171|2179|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|2246|2253|getSlot|method|net.minecraft.inventory.Container|getSlot|(I)Lnet/minecraft/inventory/Slot;
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|2258|2266|getStack|method|net.minecraft.inventory.Slot|getStack|()Lnet/minecraft/item/ItemStack;
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|2269|2283|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|2286|2294|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|2316|2323|getSlot|method|net.minecraft.inventory.Container|getSlot|(I)Lnet/minecraft/inventory/Slot;
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|2328|2336|getStack|method|net.minecraft.inventory.Slot|getStack|()Lnet/minecraft/item/ItemStack;
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|2339|2353|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|2356|2364|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|2406|2413|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|2435|2450|isItemEnchanted|method|net.minecraft.item.ItemStack|isItemEnchanted|()Z
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|2469|2474|event|param|com.nat3z.skyqol.listeners.AntiNonEnchanted|containerevent|(Lnet/minecraftforge/client/event/GuiScreenEvent$MouseInputEvent$Pre;)V|event|0
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|2475|2486|setCanceled|method|net.minecraftforge.fml.common.eventhandler.Event|setCanceled|(Z)V
+      @|com\nat3z\skyqol\listeners\AntiNonEnchanted.java|2548|2568|NullPointerException|class|java.lang.NullPointerException
+   Method End: containerevent(Lnet/minecraftforge/client/event/GuiScreenEvent$MouseInputEvent$Pre;)V
+Class End  : com.nat3z.skyqol.listeners.AntiNonEnchanted
+endProcessing com\nat3z\skyqol\listeners\AntiNonEnchanted.java
+
+processing com\nat3z\skyqol\listeners\BasicListener.java
+@|com\nat3z\skyqol\listeners\BasicListener.java|8|34|com.nat3z.skyqol.listeners|package|com.nat3z.skyqol.listeners|(file)
+Class Start: com.nat3z.skyqol.listeners.BasicListener
+   @|com\nat3z\skyqol\listeners\BasicListener.java|556|565|Minecraft|class|net.minecraft.client.Minecraft
+   @|com\nat3z\skyqol\listeners\BasicListener.java|566|568|mc|field|com.nat3z.skyqol.listeners.BasicListener|mc|
+   Method Start: onTick(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+      @|com\nat3z\skyqol\listeners\BasicListener.java|606|612|onTick|method|com.nat3z.skyqol.listeners.BasicListener|onTick|(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+      @|com\nat3z\skyqol\listeners\BasicListener.java|613|629|ItemTooltipEvent|class|net.minecraftforge.event.entity.player.ItemTooltipEvent
+      @|com\nat3z\skyqol\listeners\BasicListener.java|630|635|event|param|com.nat3z.skyqol.listeners.BasicListener|onTick|(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V|event|0
+      @|com\nat3z\skyqol\listeners\BasicListener.java|649|655|Config|class|com.nat3z.skyqol.Config
+      @|com\nat3z\skyqol\listeners\BasicListener.java|656|675|dungeonsprofitcheck|field|com.nat3z.skyqol.Config|dungeonsprofitcheck
+      @|com\nat3z\skyqol\listeners\BasicListener.java|707|709|mc|field|com.nat3z.skyqol.listeners.BasicListener|mc
+      @|com\nat3z\skyqol\listeners\BasicListener.java|712|721|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\nat3z\skyqol\listeners\BasicListener.java|722|734|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|743|757|EntityPlayerSP|class|net.minecraft.client.entity.EntityPlayerSP
+      @|com\nat3z\skyqol\listeners\BasicListener.java|762|764|mc|field|com.nat3z.skyqol.listeners.BasicListener|mc
+      @|com\nat3z\skyqol\listeners\BasicListener.java|765|774|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|com\nat3z\skyqol\listeners\BasicListener.java|790|795|event|param|com.nat3z.skyqol.listeners.BasicListener|onTick|(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V|event|0
+      @|com\nat3z\skyqol\listeners\BasicListener.java|796|805|itemStack|field|net.minecraftforge.event.entity.player.ItemTooltipEvent|itemStack
+      @|com\nat3z\skyqol\listeners\BasicListener.java|806|820|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|823|834|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|837|845|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|907|913|String|class|java.lang.String
+      @|com\nat3z\skyqol\listeners\BasicListener.java|928|941|openContainer|field|net.minecraft.entity.player.EntityPlayer|openContainer
+      @|com\nat3z\skyqol\listeners\BasicListener.java|942|949|getSlot|method|net.minecraft.inventory.Container|getSlot|(I)Lnet/minecraft/inventory/Slot;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|954|962|getStack|method|net.minecraft.inventory.Slot|getStack|()Lnet/minecraft/item/ItemStack;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|965|979|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|982|990|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|993|1004|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1026|1037|StringUtils|class|net.minecraft.util.StringUtils
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1038|1055|stripControlCodes|method|net.minecraft.util.StringUtils|stripControlCodes|(Ljava/lang/String;)Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1074|1080|String|class|java.lang.String
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1095|1108|openContainer|field|net.minecraft.entity.player.EntityPlayer|openContainer
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1109|1116|getSlot|method|net.minecraft.inventory.Container|getSlot|(I)Lnet/minecraft/inventory/Slot;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1121|1129|getStack|method|net.minecraft.inventory.Slot|getStack|()Lnet/minecraft/item/ItemStack;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1132|1146|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1149|1157|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1160|1171|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1193|1204|StringUtils|class|net.minecraft.util.StringUtils
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1205|1222|stripControlCodes|method|net.minecraft.util.StringUtils|stripControlCodes|(Ljava/lang/String;)Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1241|1247|String|class|java.lang.String
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1262|1275|openContainer|field|net.minecraft.entity.player.EntityPlayer|openContainer
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1276|1283|getSlot|method|net.minecraft.inventory.Container|getSlot|(I)Lnet/minecraft/inventory/Slot;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1288|1296|getStack|method|net.minecraft.inventory.Slot|getStack|()Lnet/minecraft/item/ItemStack;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1299|1313|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1316|1324|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1327|1338|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1360|1371|StringUtils|class|net.minecraft.util.StringUtils
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1372|1389|stripControlCodes|method|net.minecraft.util.StringUtils|stripControlCodes|(Ljava/lang/String;)Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1415|1421|String|class|java.lang.String
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1431|1440|ItemUtils|class|me.nat3z.ItemUtils
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1441|1452|getItemLore|method|me.nat3z.ItemUtils|getItemLore|(Lnet/minecraft/item/ItemStack;)Ljava/util/List;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1455|1468|openContainer|field|net.minecraft.entity.player.EntityPlayer|openContainer
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1469|1476|getSlot|method|net.minecraft.inventory.Container|getSlot|(I)Lnet/minecraft/inventory/Slot;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1481|1489|getStack|method|net.minecraft.inventory.Slot|getStack|()Lnet/minecraft/item/ItemStack;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1493|1501|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1504|1515|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1534|1545|StringUtils|class|net.minecraft.util.StringUtils
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1546|1563|stripControlCodes|method|net.minecraft.util.StringUtils|stripControlCodes|(Ljava/lang/String;)Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1579|1585|String|class|java.lang.String
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1595|1604|ItemUtils|class|me.nat3z.ItemUtils
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1605|1616|getItemLore|method|me.nat3z.ItemUtils|getItemLore|(Lnet/minecraft/item/ItemStack;)Ljava/util/List;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1619|1632|openContainer|field|net.minecraft.entity.player.EntityPlayer|openContainer
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1633|1640|getSlot|method|net.minecraft.inventory.Container|getSlot|(I)Lnet/minecraft/inventory/Slot;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1645|1653|getStack|method|net.minecraft.inventory.Slot|getStack|()Lnet/minecraft/item/ItemStack;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1657|1665|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1668|1679|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1698|1709|StringUtils|class|net.minecraft.util.StringUtils
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1710|1727|stripControlCodes|method|net.minecraft.util.StringUtils|stripControlCodes|(Ljava/lang/String;)Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1743|1749|String|class|java.lang.String
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1759|1768|ItemUtils|class|me.nat3z.ItemUtils
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1769|1780|getItemLore|method|me.nat3z.ItemUtils|getItemLore|(Lnet/minecraft/item/ItemStack;)Ljava/util/List;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1783|1796|openContainer|field|net.minecraft.entity.player.EntityPlayer|openContainer
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1797|1804|getSlot|method|net.minecraft.inventory.Container|getSlot|(I)Lnet/minecraft/inventory/Slot;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1809|1817|getStack|method|net.minecraft.inventory.Slot|getStack|()Lnet/minecraft/item/ItemStack;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1821|1829|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1832|1843|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1862|1873|StringUtils|class|net.minecraft.util.StringUtils
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1874|1891|stripControlCodes|method|net.minecraft.util.StringUtils|stripControlCodes|(Ljava/lang/String;)Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1921|1929|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1958|1966|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|1995|2003|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|2074|2082|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|2110|2118|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|2146|2154|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|2223|2231|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|2260|2268|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|2297|2305|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|2375|2383|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|2412|2420|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|2449|2457|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|2527|2535|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|2557|2565|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|2587|2595|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|2660|2668|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|2692|2700|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|2724|2732|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|2796|2804|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|2830|2838|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|2864|2872|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|2936|2944|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|2962|2970|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|2988|2996|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|3056|3064|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|3092|3100|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|3128|3136|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|3206|3214|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|3244|3252|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|3282|3290|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|3362|3370|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|3391|3399|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|3420|3428|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|3491|3499|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|3524|3532|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|3557|3565|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|3630|3638|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|3674|3682|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|3718|3726|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|3803|3811|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|3847|3855|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|3891|3899|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|3976|3984|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|4023|4031|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|4070|4078|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|4159|4167|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|4203|4211|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|4247|4255|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|4332|4340|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|4361|4369|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|4390|4398|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|4460|4468|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|4496|4504|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|4532|4540|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|4610|4618|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|4645|4653|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|4680|4688|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|4756|4764|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|4790|4798|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|4824|4832|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|4906|4914|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|4940|4948|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|4974|4982|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|5048|5056|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|5083|5091|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|5118|5126|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|5194|5202|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|5234|5242|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|5274|5282|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|5355|5363|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|5399|5407|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|5443|5451|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|5527|5535|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|5571|5579|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|5615|5623|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|5700|5708|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|5744|5752|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|5788|5796|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|5873|5881|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|5917|5925|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|5961|5969|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|6047|6055|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|6084|6092|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|6121|6129|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|6200|6208|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|6235|6243|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|6270|6278|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|6348|6356|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|6384|6392|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|6420|6428|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|6498|6506|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|6533|6541|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|6568|6576|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|6644|6652|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|6679|6687|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|6714|6722|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|6797|6805|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|6833|6841|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|6869|6877|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|6945|6953|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|6981|6989|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|7017|7025|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|7094|7102|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|7130|7138|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|7166|7174|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|7243|7251|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|7279|7287|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|7315|7323|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|7391|7399|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|7427|7435|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|7463|7471|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|7546|7554|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|7577|7585|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|7608|7616|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|7686|7694|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|7722|7730|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|7758|7766|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|7835|7843|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|7870|7878|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|7905|7913|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|7987|7995|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|8018|8026|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|8049|8057|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|8121|8129|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|8153|8161|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|8185|8193|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|8258|8266|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|8290|8298|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|8322|8330|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|8412|8420|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|8442|8450|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|8472|8480|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|8541|8549|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|8574|8582|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|8607|8615|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|8680|8688|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|8708|8716|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|8736|8744|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|8803|8811|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|8830|8838|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|8857|8865|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|8923|8931|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|8952|8960|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|8981|8989|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|9051|9059|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|9086|9094|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|9121|9129|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|9195|9203|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|9222|9230|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|9249|9257|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|9311|9319|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|9342|9350|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|9373|9381|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|9444|9452|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|9471|9479|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|9498|9506|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|9565|9573|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|9593|9601|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|9621|9629|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10060|10066|String|class|java.lang.String
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10077|10082|event|param|com.nat3z.skyqol.listeners.BasicListener|onTick|(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V|event|0
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10083|10092|itemStack|field|net.minecraftforge.event.entity.player.ItemTooltipEvent|itemStack
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10093|10107|getTagCompound|method|net.minecraft.item.ItemStack|getTagCompound|()Lnet/minecraft/nbt/NBTTagCompound;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10110|10124|getCompoundTag|method|net.minecraft.nbt.NBTTagCompound|getCompoundTag|(Ljava/lang/String;)Lnet/minecraft/nbt/NBTTagCompound;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10136|10146|getTagList|method|net.minecraft.nbt.NBTTagCompound|getTagList|(Ljava/lang/String;I)Lnet/minecraft/nbt/NBTTagList;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10158|10172|getStringTagAt|method|net.minecraft.nbt.NBTTagList|getStringTagAt|(I)Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10176|10186|replaceAll|method|java.lang.String|replaceAll|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10196|10203|replace|method|java.lang.String|replace|(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10217|10227|replaceAll|method|java.lang.String|replaceAll|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10237|10245|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10265|10276|StringUtils|class|net.minecraft.util.StringUtils
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10277|10294|stripControlCodes|method|net.minecraft.util.StringUtils|stripControlCodes|(Ljava/lang/String;)Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10324|10335|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10338|10346|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10379|10386|Integer|class|java.lang.Integer
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10387|10395|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10422|10430|TextDraw|class|me.nat3z.TextDraw
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10442|10450|TextDraw|class|me.nat3z.TextDraw
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10492|10500|drawText|method|me.nat3z.TextDraw|drawText|(Ljava/lang/String;III)V
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10501|10519|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10520|10523|RED|field|net.minecraft.util.EnumChatFormatting|RED
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10705|10713|drawText|method|me.nat3z.TextDraw|drawText|(Ljava/lang/String;III)V
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10714|10732|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10733|10738|GREEN|field|net.minecraft.util.EnumChatFormatting|GREEN
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10908|10916|drawText|method|me.nat3z.TextDraw|drawText|(Ljava/lang/String;III)V
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10917|10935|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|com\nat3z\skyqol\listeners\BasicListener.java|10936|10940|GRAY|field|net.minecraft.util.EnumChatFormatting|GRAY
+   Method End: onTick(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+Class End  : com.nat3z.skyqol.listeners.BasicListener
+endProcessing com\nat3z\skyqol\listeners\BasicListener.java
+
+processing com\nat3z\skyqol\listeners\StopDropping.java
+  File had no contents.
+endProcessing com\nat3z\skyqol\listeners\StopDropping.java
+
+processing me\nat3z\ChatColor.java
+@|me\nat3z\ChatColor.java|8|16|me.nat3z|package|me.nat3z|(file)
+Class Start: me.nat3z.ChatColor
+   @|me\nat3z\ChatColor.java|99|105|String|class|java.lang.String
+   @|me\nat3z\ChatColor.java|106|110|PINK|field|me.nat3z.ChatColor|PINK|
+   @|me\nat3z\ChatColor.java|134|140|String|class|java.lang.String
+   @|me\nat3z\ChatColor.java|141|147|PURPLE|field|me.nat3z.ChatColor|PURPLE|
+   @|me\nat3z\ChatColor.java|171|177|String|class|java.lang.String
+   @|me\nat3z\ChatColor.java|178|186|DARK_RED|field|me.nat3z.ChatColor|DARK_RED|
+   @|me\nat3z\ChatColor.java|210|216|String|class|java.lang.String
+   @|me\nat3z\ChatColor.java|217|220|RED|field|me.nat3z.ChatColor|RED|
+   @|me\nat3z\ChatColor.java|244|250|String|class|java.lang.String
+   @|me\nat3z\ChatColor.java|251|255|GOLD|field|me.nat3z.ChatColor|GOLD|
+   @|me\nat3z\ChatColor.java|279|285|String|class|java.lang.String
+   @|me\nat3z\ChatColor.java|286|290|AQUA|field|me.nat3z.ChatColor|AQUA|
+   @|me\nat3z\ChatColor.java|314|320|String|class|java.lang.String
+   @|me\nat3z\ChatColor.java|321|326|GREEN|field|me.nat3z.ChatColor|GREEN|
+   @|me\nat3z\ChatColor.java|350|356|String|class|java.lang.String
+   @|me\nat3z\ChatColor.java|357|367|DARK_GREEN|field|me.nat3z.ChatColor|DARK_GREEN|
+   @|me\nat3z\ChatColor.java|391|397|String|class|java.lang.String
+   @|me\nat3z\ChatColor.java|398|407|DARK_BLUE|field|me.nat3z.ChatColor|DARK_BLUE|
+   @|me\nat3z\ChatColor.java|431|437|String|class|java.lang.String
+   @|me\nat3z\ChatColor.java|438|442|BLUE|field|me.nat3z.ChatColor|BLUE|
+   @|me\nat3z\ChatColor.java|466|472|String|class|java.lang.String
+   @|me\nat3z\ChatColor.java|473|478|BLACK|field|me.nat3z.ChatColor|BLACK|
+   @|me\nat3z\ChatColor.java|502|508|String|class|java.lang.String
+   @|me\nat3z\ChatColor.java|509|513|GRAY|field|me.nat3z.ChatColor|GRAY|
+   @|me\nat3z\ChatColor.java|537|543|String|class|java.lang.String
+   @|me\nat3z\ChatColor.java|544|553|DARK_GRAY|field|me.nat3z.ChatColor|DARK_GRAY|
+   @|me\nat3z\ChatColor.java|577|583|String|class|java.lang.String
+   @|me\nat3z\ChatColor.java|584|590|YELLOW|field|me.nat3z.ChatColor|YELLOW|
+   @|me\nat3z\ChatColor.java|614|620|String|class|java.lang.String
+   @|me\nat3z\ChatColor.java|621|626|WHITE|field|me.nat3z.ChatColor|WHITE|
+   @|me\nat3z\ChatColor.java|651|657|String|class|java.lang.String
+   @|me\nat3z\ChatColor.java|658|662|BOLD|field|me.nat3z.ChatColor|BOLD|
+   @|me\nat3z\ChatColor.java|686|692|String|class|java.lang.String
+   @|me\nat3z\ChatColor.java|693|706|STRIKETHROUGH|field|me.nat3z.ChatColor|STRIKETHROUGH|
+   @|me\nat3z\ChatColor.java|730|736|String|class|java.lang.String
+   @|me\nat3z\ChatColor.java|737|746|UNDERLINE|field|me.nat3z.ChatColor|UNDERLINE|
+   @|me\nat3z\ChatColor.java|770|776|String|class|java.lang.String
+   @|me\nat3z\ChatColor.java|777|784|ITALICS|field|me.nat3z.ChatColor|ITALICS|
+   @|me\nat3z\ChatColor.java|808|814|String|class|java.lang.String
+   @|me\nat3z\ChatColor.java|815|820|RESET|field|me.nat3z.ChatColor|RESET|
+   Method Start: stripColor(Ljava/lang/String;)Ljava/lang/String;
+      @|me\nat3z\ChatColor.java|853|863|stripColor|method|me.nat3z.ChatColor|stripColor|(Ljava/lang/String;)Ljava/lang/String;
+      @|me\nat3z\ChatColor.java|846|852|String|class|java.lang.String
+      @|me\nat3z\ChatColor.java|864|870|String|class|java.lang.String
+      @|me\nat3z\ChatColor.java|871|877|string|param|me.nat3z.ChatColor|stripColor|(Ljava/lang/String;)Ljava/lang/String;|string|0
+      @|me\nat3z\ChatColor.java|883|889|String|class|java.lang.String
+      @|me\nat3z\ChatColor.java|899|910|StringUtils|class|net.minecraft.util.StringUtils
+      @|me\nat3z\ChatColor.java|911|928|stripControlCodes|method|net.minecraft.util.StringUtils|stripControlCodes|(Ljava/lang/String;)Ljava/lang/String;
+      @|me\nat3z\ChatColor.java|929|935|string|param|me.nat3z.ChatColor|stripColor|(Ljava/lang/String;)Ljava/lang/String;|string|0
+   Method End: stripColor(Ljava/lang/String;)Ljava/lang/String;
+   Method Start: isFormatted(Ljava/lang/String;)Ljava/lang/Boolean;
+      @|me\nat3z\ChatColor.java|981|992|isFormatted|method|me.nat3z.ChatColor|isFormatted|(Ljava/lang/String;)Ljava/lang/Boolean;
+      @|me\nat3z\ChatColor.java|973|980|Boolean|class|java.lang.Boolean
+      @|me\nat3z\ChatColor.java|993|999|String|class|java.lang.String
+      @|me\nat3z\ChatColor.java|1000|1006|string|param|me.nat3z.ChatColor|isFormatted|(Ljava/lang/String;)Ljava/lang/Boolean;|string|0
+      @|me\nat3z\ChatColor.java|1016|1022|string|param|me.nat3z.ChatColor|isFormatted|(Ljava/lang/String;)Ljava/lang/Boolean;|string|0
+      @|me\nat3z\ChatColor.java|1023|1031|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+   Method End: isFormatted(Ljava/lang/String;)Ljava/lang/Boolean;
+Class End  : me.nat3z.ChatColor
+endProcessing me\nat3z\ChatColor.java
+
+processing me\nat3z\CheckForPiracy.java
+@|me\nat3z\CheckForPiracy.java|8|16|me.nat3z|package|me.nat3z|(file)
+Class Start: me.nat3z.CheckForPiracy
+   Method Start: skyQOLPiracy()V
+      @|me\nat3z\CheckForPiracy.java|258|270|skyQOLPiracy|method|me.nat3z.CheckForPiracy|skyQOLPiracy|()V
+      @|me\nat3z\CheckForPiracy.java|280|291|IOException|class|java.io.IOException
+      @|me\nat3z\CheckForPiracy.java|301|307|String|class|java.lang.String
+      @|me\nat3z\CheckForPiracy.java|387|390|URL|class|java.net.URL
+      @|me\nat3z\CheckForPiracy.java|401|404|URL|class|java.net.URL
+      @|me\nat3z\CheckForPiracy.java|481|495|BufferedReader|class|java.io.BufferedReader
+      @|me\nat3z\CheckForPiracy.java|509|523|BufferedReader|class|java.io.BufferedReader
+      @|me\nat3z\CheckForPiracy.java|528|545|InputStreamReader|class|java.io.InputStreamReader
+      @|me\nat3z\CheckForPiracy.java|550|560|openStream|method|java.net.URL|openStream|()Ljava/io/InputStream;
+      @|me\nat3z\CheckForPiracy.java|609|615|String|class|java.lang.String
+      @|me\nat3z\CheckForPiracy.java|630|638|readLine|method|java.io.BufferedReader|readLine|()Ljava/lang/String;
+      @|me\nat3z\CheckForPiracy.java|665|673|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|me\nat3z\CheckForPiracy.java|674|683|Minecraft|class|net.minecraft.client.Minecraft
+      @|me\nat3z\CheckForPiracy.java|684|696|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|me\nat3z\CheckForPiracy.java|699|708|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|me\nat3z\CheckForPiracy.java|709|720|getUniqueID|method|net.minecraft.entity.Entity|getUniqueID|()Ljava/util/UUID;
+      @|me\nat3z\CheckForPiracy.java|723|731|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|me\nat3z\CheckForPiracy.java|748|754|System|class|java.lang.System
+      @|me\nat3z\CheckForPiracy.java|755|758|out|field|java.lang.System|out
+      @|me\nat3z\CheckForPiracy.java|759|766|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|me\nat3z\CheckForPiracy.java|824|833|Minecraft|class|net.minecraft.client.Minecraft
+      @|me\nat3z\CheckForPiracy.java|834|846|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|me\nat3z\CheckForPiracy.java|849|856|crashed|method|net.minecraft.client.Minecraft|crashed|(Lnet/minecraft/crash/CrashReport;)V
+      @|me\nat3z\CheckForPiracy.java|861|872|CrashReport|class|net.minecraft.crash.CrashReport
+      @|me\nat3z\CheckForPiracy.java|982|991|Exception|class|java.lang.Exception
+      @|me\nat3z\CheckForPiracy.java|1048|1053|close|method|java.lang.AutoCloseable|close|()V
+   Method End: skyQOLPiracy()V
+Class End  : me.nat3z.CheckForPiracy
+endProcessing me\nat3z\CheckForPiracy.java
+
+processing me\nat3z\ItemUtils.java
+@|me\nat3z\ItemUtils.java|8|16|me.nat3z|package|me.nat3z|(file)
+Class Start: me.nat3z.ItemUtils
+   Method Start: getItemLore(Lnet/minecraft/item/ItemStack;)Ljava/util/List;
+      @|me\nat3z\ItemUtils.java|271|282|getItemLore|method|me.nat3z.ItemUtils|getItemLore|(Lnet/minecraft/item/ItemStack;)Ljava/util/List;
+      @|me\nat3z\ItemUtils.java|263|269|String|class|java.lang.String
+      @|me\nat3z\ItemUtils.java|258|262|List|class|java.util.List
+      @|me\nat3z\ItemUtils.java|283|292|ItemStack|class|net.minecraft.item.ItemStack
+      @|me\nat3z\ItemUtils.java|293|302|itemStack|param|me.nat3z.ItemUtils|getItemLore|(Lnet/minecraft/item/ItemStack;)Ljava/util/List;|itemStack|0
+      @|me\nat3z\ItemUtils.java|311|320|itemStack|param|me.nat3z.ItemUtils|getItemLore|(Lnet/minecraft/item/ItemStack;)Ljava/util/List;|itemStack|0
+      @|me\nat3z\ItemUtils.java|321|335|hasTagCompound|method|net.minecraft.item.ItemStack|hasTagCompound|()Z
+      @|me\nat3z\ItemUtils.java|341|350|itemStack|param|me.nat3z.ItemUtils|getItemLore|(Lnet/minecraft/item/ItemStack;)Ljava/util/List;|itemStack|0
+      @|me\nat3z\ItemUtils.java|351|365|getTagCompound|method|net.minecraft.item.ItemStack|getTagCompound|()Lnet/minecraft/nbt/NBTTagCompound;
+      @|me\nat3z\ItemUtils.java|368|374|hasKey|method|net.minecraft.nbt.NBTTagCompound|hasKey|(Ljava/lang/String;I)Z
+      @|me\nat3z\ItemUtils.java|396|410|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound
+      @|me\nat3z\ItemUtils.java|421|430|itemStack|param|me.nat3z.ItemUtils|getItemLore|(Lnet/minecraft/item/ItemStack;)Ljava/util/List;|itemStack|0
+      @|me\nat3z\ItemUtils.java|431|445|getTagCompound|method|net.minecraft.item.ItemStack|getTagCompound|()Lnet/minecraft/nbt/NBTTagCompound;
+      @|me\nat3z\ItemUtils.java|448|462|getCompoundTag|method|net.minecraft.nbt.NBTTagCompound|getCompoundTag|(Ljava/lang/String;)Lnet/minecraft/nbt/NBTTagCompound;
+      @|me\nat3z\ItemUtils.java|494|500|hasKey|method|net.minecraft.nbt.NBTTagCompound|hasKey|(Ljava/lang/String;I)Z
+      @|me\nat3z\ItemUtils.java|519|529|NBTTagList|class|net.minecraft.nbt.NBTTagList
+      @|me\nat3z\ItemUtils.java|545|555|getTagList|method|net.minecraft.nbt.NBTTagCompound|getTagList|(Ljava/lang/String;I)Lnet/minecraft/nbt/NBTTagList;
+      @|me\nat3z\ItemUtils.java|577|581|List|class|java.util.List
+      @|me\nat3z\ItemUtils.java|582|588|String|class|java.lang.String
+      @|me\nat3z\ItemUtils.java|607|616|ArrayList|class|java.util.ArrayList
+      @|me\nat3z\ItemUtils.java|617|623|String|class|java.lang.String
+      @|me\nat3z\ItemUtils.java|675|683|tagCount|method|net.minecraft.nbt.NBTTagList|tagCount|()I
+      @|me\nat3z\ItemUtils.java|719|722|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|me\nat3z\ItemUtils.java|728|742|getStringTagAt|method|net.minecraft.nbt.NBTTagList|getStringTagAt|(I)Ljava/lang/String;
+      @|me\nat3z\ItemUtils.java|809|820|Collections|class|java.util.Collections
+      @|me\nat3z\ItemUtils.java|821|830|emptyList|method|java.util.Collections|emptyList|()Ljava/util/List;
+   Method End: getItemLore(Lnet/minecraft/item/ItemStack;)Ljava/util/List;
+   Method Start: getItemType(Lnet/minecraft/item/ItemStack;Ljava/lang/Boolean;)Ljava/lang/String;
+      @|me\nat3z\ItemUtils.java|952|963|getItemType|method|me.nat3z.ItemUtils|getItemType|(Lnet/minecraft/item/ItemStack;Ljava/lang/Boolean;)Ljava/lang/String;
+      @|me\nat3z\ItemUtils.java|945|951|String|class|java.lang.String
+      @|me\nat3z\ItemUtils.java|964|973|ItemStack|class|net.minecraft.item.ItemStack
+      @|me\nat3z\ItemUtils.java|974|983|itemStack|param|me.nat3z.ItemUtils|getItemType|(Lnet/minecraft/item/ItemStack;Ljava/lang/Boolean;)Ljava/lang/String;|itemStack|0
+      @|me\nat3z\ItemUtils.java|985|992|Boolean|class|java.lang.Boolean
+      @|me\nat3z\ItemUtils.java|993|1005|LogDebugging|param|me.nat3z.ItemUtils|getItemType|(Lnet/minecraft/item/ItemStack;Ljava/lang/Boolean;)Ljava/lang/String;|LogDebugging|1
+      @|me\nat3z\ItemUtils.java|1011|1017|String|class|java.lang.String
+      @|me\nat3z\ItemUtils.java|1025|1034|itemStack|param|me.nat3z.ItemUtils|getItemType|(Lnet/minecraft/item/ItemStack;Ljava/lang/Boolean;)Ljava/lang/String;|itemStack|0
+      @|me\nat3z\ItemUtils.java|1035|1049|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|me\nat3z\ItemUtils.java|1052|1062|replaceAll|method|java.lang.String|replaceAll|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|me\nat3z\ItemUtils.java|1073|1084|toUpperCase|method|java.lang.String|toUpperCase|()Ljava/lang/String;
+      @|me\nat3z\ItemUtils.java|1090|1099|ChatColor|class|me.nat3z.ChatColor
+      @|me\nat3z\ItemUtils.java|1100|1110|stripColor|method|me.nat3z.ChatColor|stripColor|(Ljava/lang/String;)Ljava/lang/String;
+      @|me\nat3z\ItemUtils.java|1127|1139|LogDebugging|param|me.nat3z.ItemUtils|getItemType|(Lnet/minecraft/item/ItemStack;Ljava/lang/Boolean;)Ljava/lang/String;|LogDebugging|1
+      @|me\nat3z\ItemUtils.java|1146|1152|System|class|java.lang.System
+      @|me\nat3z\ItemUtils.java|1153|1156|out|field|java.lang.System|out
+      @|me\nat3z\ItemUtils.java|1157|1164|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|me\nat3z\ItemUtils.java|1261|1267|System|class|java.lang.System
+      @|me\nat3z\ItemUtils.java|1268|1271|out|field|java.lang.System|out
+      @|me\nat3z\ItemUtils.java|1272|1279|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|me\nat3z\ItemUtils.java|1379|1385|System|class|java.lang.System
+      @|me\nat3z\ItemUtils.java|1386|1389|out|field|java.lang.System|out
+      @|me\nat3z\ItemUtils.java|1390|1397|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|me\nat3z\ItemUtils.java|1419|1428|itemStack|param|me.nat3z.ItemUtils|getItemType|(Lnet/minecraft/item/ItemStack;Ljava/lang/Boolean;)Ljava/lang/String;|itemStack|0
+      @|me\nat3z\ItemUtils.java|1429|1443|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|me\nat3z\ItemUtils.java|1451|1457|System|class|java.lang.System
+      @|me\nat3z\ItemUtils.java|1458|1461|out|field|java.lang.System|out
+      @|me\nat3z\ItemUtils.java|1462|1469|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|me\nat3z\ItemUtils.java|1506|1512|System|class|java.lang.System
+      @|me\nat3z\ItemUtils.java|1513|1516|out|field|java.lang.System|out
+      @|me\nat3z\ItemUtils.java|1517|1524|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|me\nat3z\ItemUtils.java|1543|1555|LogDebugging|param|me.nat3z.ItemUtils|getItemType|(Lnet/minecraft/item/ItemStack;Ljava/lang/Boolean;)Ljava/lang/String;|LogDebugging|1
+      @|me\nat3z\ItemUtils.java|1561|1567|System|class|java.lang.System
+      @|me\nat3z\ItemUtils.java|1568|1571|out|field|java.lang.System|out
+      @|me\nat3z\ItemUtils.java|1572|1579|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+   Method End: getItemType(Lnet/minecraft/item/ItemStack;Ljava/lang/Boolean;)Ljava/lang/String;
+Class End  : me.nat3z.ItemUtils
+endProcessing me\nat3z\ItemUtils.java
+
+processing me\nat3z\TextDraw.java
+@|me\nat3z\TextDraw.java|8|16|me.nat3z|package|me.nat3z|(file)
+Class Start: me.nat3z.TextDraw
+   Method Start: drawText(Ljava/lang/String;III)V
+      @|me\nat3z\TextDraw.java|144|152|drawText|method|me.nat3z.TextDraw|drawText|(Ljava/lang/String;III)V
+      @|me\nat3z\TextDraw.java|153|159|String|class|java.lang.String
+      @|me\nat3z\TextDraw.java|160|164|Text|param|me.nat3z.TextDraw|drawText|(Ljava/lang/String;III)V|Text|0
+      @|me\nat3z\TextDraw.java|170|171|x|param|me.nat3z.TextDraw|drawText|(Ljava/lang/String;III)V|x|1
+      @|me\nat3z\TextDraw.java|177|178|y|param|me.nat3z.TextDraw|drawText|(Ljava/lang/String;III)V|y|2
+      @|me\nat3z\TextDraw.java|184|189|color|param|me.nat3z.TextDraw|drawText|(Ljava/lang/String;III)V|color|3
+      @|me\nat3z\TextDraw.java|198|210|FontRenderer|class|net.minecraft.client.gui.FontRenderer
+      @|me\nat3z\TextDraw.java|221|230|Minecraft|class|net.minecraft.client.Minecraft
+      @|me\nat3z\TextDraw.java|231|243|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|me\nat3z\TextDraw.java|246|261|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|me\nat3z\TextDraw.java|276|286|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|me\nat3z\TextDraw.java|287|291|Text|param|me.nat3z.TextDraw|drawText|(Ljava/lang/String;III)V|Text|0
+      @|me\nat3z\TextDraw.java|293|294|x|param|me.nat3z.TextDraw|drawText|(Ljava/lang/String;III)V|x|1
+      @|me\nat3z\TextDraw.java|296|297|y|param|me.nat3z.TextDraw|drawText|(Ljava/lang/String;III)V|y|2
+      @|me\nat3z\TextDraw.java|299|304|color|param|me.nat3z.TextDraw|drawText|(Ljava/lang/String;III)V|color|3
+   Method End: drawText(Ljava/lang/String;III)V
+Class End  : me.nat3z.TextDraw
+endProcessing me\nat3z\TextDraw.java
+
+processing me\nat3z\Utilities.java
+@|me\nat3z\Utilities.java|8|16|me.nat3z|package|me.nat3z|(file)
+Class Start: me.nat3z.Utilities
+   Method Start: displayGUI(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|me\nat3z\Utilities.java|240|250|displayGUI|method|me.nat3z.Utilities|displayGUI|(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|me\nat3z\Utilities.java|251|260|GuiScreen|class|net.minecraft.client.gui.GuiScreen
+      @|me\nat3z\Utilities.java|261|264|gui|param|me.nat3z.Utilities|displayGUI|(Lnet/minecraft/client/gui/GuiScreen;)V|gui|0
+      @|me\nat3z\Utilities.java|276|285|Minecraft|class|net.minecraft.client.Minecraft
+      @|me\nat3z\Utilities.java|286|298|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|me\nat3z\Utilities.java|301|317|displayGuiScreen|method|net.minecraft.client.Minecraft|displayGuiScreen|(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|me\nat3z\Utilities.java|318|321|gui|param|me.nat3z.Utilities|displayGUI|(Lnet/minecraft/client/gui/GuiScreen;)V|gui|0
+   Method End: displayGUI(Lnet/minecraft/client/gui/GuiScreen;)V
+   Method Start: sendMessage(Ljava/lang/String;)V
+      @|me\nat3z\Utilities.java|347|358|sendMessage|method|me.nat3z.Utilities|sendMessage|(Ljava/lang/String;)V
+      @|me\nat3z\Utilities.java|359|365|String|class|java.lang.String
+      @|me\nat3z\Utilities.java|366|373|message|param|me.nat3z.Utilities|sendMessage|(Ljava/lang/String;)V|message|0
+      @|me\nat3z\Utilities.java|385|394|Minecraft|class|net.minecraft.client.Minecraft
+      @|me\nat3z\Utilities.java|395|407|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|me\nat3z\Utilities.java|410|419|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|me\nat3z\Utilities.java|420|434|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|me\nat3z\Utilities.java|439|456|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|me\nat3z\Utilities.java|457|475|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|me\nat3z\Utilities.java|476|485|DARK_AQUA|field|net.minecraft.util.EnumChatFormatting|DARK_AQUA
+      @|me\nat3z\Utilities.java|494|512|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|me\nat3z\Utilities.java|513|517|AQUA|field|net.minecraft.util.EnumChatFormatting|AQUA
+      @|me\nat3z\Utilities.java|543|561|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|me\nat3z\Utilities.java|562|571|DARK_AQUA|field|net.minecraft.util.EnumChatFormatting|DARK_AQUA
+      @|me\nat3z\Utilities.java|582|600|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|me\nat3z\Utilities.java|601|606|RESET|field|net.minecraft.util.EnumChatFormatting|RESET
+      @|me\nat3z\Utilities.java|609|616|message|param|me.nat3z.Utilities|sendMessage|(Ljava/lang/String;)V|message|0
+   Method End: sendMessage(Ljava/lang/String;)V
+   Method Start: sendWarning(Ljava/lang/String;)V
+      @|me\nat3z\Utilities.java|643|654|sendWarning|method|me.nat3z.Utilities|sendWarning|(Ljava/lang/String;)V
+      @|me\nat3z\Utilities.java|655|661|String|class|java.lang.String
+      @|me\nat3z\Utilities.java|662|669|message|param|me.nat3z.Utilities|sendWarning|(Ljava/lang/String;)V|message|0
+      @|me\nat3z\Utilities.java|681|690|Minecraft|class|net.minecraft.client.Minecraft
+      @|me\nat3z\Utilities.java|691|703|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|me\nat3z\Utilities.java|706|715|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|me\nat3z\Utilities.java|716|730|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|me\nat3z\Utilities.java|735|752|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|me\nat3z\Utilities.java|753|771|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|me\nat3z\Utilities.java|772|780|DARK_RED|field|net.minecraft.util.EnumChatFormatting|DARK_RED
+      @|me\nat3z\Utilities.java|789|807|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|me\nat3z\Utilities.java|808|811|RED|field|net.minecraft.util.EnumChatFormatting|RED
+      @|me\nat3z\Utilities.java|837|855|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|me\nat3z\Utilities.java|856|864|DARK_RED|field|net.minecraft.util.EnumChatFormatting|DARK_RED
+      @|me\nat3z\Utilities.java|875|893|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|me\nat3z\Utilities.java|894|897|RED|field|net.minecraft.util.EnumChatFormatting|RED
+      @|me\nat3z\Utilities.java|900|907|message|param|me.nat3z.Utilities|sendWarning|(Ljava/lang/String;)V|message|0
+   Method End: sendWarning(Ljava/lang/String;)V
+Class End  : me.nat3z.Utilities
+endProcessing me\nat3z\Utilities.java
+
