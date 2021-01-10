@@ -1,7 +1,7 @@
 # Nate's Skyblock Mod
 Nate's Skyblock Mod is a Quality of Life Mod Created by Nat3zDev.
 
-## Installation
+## Index
 * [Installation](#Installation)
 * [Contributing](#Contributing)
 * [License](#license)
