@@ -38,7 +38,12 @@ Please make sure you are using the latest version of the repository.
 [Sk1er.club](https://sk1er.club/discord)
 
 [Dankers Skyblock Mod](https://discord.gg/mxA7sSX9q3)
+
 [Forge Modding Community](https://discord.gg/UvedJ9m)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+# Nate's Skyblock Mod would not be possible if Open Source Programs did not exist! Here is the list of Programs used and their respective Licenses
+[List of Programs](https://github.com/Nat3z/SkyblockMod/blob/main/OPEN_SOURCE_SOFTWARE_USED.md)
+
