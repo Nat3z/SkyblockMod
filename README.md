@@ -18,10 +18,21 @@ gradlew build
 
 If any errors occur, make sure you are using the proper JDK Build and if you have set your environment variables correctly.
 You will see in the "build/libs" folder two .jar files, one with the name
-@@ -29,10 +33,12 @@ Pull requests are ALWAYS welcome! If you have ideas for the mod, please suggest
+```bash
+modid-(modversion)-sources
+```
+And another with
+```bash
+modid-(modversion)
+```
+Ignore the one having -sources in the name.
+
+Drag and drop into your mod folder and you're done with the install!
+
+## Contributing
+Pull requests are ALWAYS welcome! If you have ideas for the mod, please suggest
 If you have major issues, please report them to the "Issues" tab.
 Please make sure you are using the latest version of the repository.
-
 
 ## Helpful Sources
 [Sk1er.club](https://sk1er.club/discord)
