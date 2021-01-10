@@ -22,8 +22,6 @@ You will see in the "build/libs" folder two .jar files, one with the name
 If you have major issues, please report them to the "Issues" tab.
 Please make sure you are using the latest version of the repository.
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
 
 ## Helpful Sources
 [Sk1er.club](https://sk1er.club/discord)
@@ -31,6 +29,5 @@ Please make sure you are using the latest version of the repository.
 [Dankers Skyblock Mod](https://discord.gg/mxA7sSX9q3)
 [Forge Modding Community](https://discord.gg/UvedJ9m)
 
-### License
+## License
 [MIT](https://choosealicense.com/licenses/mit/)
-[Forge Modding Community](https://discord.gg/UvedJ9m)
