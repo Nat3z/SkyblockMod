@@ -14,7 +14,6 @@ Type the following into the Command line:
 ```bash
 gradlew build
 ```
-ALTERNATIVE: Open "build.bat"
 ### ALTERNATIVE: Open "build.bat"
 
 If any errors occur, make sure you are using the proper JDK Build and if you have set your environment variables correctly.
