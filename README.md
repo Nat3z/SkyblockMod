@@ -23,7 +23,6 @@ You will see in the "build/libs" folder two .jar files, one with the name
 If you have major issues, please report them to the "Issues" tab.
 Please make sure you are using the latest version of the repository.
 
-### Helpful Sources
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
