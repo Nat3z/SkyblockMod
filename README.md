@@ -42,7 +42,7 @@ Please make sure you are using the latest version of the repository.
 [Forge Modding Community](https://discord.gg/UvedJ9m)
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[GNU](https://choosealicense.com/licenses/gpl-3.0/)
 
 ## Nate's Skyblock Mod would not be possible if Open Source Programs did not exist! Here is the list of Programs used and their respective Licenses
 [List of Programs](https://github.com/Nat3z/SkyblockMod/blob/main/OPEN_SOURCE_SOFTWARE_USED.md)
