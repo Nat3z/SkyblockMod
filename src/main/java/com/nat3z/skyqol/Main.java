@@ -7,44 +7,68 @@
 package com.nat3z.skyqol;
 
 import java.io.IOException;
+import java.util.List;
 
+import com.nat3z.skyqol.config.PersistentValue;
 import com.nat3z.skyqol.gui.Commands;
+import com.nat3z.skyqol.gui.GUI;
+import com.nat3z.skyqol.gui.SetKey;
 import com.nat3z.skyqol.listeners.AntiNonEnchanted;
-import com.nat3z.skyqol.listeners.BasicListener;
-//import com.nat3z.skyqol.listeners.StopDropping;
+import com.nat3z.skyqol.listeners.WarnUsersForRareItem;
+import com.nat3z.skyqol.listeners.MinionStatistics;
+import com.nat3z.skyqol.listeners.HighlightFarmingContests;
 
+import me.nat3z.ChatColor;
+import me.nat3z.Utilities;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.EntityPlayerSP;
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.scoreboard.Scoreboard;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraftforge.client.ClientCommandHandler;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.client.config.GuiConfigEntries.ChatColorEntry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent;
+import scala.tools.nsc.transform.Delambdafy.ThisReferringMethodsTraverser;
 
-@Mod (modid = "natemodskyblock", version = "1.0.3", name = "Nate's Skyblock Mod")
+@Mod (modid = "natemodskyblock", version = "1.0.5", name = "Nate's Skyblock Mod")
 public class Main {
-    public boolean guiOpen;
+	
+	public static String version = "1.0.5";
+	
+    public boolean guiOpen = false;
     @Mod.Instance("natemodskyblock")
     public static Main INSTANCE;
     public boolean enabled = true;
-    private final Config config = new Config();
+    public static Config config;
     public boolean stopDropping = false;
+    public int pagetoopen = 1;
+    public static PersistentValue persistentValues;
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) throws IOException
     {
+    	
         System.out.println("-=-=-=-=-=-=-=-=-");
         System.out.println("Nate's Skyblock Mod");
         System.out.println("Now Checking Status");
         System.out.println("-=-=-=-=-=-=-=-=-");
+        
+        persistentValues = new PersistentValue(event.getModConfigurationDirectory());
+        config = new Config(event.getModConfigurationDirectory());
+
     }
     
     /*
-     * Simple Flushed Event Registry
+     * Simple Event Registry
      * MinecraftForge.EVENT_BUS.register(new NAME OF WORKSPACE);
      * 
-     * Simple Flushed Command Registry
+     * Simple Command Registry
      * ClientCommandHandler.instance.registerCommand(new NAME OF WORKSPACE);
      */
 
@@ -55,29 +79,82 @@ public class Main {
         System.out.println("Nate's Skyblock Mod");
         System.out.println("  Has Activated");
         System.out.println("-=-=-=-=-=-=-=-=-");
-        //MinecraftForge.EVENT_BUS.register(new StopDropping());
-        MinecraftForge.EVENT_BUS.register(new BasicListener());
         MinecraftForge.EVENT_BUS.register(new AntiNonEnchanted());
+        MinecraftForge.EVENT_BUS.register(new MinionStatistics());
+        MinecraftForge.EVENT_BUS.register(this);
+        
+        MinecraftForge.EVENT_BUS.register(new HighlightFarmingContests());
+
+        MinecraftForge.EVENT_BUS.register(new WarnUsersForRareItem());
+        MinecraftForge.EVENT_BUS.register(new CheckForUpdates());
+
         ClientCommandHandler.instance.registerCommand(new Commands(this));
-        // ACTIVATES MODCORE
+        ClientCommandHandler.instance.registerCommand(new SetKey(this));
+        
+        /*
+         * This Mod Is Powered By ModCore.
+         */
         ModCoreInstaller.initializeModCore(Minecraft.getMinecraft().mcDataDir);
     }
 
     @EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
+    	persistentValues.loadValues();
+    	config.loadValues();
+    }
+    @SubscribeEvent
+    public void onTick(TickEvent.RenderTickEvent event) {
+        if(guiOpen) {
+            Minecraft.getMinecraft().displayGuiScreen((GuiScreen) new GUI(pagetoopen));
+            this.pagetoopen = 1;
+        	this.guiOpen = false;
+            return;
+        }
     }
 
 	public void openGUI() {
 		this.guiOpen = true;
 	}
 	
-	public String getMessage() {
-		return EnumChatFormatting.BLUE + "Test Command";
+	public static boolean isOnSkyblock() {
+		
+    	Minecraft mc = Minecraft.getMinecraft();
+    	EntityPlayerSP p = mc.thePlayer;
+    	
+    	
+    	String sbTitle;
+    	
+    	// For Some Reason This Bugs Out On Mineplex?????
+    	try {
+    		sbTitle = EnumChatFormatting.getTextWithoutFormattingCodes(p.getWorldScoreboard().getObjectiveInDisplaySlot(1).getDisplayName());
+        	if(sbTitle.toLowerCase().contains("skyblock"))
+        		return true;
+    	} catch (Exception e) { e.printStackTrace(); }
+		
+		
+		return false;
 	}
 	
-    public Config getConfig() {
-        return config;
-    }
+	public static boolean isInDungeons() {
+		
+    	
+    	// Copy + Paste From Method Above Lmao
+    	try {
+    		
+    		if (isOnSkyblock()) {
+    			List<String> scoreboard = Utilities.getScoreboardLines();
+    			
+    			for (String s : scoreboard) {
+    				String sCleaned = Utilities.cleanSB(s);
+    				if (sCleaned.contains("The Catacombs"))
+    					return true;
+    			}
+    		}
+    		
+    	} catch (Exception e) { e.printStackTrace(); }
+
+		return false;
+	}
     
 }

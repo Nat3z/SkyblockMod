@@ -10,9 +10,6 @@ import net.minecraft.nbt.NBTTagList;
 
 public class ItemUtils {
 
-	/*
-	* Code from SkyblockAddons official Github Page
-	*/
 	public static List<String> getItemLore(ItemStack itemStack) {
 		if(itemStack.hasTagCompound() && itemStack.getTagCompound().hasKey("display", 10)) {
 			NBTTagCompound display = itemStack.getTagCompound().getCompoundTag("display");

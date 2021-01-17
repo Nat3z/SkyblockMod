@@ -1,7 +1,9 @@
 package com.nat3z.skyqol.listeners;
 
 import com.nat3z.skyqol.Config;
+import com.nat3z.skyqol.Main;
 
+import me.nat3z.Utilities;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
@@ -13,11 +15,15 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class AntiNonEnchanted {
     @SubscribeEvent
     public void containerevent(MouseInputEvent.Pre event) {
-    	if (!Config.stopclickenchant)
+    	if (!Main.config.isModEnabled() || !Main.config.isAntiNonEnchantedEnabled())
     		return;
+    	
+    	
     	
     	if (event.gui instanceof GuiContainer) {
     		try {
+    			if (!Main.isOnSkyblock())
+    				return;
     			//Main m = new Main();
     	//		if (!m.isInSkyblock)
     	//			return;
