@@ -16,7 +16,6 @@ public class Config {
 	private boolean modtype;
 	private boolean antinonenchanted;
 	private boolean unclaimedfarmingcontest;
-	private boolean minionstats;
 	private boolean warnpeopleforrareiteminsecretchest;
 
 	public Config(File configDir) {
@@ -37,7 +36,6 @@ public class Config {
 				this.modtype = valuesObject.has("modtype") ? valuesObject.get("modtype").getAsBoolean() : false;
 				this.antinonenchanted = valuesObject.has("antinonenchanted") ? valuesObject.get("antinonenchanted").getAsBoolean() : false;
 				this.unclaimedfarmingcontest = valuesObject.has("unclaimedfarmingcontests") ? valuesObject.get("unclaimedfarmingcontests").getAsBoolean() : false;
-				this.minionstats = valuesObject.has("minionstats") ? valuesObject.get("minionstats").getAsBoolean() : false;
 				this.warnpeopleforrareiteminsecretchest = valuesObject.has("warnpeopleforrareriteminsecretchest") ? valuesObject.get("warnpeopleforrareriteminsecretchest").getAsBoolean() : false;
 
 			} catch (Exception ex) {
@@ -60,7 +58,6 @@ public class Config {
 			valuesObject.addProperty("modtype", this.modtype);
 			valuesObject.addProperty("antinonenchanted", this.antinonenchanted);
 			valuesObject.addProperty("unclaimedfarmingcontests", this.unclaimedfarmingcontest);
-			valuesObject.addProperty("minionstats", this.minionstats);
 			valuesObject.addProperty("warnpeopleforrareriteminsecretchest", this.warnpeopleforrareiteminsecretchest);
 
 			bufferedWriter.write(valuesObject.toString());
@@ -80,11 +77,7 @@ public class Config {
 	public Boolean isUnclaimedFarmingContest() {
 		return this.unclaimedfarmingcontest;
 	}
-	
-	public Boolean isMinionStats() {
-		return this.minionstats;
-	}
-	
+
 	public Boolean isWarnPeopleForRarerItemInSecretChest() {
 		return this.warnpeopleforrareiteminsecretchest;
 	}
@@ -93,10 +86,6 @@ public class Config {
 		saveValues();
 	}
 	
-	public void setMinionStats(Boolean isItEnabled) {
-		this.minionstats = isItEnabled;
-		saveValues();
-	}
 	
 	public void setUnclaimedFarmingContest(Boolean isItEnabled) {
 		this.unclaimedfarmingcontest = isItEnabled;
@@ -111,17 +100,5 @@ public class Config {
 		this.antinonenchanted = isItEnabled;
 		saveValues();
 	}
-	
-	
-	
-	// ==============================
-	
-	public void getButtonLocation(int id) {
-		
-		switch (id) {
-			case 1:
-				
-		}
-		
-	}
+
 }

@@ -20,7 +20,8 @@ public class WarnUsersForRareItem {
 
 		if (!Main.config.isWarnPeopleForRarerItemInSecretChest() || !Main.config.isModEnabled())
 			return;
-		
+		if (!Main.isHypixel())
+			return;
 		try {
 			if (Minecraft.getMinecraft().currentScreen instanceof GuiChest) {
 				
@@ -39,7 +40,7 @@ public class WarnUsersForRareItem {
     			
     			if (stripurmomlastnightxdxddxdxdxd.contains("treasure") || stripurmomlastnightxdxddxdxdxd.contains("health") || stripurmomlastnightxdxddxdxdxd.contains("key")) {
     				Utilities.sendTitleCentered("Rare Item!");
-					Utilities.showOnSlot(inventory.inventorySlots.inventorySlots.size(), inv.getSlot(13).xDisplayPosition, inv.getSlot(13).yDisplayPosition);
+					//Utilities.showOnSlot(inventory.inventorySlots.inventorySlots.size(), inv.getSlot(13).xDisplayPosition, inv.getSlot(13).yDisplayPosition);
 
     			}
 			}

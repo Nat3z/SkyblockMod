@@ -4,6 +4,7 @@ import com.nat3z.skyqol.Config;
 import com.nat3z.skyqol.Main;
 
 import me.nat3z.Utilities;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
@@ -22,6 +23,10 @@ public class AntiNonEnchanted {
     	
     	if (event.gui instanceof GuiContainer) {
     		try {
+    			
+    			if (!Main.isHypixel())
+    				return;
+    			
     			if (!Main.isOnSkyblock())
     				return;
     			//Main m = new Main();
@@ -52,7 +57,7 @@ public class AntiNonEnchanted {
         				}
         			}
         		}
-    		} catch (NullPointerException exception) {} // This is used to Catch Null Pointers
+    		} catch (Exception exception) {} // This is used to Catch Null Pointers
     	}
 
     }

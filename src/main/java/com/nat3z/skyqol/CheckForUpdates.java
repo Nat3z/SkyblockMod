@@ -31,8 +31,11 @@ public class CheckForUpdates {
 	 * Code From Danker's Skyblock Mod
 	 */
 	
+
+	
 	@SubscribeEvent
 	public void doCompleteCheck(EntityJoinWorldEvent event) {
+		
     	if (!updateChecked) {
 			updateChecked = true;
 			

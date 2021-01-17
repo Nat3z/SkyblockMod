@@ -126,19 +126,12 @@ public class GUI extends GuiScreen {
     			case "Anti Non Enchanted: Enabled":
     				Main.config.setAntiNonEnchantedEnabled(false);
     				break;
-        	
-    			case "Minion Statistics: Disabled":
-    				Main.config.setMinionStats(true);
-    				break;
-    			case "Minion Statistics: Enabled":
-    				Main.config.setMinionStats(false);
-    				break;
     				
-    			case "Highlight Unclaimed Farming Contests: Enabled":
+    			case "Highlight Unclaimed Contests: Enabled":
     				Main.config.setUnclaimedFarmingContest(false);
     				break;
             	
-    			case "Highlight Unclaimed Farming Contests: Disabled":
+    			case "Highlight Unclaimed Contests: Disabled":
     				Main.config.setUnclaimedFarmingContest(true);
             		break;
             		
@@ -209,19 +202,16 @@ public class GUI extends GuiScreen {
 				else
 					button3.displayString = "Highlight Unclaimed Contests: " + EnumChatFormatting.RED + "Disabled";
 
-				if (Main.config.isMinionStats())
-					button4.displayString = "Minion Statistics: " + EnumChatFormatting.GREEN + "Enabled";
+				if (Main.config.isWarnPeopleForRarerItemInSecretChest())
+					button4.displayString = "Warning for Rare Items in Sec. Chest: " + EnumChatFormatting.GREEN + "Enabled";
 				else
-					button4.displayString = "Minion Statistics: " + EnumChatFormatting.RED + "Disabled";
+					button4.displayString = "Warning for Rare Items in Sec. Chest: " + EnumChatFormatting.RED + "Disabled";
 			break;
 	    
 			case 2:
 				buttonList.add(backPage);
 				buttonList.remove(nextPage);
-				if (Main.config.isWarnPeopleForRarerItemInSecretChest())
-					button1.displayString = "Warning for Rare Items in Sec. Chest: " + EnumChatFormatting.GREEN + "Enabled";
-				else
-					button1.displayString = "Warning for Rare Items in Sec. Chest: " + EnumChatFormatting.RED + "Disabled";
+				button1.displayString = EnumChatFormatting.GRAY + "None";
 				
 				button2.displayString = EnumChatFormatting.GRAY + "None";
 				button3.displayString = EnumChatFormatting.GRAY + "None";

@@ -3,7 +3,6 @@ package com.nat3z.skyqol.gui;
 import com.nat3z.skyqol.Config;
 import com.nat3z.skyqol.Main;
 
-import club.sk1er.mods.core.ModCore;
 import me.nat3z.Utilities;
 import net.minecraft.client.Minecraft;
 import net.minecraft.command.CommandBase;

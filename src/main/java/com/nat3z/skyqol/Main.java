@@ -19,6 +19,7 @@ import me.nat3z.Utilities;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.multiplayer.ServerData;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraftforge.client.ClientCommandHandler;
 import net.minecraftforge.common.MinecraftForge;
@@ -30,10 +31,11 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 
-@Mod (modid = "natemodskyblock", version = "1.0.6", name = "Nate's Skyblock Mod")
+@Mod (modid = "natemodskyblock", version = "1.0.7", name = "Nate's Skyblock Mod")
 public class Main {
-	
-	public static String version = "1.0.6";
+
+	public static boolean isonhypixel = false;
+	public static String version = "1.0.7";
 	
     public boolean guiOpen = false;
     @Mod.Instance("natemodskyblock")
@@ -75,7 +77,6 @@ public class Main {
         System.out.println("  Has Activated");
         System.out.println("-=-=-=-=-=-=-=-=-");
         MinecraftForge.EVENT_BUS.register(new AntiNonEnchanted());
-        MinecraftForge.EVENT_BUS.register(new MinionStatistics());
         MinecraftForge.EVENT_BUS.register(this);
         
         MinecraftForge.EVENT_BUS.register(new HighlightFarmingContests());
@@ -89,7 +90,7 @@ public class Main {
         /*
          * This Mod Is Powered By ModCore.
          */
-        ModCoreInstaller.initializeModCore(Minecraft.getMinecraft().mcDataDir);
+        //ModCoreInstaller.initializeModCore(Minecraft.getMinecraft().mcDataDir);
     }
 
     @EventHandler
@@ -128,6 +129,17 @@ public class Main {
     	} catch (Exception e) { e.printStackTrace(); }
 		
 		
+		return false;
+	}
+	
+	public static boolean isHypixel() {
+		try {
+			if (Minecraft.getMinecraft().getCurrentServerData().serverIP.contains("hypixel"))
+				return true;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
 		return false;
 	}
 	

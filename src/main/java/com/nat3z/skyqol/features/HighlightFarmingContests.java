@@ -24,7 +24,8 @@ public class HighlightFarmingContests {
     	if (!Main.config.isModEnabled() || !Main.config.isUnclaimedFarmingContest())
     		return;
     	
-    	
+		if (!Main.isHypixel())
+			return;
     	
     	if (Minecraft.getMinecraft().currentScreen instanceof GuiChest) {
     		try {
