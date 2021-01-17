@@ -52,6 +52,10 @@ public class Utilities extends Gui {
 	 * Code Below Is From Danker's Skyblock Mod
 	 */
 	
+	/*
+	* Made the color always green
+	*/
+	
 	public static void showOnSlot(int size, int xSlotPos, int ySlotPos) {
 		ScaledResolution sr = new ScaledResolution(Minecraft.getMinecraft());
 		int guiLeft = (sr.getScaledWidth() - 176) / 2;

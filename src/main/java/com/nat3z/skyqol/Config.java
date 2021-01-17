@@ -112,4 +112,16 @@ public class Config {
 		saveValues();
 	}
 	
+	
+	
+	// ==============================
+	
+	public void getButtonLocation(int id) {
+		
+		switch (id) {
+			case 1:
+				
+		}
+		
+	}
 }

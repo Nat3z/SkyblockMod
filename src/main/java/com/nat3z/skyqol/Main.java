@@ -1,5 +1,5 @@
 /*
- * Welcome To The Template!
+ * Welcome To The Template
  * Use This Simple Template To Create Mods!
  * There will be guidance and many templates!
  */
@@ -10,24 +10,18 @@ import java.io.IOException;
 import java.util.List;
 
 import com.nat3z.skyqol.config.PersistentValue;
+import com.nat3z.skyqol.features.*;
 import com.nat3z.skyqol.gui.Commands;
 import com.nat3z.skyqol.gui.GUI;
 import com.nat3z.skyqol.gui.SetKey;
-import com.nat3z.skyqol.listeners.AntiNonEnchanted;
-import com.nat3z.skyqol.listeners.WarnUsersForRareItem;
-import com.nat3z.skyqol.listeners.MinionStatistics;
-import com.nat3z.skyqol.listeners.HighlightFarmingContests;
 
-import me.nat3z.ChatColor;
 import me.nat3z.Utilities;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.client.gui.GuiScreen;
-import net.minecraft.scoreboard.Scoreboard;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraftforge.client.ClientCommandHandler;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.client.config.GuiConfigEntries.ChatColorEntry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -35,18 +29,18 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
-import scala.tools.nsc.transform.Delambdafy.ThisReferringMethodsTraverser;
 
-@Mod (modid = "natemodskyblock", version = "1.0.5", name = "Nate's Skyblock Mod")
+@Mod (modid = "natemodskyblock", version = "1.0.6", name = "Nate's Skyblock Mod")
 public class Main {
 	
-	public static String version = "1.0.5";
+	public static String version = "1.0.6";
 	
     public boolean guiOpen = false;
     @Mod.Instance("natemodskyblock")
     public static Main INSTANCE;
     public boolean enabled = true;
     public static Config config;
+
     public boolean stopDropping = false;
     public int pagetoopen = 1;
     public static PersistentValue persistentValues;
@@ -59,6 +53,7 @@ public class Main {
         System.out.println("Now Checking Status");
         System.out.println("-=-=-=-=-=-=-=-=-");
         
+        // This is probably not the best way of doing this but idgaf
         persistentValues = new PersistentValue(event.getModConfigurationDirectory());
         config = new Config(event.getModConfigurationDirectory());
 

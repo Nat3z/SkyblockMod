@@ -1,4 +1,4 @@
-package com.nat3z.skyqol.listeners;
+package com.nat3z.skyqol.features;
 
 import com.nat3z.skyqol.Config;
 import com.nat3z.skyqol.Main;
