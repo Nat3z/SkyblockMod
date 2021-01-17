@@ -14,6 +14,13 @@ import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.versioning.DefaultArtifactVersion;
 
+
+
+/*
+* I have changed the Following:
+* Message When You Have An Outdated Version
+* Changed request from API
+*/
 public class CheckForUpdates {
 	
 	private boolean updateChecked = false;
