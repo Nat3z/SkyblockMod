@@ -134,11 +134,11 @@ public class GUI extends GuiScreen {
     				Main.config.setMinionStats(false);
     				break;
     				
-    			case "Highlight Unclaimed Farming Contests: Enabled":
+    			case "Highlight Unclaimed Contests: Enabled":
     				Main.config.setUnclaimedFarmingContest(false);
     				break;
             	
-    			case "Highlight Unclaimed Farming Contests: Disabled":
+    			case "Highlight Unclaimed Contests: Disabled":
     				Main.config.setUnclaimedFarmingContest(true);
             		break;
             		
