@@ -1,5 +1,5 @@
-# Nate's Skyblock Mod
-Nate's Skyblock Mod is a Quality of Life Mod Created by Nat3zDev.
+# Nate's Secret Mod
+Nate's Secret Mod is a Quality of Life Mod Created by Nat3zDev.
 
 ## Index
 * [Installation](#Installation)
@@ -44,6 +44,6 @@ Please make sure you are using the latest version of the repository.
 ## License
 [GNU](https://choosealicense.com/licenses/gpl-3.0/)
 
-## Nate's Skyblock Mod would not be possible if Open Source Programs did not exist! Here is the list of Programs used and their respective Licenses
+## Nate's Secret Mod would not be possible if Open Source Programs did not exist! Here is the list of Programs used and their respective Licenses
 [List of Programs](https://github.com/Nat3z/SkyblockMod/blob/main/OPEN_SOURCE_SOFTWARE_USED.md)
 
