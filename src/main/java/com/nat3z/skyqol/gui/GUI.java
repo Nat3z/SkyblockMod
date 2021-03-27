@@ -230,14 +230,14 @@ public class GUI extends GuiScreen {
 					button1.displayString = "Copy Dungeon Deaths: " + EnumChatFormatting.RED + "Disabled";
 				
 				if (!Main.config.modules.get("copydungeonfail").booleanValue())
-						button1.displayString = EnumChatFormatting.GOLD + "Copy Dungeon Deaths: " + EnumChatFormatting.DARK_GRAY + "Force Disabled";
+						button1.displayString = "Copy Dungeon Deaths: " + EnumChatFormatting.DARK_GRAY + "Force Disabled";
 				if (Main.config.isDungeonreparty())
-					button2.displayString = EnumChatFormatting.GOLD + "Reparty Dungeon Teammates: " + EnumChatFormatting.GREEN + "Enabled";
+					button2.displayString = "Reparty Dungeon Teammates: " + EnumChatFormatting.GREEN + "Enabled";
 				else
-						button2.displayString = EnumChatFormatting.GOLD + "Reparty Dungeon Teammates: " + EnumChatFormatting.RED + "Disabled";
+						button2.displayString = "Reparty Dungeon Teammates: " + EnumChatFormatting.RED + "Disabled";
 				
 				if (!Main.config.modules.get("dungeonreparty").booleanValue())
-					button2.displayString = EnumChatFormatting.GOLD + "Reparty Dungeon Teammates: " + EnumChatFormatting.DARK_GRAY + "Force Disabled";
+					button2.displayString = "Reparty Dungeon Teammates: " + EnumChatFormatting.DARK_GRAY + "Force Disabled";
 				
 				button3.displayString = EnumChatFormatting.GRAY + "None";
 				button4.displayString = EnumChatFormatting.GRAY + "None";
@@ -287,25 +287,20 @@ public class GUI extends GuiScreen {
 				buttonList.add(backPage);
 				buttonList.remove(nextPage);
 				buttonList.remove(nextPage);
-				button1.displayString = EnumChatFormatting.GOLD + "Copy Dungeon Deaths: " + EnumChatFormatting.GREEN + "Support";
-				CheckIfSupporter.isSupporting(() -> {
-					if (Main.config.isCopydungeonfail())
-						button1.displayString = EnumChatFormatting.GOLD + "Copy Dungeon Deaths: " + EnumChatFormatting.GREEN + "Enabled";
-					else
-						button1.displayString = EnumChatFormatting.GOLD + "Copy Dungeon Deaths: " + EnumChatFormatting.RED + "Disabled";
-					if (!Main.config.modules.get("copydungeonfail").booleanValue())
-						button1.displayString = EnumChatFormatting.GOLD + "Copy Dungeon Deaths: " + EnumChatFormatting.DARK_GRAY + "Force Disabled";
-					});
-
-				button2.displayString = EnumChatFormatting.GOLD + "Reparty Dungeon Teammates: " + EnumChatFormatting.YELLOW + "Support";
-				CheckIfSupporter.isSupporting(() -> {
-					if (Main.config.isDungeonreparty())
-						button2.displayString = EnumChatFormatting.GOLD + "Reparty Dungeon Teammates: " + EnumChatFormatting.GREEN + "Enabled";
-					else
-						button2.displayString = EnumChatFormatting.GOLD + "Reparty Dungeon Teammates: " + EnumChatFormatting.RED + "Disabled";
-					if (!Main.config.modules.get("dungeonreparty").booleanValue())
-						button2.displayString = EnumChatFormatting.GOLD + "Reparty Dungeon Teammates: " + EnumChatFormatting.DARK_GRAY + "Force Disabled";
-				});
+				if (Main.config.isCopydungeonfail())
+					button1.displayString = "Copy Dungeon Deaths: " + EnumChatFormatting.GREEN + "Enabled";
+				else
+					button1.displayString = "Copy Dungeon Deaths: " + EnumChatFormatting.RED + "Disabled";
+				
+				if (!Main.config.modules.get("copydungeonfail").booleanValue())
+						button1.displayString = "Copy Dungeon Deaths: " + EnumChatFormatting.DARK_GRAY + "Force Disabled";
+				if (Main.config.isDungeonreparty())
+					button2.displayString = "Reparty Dungeon Teammates: " + EnumChatFormatting.GREEN + "Enabled";
+				else
+						button2.displayString = "Reparty Dungeon Teammates: " + EnumChatFormatting.RED + "Disabled";
+				
+				if (!Main.config.modules.get("dungeonreparty").booleanValue())
+					button2.displayString = "Reparty Dungeon Teammates: " + EnumChatFormatting.DARK_GRAY + "Force Disabled";
 				
 				button3.displayString = EnumChatFormatting.GRAY + "None";
 				button4.displayString = EnumChatFormatting.GRAY + "None";
