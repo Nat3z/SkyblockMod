@@ -1,6 +1,6 @@
 # Software's Code Used
 
-Nate's Skyblock Mod Uses Code From Open Source Projects. Here are the Programs used:
+Nate's Secret Mod Uses Code From Open Source Projects. Here are the Programs used:
 
 Software | License
 ------------ | -------------
