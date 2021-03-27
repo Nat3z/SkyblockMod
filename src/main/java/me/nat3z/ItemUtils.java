@@ -27,6 +27,26 @@ public class ItemUtils {
 		}
 		return Collections.emptyList();
 	}
+	
+	public static boolean isItemRarity(String legIepicIrareIuncommonIcommon, ItemStack itemStack) {
+		List<String> lore = getItemLore(itemStack);
+		if (lore.isEmpty())
+			return false;
+		
+		
+		if (legIepicIrareIuncommonIcommon.equals("leg") && lore.contains("LEG"))
+			return true;
+		else if (legIepicIrareIuncommonIcommon.equals("epic") && lore.contains("EPIC"))
+			return true;
+		else if (legIepicIrareIuncommonIcommon.equals("rare") && lore.contains("RARE"))
+			return true;
+		else if (legIepicIrareIuncommonIcommon.equals("uncommon") && lore.contains("UNCOMMON"))
+			return true;
+		else if (legIepicIrareIuncommonIcommon.equals("common") && lore.contains("COMMON"))
+			return true;
+		
+		return false;
+	}
 	// This method is not for Usage in Skyblock Item Check and is only for switch/if statements
 	public static String getItemType(ItemStack itemStack, Boolean LogDebugging) {
 		String item = itemStack.getDisplayName().replaceAll(" ", "_").toUpperCase();

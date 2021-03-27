@@ -33,7 +33,7 @@ public class PersistentValue {
 				this.apikey = valuesObject.has("api") ? valuesObject.get("api").getAsString() : " ";
 				
 			} catch (Exception ex) {
-				System.out.println("Nate's Skyblock Mod: There was an error while trying to load persistent values,");
+				System.out.println("Nate's Secret Mod: There was an error while trying to load persistent values,");
 				ex.printStackTrace();
 				saveValues();
 				
@@ -53,7 +53,7 @@ public class PersistentValue {
 			bufferedWriter.write(valuesObject.toString());
 			bufferedWriter.close();
 		} catch (Exception ex) {
-			System.out.println("Nate's Skyblock Mod: There was an error while trying to save persistent values,");
+			System.out.println("Nate's Secret Mod: There was an error while trying to save persistent values,");
 			ex.printStackTrace();
 		}
 	}

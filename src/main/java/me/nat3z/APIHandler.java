@@ -71,4 +71,30 @@ public class APIHandler {
 
 		return new JsonObject();
 	}
+	public static String getStringFromUrl(String urlstring) {
+		String res = null;
+		try {
+			URL url = new URL(urlstring);
+			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+			conn.setRequestMethod("GET");
+			
+			if (conn.getResponseCode() == HttpURLConnection.HTTP_OK) {
+				BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+				String input;
+				StringBuilder response = new StringBuilder();
+				
+				while ((input = in.readLine()) != null) {
+					response.append(input);
+				}
+				in.close();
+				
+				res = response.toString();
+			} 
+		} catch (IOException ex) {
+	        Utilities.sendWarning("An error ocurred while getting your Supporter Status.");
+			ex.printStackTrace();
+		}
+		System.out.println(res);
+		return res;
+	}
 }

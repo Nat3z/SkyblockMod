@@ -4,6 +4,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.util.HashMap;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -17,8 +18,17 @@ public class Config {
 	private boolean antinonenchanted;
 	private boolean unclaimedfarmingcontest;
 	private boolean warnpeopleforrareiteminsecretchest;
-
+	private boolean copydungeonfail;
+	private boolean dungeonreparty;
+	
+	public static HashMap<String, Boolean> modules = new HashMap<>();
+	
 	public Config(File configDir) {
+		modules.put("antinonenchanted", true);
+		modules.put("unclaimedfarmingcontests", true);
+		modules.put("warnpeopleforrareriteminsecretchest", true);
+		modules.put("copydungeonfail", true);
+		modules.put("dungeonreparty", true);
 		this.configValuesFile = new File(configDir.getAbsolutePath() + "/natemodsb.cfg");
 	}
 	
@@ -37,9 +47,11 @@ public class Config {
 				this.antinonenchanted = valuesObject.has("antinonenchanted") ? valuesObject.get("antinonenchanted").getAsBoolean() : false;
 				this.unclaimedfarmingcontest = valuesObject.has("unclaimedfarmingcontests") ? valuesObject.get("unclaimedfarmingcontests").getAsBoolean() : false;
 				this.warnpeopleforrareiteminsecretchest = valuesObject.has("warnpeopleforrareriteminsecretchest") ? valuesObject.get("warnpeopleforrareriteminsecretchest").getAsBoolean() : false;
+				this.copydungeonfail = valuesObject.has("copydungeonfail") ? valuesObject.get("copydungeonfail").getAsBoolean() : false;
+				this.dungeonreparty = valuesObject.has("dungeonreparty") ? valuesObject.get("dungeonreparty").getAsBoolean() : false;
 
 			} catch (Exception ex) {
-				System.out.println("Nate's Skyblock Mod: There was an error while trying to load Configuration values,");
+				System.out.println("Nate's Secret Mod: There was an error while trying to load Configuration values,");
 				ex.printStackTrace();
 				saveValues();
 				
@@ -59,11 +71,13 @@ public class Config {
 			valuesObject.addProperty("antinonenchanted", this.antinonenchanted);
 			valuesObject.addProperty("unclaimedfarmingcontests", this.unclaimedfarmingcontest);
 			valuesObject.addProperty("warnpeopleforrareriteminsecretchest", this.warnpeopleforrareiteminsecretchest);
+			valuesObject.addProperty("copydungeonfail", this.copydungeonfail);
+			valuesObject.addProperty("dungeonreparty", this.dungeonreparty);
 
 			bufferedWriter.write(valuesObject.toString());
 			bufferedWriter.close();
 		} catch (Exception ex) {
-			System.out.println("Nate's Skyblock Mod: There was an error while trying to save Configuration values,");
+			System.out.println("Nate's Secret Mod: There was an error while trying to save Configuration values.");
 			ex.printStackTrace();
 		}
 	}
@@ -77,7 +91,22 @@ public class Config {
 	public Boolean isUnclaimedFarmingContest() {
 		return this.unclaimedfarmingcontest;
 	}
-
+	public boolean isCopydungeonfail() {
+		return copydungeonfail;
+	}
+	public void setCopydungeonfail(boolean copydungeonfail) {
+		this.copydungeonfail = copydungeonfail;
+		saveValues();
+	}
+	
+	public boolean isDungeonreparty() {
+		return dungeonreparty;
+	}
+	public void setDungeonreparty(boolean dungeonreparty) {
+		this.dungeonreparty = dungeonreparty;
+		saveValues();
+	}
+	
 	public Boolean isWarnPeopleForRarerItemInSecretChest() {
 		return this.warnpeopleforrareiteminsecretchest;
 	}

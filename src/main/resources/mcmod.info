@@ -1,16 +1,16 @@
 [
-{
-  "modid": "natemodskyblock",
-  "name": "Nate's Skyblock Mod",
-  "description": "A mod for the gamemode Hypixel Skyblock by the Hypixel Network. It adds Quality of Life and overall Helpful Features!",
-  "version": "1.0.0",
-  "mcversion": "${mcversion}",
-  "url": "nat3z.github.io",
-  "updateUrl": "nat3z.github.io/skyblockmod/",
-  "authorList": ["Nat3zDev"],
-  "credits": "",
-  "logoFile": "",
-  "screenshots": [],
-  "dependencies": ["ModCore"]
-}
+	{
+	  "modid": "natemodskyblock",
+	  "name": "Nate's Secret Mod",
+	  "description": "A mod for the gamemode Hypixel Skyblock by the Hypixel Network. It adds Quality of Life and overall Helpful Features!",
+	  "version": "1.0.8",
+	  "mcversion": "1.8.9",
+	  "url": "nat3z.github.io",
+	  "updateUrl": "nat3z.github.io/skyblockmod/",
+	  "authorList": ["Nat3zDev"],
+	  "credits": "",
+	  "logoFile": "",
+	  "screenshots": [],
+	  "dependencies": []
+	}
 ]

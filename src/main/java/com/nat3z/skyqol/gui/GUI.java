@@ -16,22 +16,17 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import com.google.gson.JsonObject;
 import com.nat3z.skyqol.CheckForUpdates;
+import com.nat3z.skyqol.CheckIfSupporter;
 import com.nat3z.skyqol.Main;
 
-import me.nat3z.APIHandler;
+import me.nat3z.Utilities;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.ScaledResolution;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.event.ClickEvent;
-import net.minecraft.event.ClickEvent.Action;
-import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.StringUtils;
-import net.minecraftforge.fml.common.versioning.DefaultArtifactVersion;
 
 public class GUI extends GuiScreen {
 	private GuiButton closeGUI;
@@ -45,7 +40,7 @@ public class GUI extends GuiScreen {
     private GuiButton github;
     
     private GuiButton updatetoversion;
-
+    
 	
     @SuppressWarnings("unused")
 	private byte byte0 = -16;
@@ -56,6 +51,7 @@ public class GUI extends GuiScreen {
     
     @Override
     public void initGui() {
+    	
 		ScaledResolution sr = new ScaledResolution(Minecraft.getMinecraft());
 
 		int height = sr.getScaledHeight();
@@ -63,27 +59,24 @@ public class GUI extends GuiScreen {
     	super.initGui();
     	
     	// Always Present
-		backPage = new GuiButton(0, width / 2 - 100, (int) (height * 0.1), 80, 20, EnumChatFormatting.GRAY + "< Back");
-		nextPage = new GuiButton(0, width / 2 + 20, (int) (height * 0.1), 80, 20, EnumChatFormatting.GRAY + "Next >");
+		backPage = new GuiButton(0, width / 2 - 150, (int) (height * 0.1), 100, 20, EnumChatFormatting.GRAY + "< Back");
+		nextPage = new GuiButton(0, width / 2 + 50, (int) (height * 0.1), 100, 20, EnumChatFormatting.GRAY + "Next >");
     	
-		button1 = new GuiButton(0, width / 2 - 100, (int) (height *0.2), EnumChatFormatting.GRAY + "None");
+		button1 = new GuiButton(0, width / 2 - 150, (int) (height *0.2), 300, 20, EnumChatFormatting.GRAY + "None");
 		
-		button2 = new GuiButton(0, width / 2 - 100, (int) (height *0.3), EnumChatFormatting.GRAY + "None");
-		button3 = new GuiButton(0, width / 2 - 100, (int) (height *0.4), EnumChatFormatting.GRAY + "None");
-		button4 = new GuiButton(0, width / 2 - 100, (int) (height *0.5), EnumChatFormatting.GRAY + "None");
+		button2 = new GuiButton(0, width / 2 - 150, (int) (height *0.3), 300, 20, EnumChatFormatting.GRAY + "None");
+		button3 = new GuiButton(0, width / 2 - 150, (int) (height *0.4), 300, 20, EnumChatFormatting.GRAY + "None");
+		button4 = new GuiButton(0, width / 2 - 150, (int) (height *0.5), 300, 20, EnumChatFormatting.GRAY + "None");
 
 		closeGUI = new GuiButton(0, 2, height - 20, 80, 20, "Close");
 		github = new GuiButton(0, 2, height - 40, 80, 20, "Github");
 
 		pages();
 		
-		
 		if (CheckForUpdates.updateversion) {
     		updatetoversion = new GuiButton(0, width / 2 - 100, (int) (height * 0.9), EnumChatFormatting.GREEN + "Update Nate's Skyblock Mod");
     		this.buttonList.add(updatetoversion);
     	}
-		
-		
 		
         buttonList.add(closeGUI);
         buttonList.add(nextPage);
@@ -106,11 +99,13 @@ public class GUI extends GuiScreen {
     protected void actionPerformed(final GuiButton guiButton) {
         if (guiButton.enabled) {
         	String buttonwithout = StringUtils.stripControlCodes(guiButton.displayString);
-        	
-        	//if (buttonwithout.equals("Close")) {
-            //	Minecraft.getMinecraft().thePlayer.closeScreen();
-           // 	return;
-          //  }
+        	if (buttonwithout.contains("Support")) {
+        		Utilities.sendWarning("I'm sorry, this module is restricted to only Supporters because it is in its beta stages. If you want access to this, please report bugs or apply fixes/suggestions to our Github page.");
+        		return;
+        	} else if (buttonwithout.contains("Force Disabled")) {
+        		Utilities.sendWarning("I'm sorry, this module has been remotely disabled. This only happens if something bad happened in the code or it has been deemed as a bannable offense by the Hypixel Staff.");
+        		return;
+        	}
         	switch (buttonwithout) {
         	
     			case "Mod Status: Disabled":
@@ -151,12 +146,30 @@ public class GUI extends GuiScreen {
     				Main.config.setWarnPeopleForRarerItemInSecretChest(true);
             		break;
             		
+    			case "Copy Dungeon Deaths: Enabled":
+    				Main.config.setCopydungeonfail(false);
+    				break;
+            	
+    			case "Copy Dungeon Deaths: Disabled":
+    				Main.config.setCopydungeonfail(true);
+            		break;
+            		
+    			case "Reparty Dungeon Teammates: Enabled":
+    				Main.config.setDungeonreparty(false);
+    				break;
+            	
+    			case "Reparty Dungeon Teammates: Disabled":
+    				Main.config.setDungeonreparty(true);
+            		break;
+            		
     			case "Next >":
     				page++;
-    				break;
+    				pages();
+    				return;
     			case "< Back":
     				page--;
-    				break;
+    				pages();
+    				return;
             	
     			case "Github":
     				try {
@@ -170,7 +183,7 @@ public class GUI extends GuiScreen {
     				return;
     			}
         	}
-        	pages();
+        	wino();
         }
     }
    
@@ -179,14 +192,10 @@ public class GUI extends GuiScreen {
     public static int getChromaColor() {
         return Color.HSBtoRGB(System.currentTimeMillis() % 1000L / 1000.0f, 0.8f, 0.8f);
     }
-    
-    public void pages() {
+    @SuppressWarnings("static-access")
+	public void wino() {
 		switch (page) {
 			case 1:
-				buttonList.remove(backPage);
-				buttonList.remove(backPage);
-
-				buttonList.add(nextPage);
 				if (Main.config.isModEnabled())
 					button1.displayString = "Mod Status: " + EnumChatFormatting.GREEN + "Enabled";
 				else
@@ -196,28 +205,110 @@ public class GUI extends GuiScreen {
 					button2.displayString = "Anti Non Enchanted: " + EnumChatFormatting.GREEN + "Enabled";
 				else
 					button2.displayString = "Anti Non Enchanted: " + EnumChatFormatting.RED + "Disabled";
-
+				if (!Main.config.modules.get("antinonenchanted").booleanValue())
+					button2.displayString = "Anti Non Enchanted: " + EnumChatFormatting.DARK_GRAY + "Force Disabled";
+	
 				if (Main.config.isUnclaimedFarmingContest())
 					button3.displayString = "Highlight Unclaimed Contests: " + EnumChatFormatting.GREEN + "Enabled";
 				else
 					button3.displayString = "Highlight Unclaimed Contests: " + EnumChatFormatting.RED + "Disabled";
-
+				if (!Main.config.modules.get("unclaimedfarmingcontests").booleanValue())
+					button3.displayString = "Highlight Unclaimed Contests: " + EnumChatFormatting.DARK_GRAY + "Force Disabled";
+	
 				if (Main.config.isWarnPeopleForRarerItemInSecretChest())
 					button4.displayString = "Warning for Rare Items in Sec. Chest: " + EnumChatFormatting.GREEN + "Enabled";
 				else
 					button4.displayString = "Warning for Rare Items in Sec. Chest: " + EnumChatFormatting.RED + "Disabled";
+				if (!Main.config.modules.get("warnpeopleforrareriteminsecretchest").booleanValue())
+					button4.displayString = "Warning for Rare Items in Sec. Chest: " + EnumChatFormatting.DARK_GRAY + "Force Disabled";
+			break;
+	    
+			case 2:
+				if (Main.config.isCopydungeonfail())
+					button1.displayString = "Copy Dungeon Deaths: " + EnumChatFormatting.GREEN + "Enabled";
+				else
+					button1.displayString = "Copy Dungeon Deaths: " + EnumChatFormatting.RED + "Disabled";
+				
+				if (!Main.config.modules.get("copydungeonfail").booleanValue())
+						button1.displayString = EnumChatFormatting.GOLD + "Copy Dungeon Deaths: " + EnumChatFormatting.DARK_GRAY + "Force Disabled";
+				if (Main.config.isDungeonreparty())
+					button2.displayString = EnumChatFormatting.GOLD + "Reparty Dungeon Teammates: " + EnumChatFormatting.GREEN + "Enabled";
+				else
+						button2.displayString = EnumChatFormatting.GOLD + "Reparty Dungeon Teammates: " + EnumChatFormatting.RED + "Disabled";
+				
+				if (!Main.config.modules.get("dungeonreparty").booleanValue())
+					button2.displayString = EnumChatFormatting.GOLD + "Reparty Dungeon Teammates: " + EnumChatFormatting.DARK_GRAY + "Force Disabled";
+				
+				button3.displayString = EnumChatFormatting.GRAY + "None";
+				button4.displayString = EnumChatFormatting.GRAY + "None";
+			break;
+			
+			default:
+				page = 2;
+				pages();
+		}
+    }
+    @SuppressWarnings("static-access")
+	public void pages() {
+		switch (page) {
+			case 1:
+				buttonList.remove(backPage);
+				buttonList.remove(backPage);
+				buttonList.add(nextPage);
+				
+				if (Main.config.isModEnabled())
+					button1.displayString = "Mod Status: " + EnumChatFormatting.GREEN + "Enabled";
+				else
+					button1.displayString = "Mod Status: " + EnumChatFormatting.RED + "Disabled";
+				
+				if (Main.config.isAntiNonEnchantedEnabled())
+					button2.displayString = "Anti Non Enchanted: " + EnumChatFormatting.GREEN + "Enabled";
+				else
+					button2.displayString = "Anti Non Enchanted: " + EnumChatFormatting.RED + "Disabled";
+				if (!Main.config.modules.get("antinonenchanted").booleanValue())
+					button2.displayString = "Anti Non Enchanted: " + EnumChatFormatting.DARK_GRAY + "Force Disabled";
+	
+				if (Main.config.isUnclaimedFarmingContest())
+					button3.displayString = "Highlight Unclaimed Contests: " + EnumChatFormatting.GREEN + "Enabled";
+				else
+					button3.displayString = "Highlight Unclaimed Contests: " + EnumChatFormatting.RED + "Disabled";
+				if (!Main.config.modules.get("unclaimedfarmingcontests").booleanValue())
+					button3.displayString = "Highlight Unclaimed Contests: " + EnumChatFormatting.DARK_GRAY + "Force Disabled";
+	
+				if (Main.config.isWarnPeopleForRarerItemInSecretChest())
+					button4.displayString = "Warning for Rare Items in Sec. Chest: " + EnumChatFormatting.GREEN + "Enabled";
+				else
+					button4.displayString = "Warning for Rare Items in Sec. Chest: " + EnumChatFormatting.RED + "Disabled";
+				if (!Main.config.modules.get("warnpeopleforrareriteminsecretchest").booleanValue())
+					button4.displayString = "Warning for Rare Items in Sec. Chest: " + EnumChatFormatting.DARK_GRAY + "Force Disabled";
 			break;
 	    
 			case 2:
 				buttonList.add(backPage);
 				buttonList.remove(nextPage);
-				button1.displayString = EnumChatFormatting.GRAY + "None";
+				buttonList.remove(nextPage);
+				button1.displayString = EnumChatFormatting.GOLD + "Copy Dungeon Deaths: " + EnumChatFormatting.GREEN + "Support";
+				CheckIfSupporter.isSupporting(() -> {
+					if (Main.config.isCopydungeonfail())
+						button1.displayString = EnumChatFormatting.GOLD + "Copy Dungeon Deaths: " + EnumChatFormatting.GREEN + "Enabled";
+					else
+						button1.displayString = EnumChatFormatting.GOLD + "Copy Dungeon Deaths: " + EnumChatFormatting.RED + "Disabled";
+					if (!Main.config.modules.get("copydungeonfail").booleanValue())
+						button1.displayString = EnumChatFormatting.GOLD + "Copy Dungeon Deaths: " + EnumChatFormatting.DARK_GRAY + "Force Disabled";
+					});
+
+				button2.displayString = EnumChatFormatting.GOLD + "Reparty Dungeon Teammates: " + EnumChatFormatting.YELLOW + "Support";
+				CheckIfSupporter.isSupporting(() -> {
+					if (Main.config.isDungeonreparty())
+						button2.displayString = EnumChatFormatting.GOLD + "Reparty Dungeon Teammates: " + EnumChatFormatting.GREEN + "Enabled";
+					else
+						button2.displayString = EnumChatFormatting.GOLD + "Reparty Dungeon Teammates: " + EnumChatFormatting.RED + "Disabled";
+					if (!Main.config.modules.get("dungeonreparty").booleanValue())
+						button2.displayString = EnumChatFormatting.GOLD + "Reparty Dungeon Teammates: " + EnumChatFormatting.DARK_GRAY + "Force Disabled";
+				});
 				
-				button2.displayString = EnumChatFormatting.GRAY + "None";
 				button3.displayString = EnumChatFormatting.GRAY + "None";
 				button4.displayString = EnumChatFormatting.GRAY + "None";
-
-
 			break;
 			
 			default:

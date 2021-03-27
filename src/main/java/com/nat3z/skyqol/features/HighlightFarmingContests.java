@@ -1,27 +1,28 @@
 package com.nat3z.skyqol.features;
 
+import java.awt.Color;
 import java.util.List;
 
 import com.nat3z.skyqol.Main;
 
+import me.nat3z.ItemUtils;
 import me.nat3z.Utilities;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiChest;
-import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.init.Items;
 import net.minecraft.inventory.ContainerChest;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.EnumChatFormatting;
 import net.minecraftforge.client.event.GuiScreenEvent;
-import net.minecraftforge.client.event.GuiScreenEvent.MouseInputEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class HighlightFarmingContests {
 
-    @SubscribeEvent
+    @SuppressWarnings("static-access")
+	@SubscribeEvent
     public void stop(GuiScreenEvent.BackgroundDrawnEvent event) {
-    	if (!Main.config.isModEnabled() || !Main.config.isUnclaimedFarmingContest())
+    	if (!Main.config.isModEnabled() || !Main.config.isUnclaimedFarmingContest() || !Main.config.modules.get("unclaimedfarmingcontests"))
     		return;
     	
 		if (!Main.isHypixel())
@@ -39,10 +40,19 @@ public class HighlightFarmingContests {
     		
     		List<Slot> invSlots = inventory.inventorySlots.inventorySlots;
     		for (Slot slot : invSlots) {
-    			
+    			try {    				
     				if (slot.getStack().isItemEnchanted()) {
-    					Utilities.showOnSlot(inventory.inventorySlots.inventorySlots.size(), slot.xDisplayPosition, slot.yDisplayPosition);
-    				}
+						ItemStack stack = slot.getStack();
+						List<String> lore = ItemUtils.getItemLore(stack);
+						String medal = EnumChatFormatting.getTextWithoutFormattingCodes(lore.get(11).toLowerCase().replace("you earned a ", "").replace(" medal", ""));
+						if (EnumChatFormatting.getTextWithoutFormattingCodes(medal).contains("gold"))
+	    					Utilities.showOnSlot(inventory.inventorySlots.inventorySlots.size(), slot.xDisplayPosition, slot.yDisplayPosition, Color.yellow.getRGB());
+						else if (EnumChatFormatting.getTextWithoutFormattingCodes(medal).contains("silver"))
+	    					Utilities.showOnSlot(inventory.inventorySlots.inventorySlots.size(), slot.xDisplayPosition, slot.yDisplayPosition, Color.DARK_GRAY.getRGB());
+						else if (EnumChatFormatting.getTextWithoutFormattingCodes(medal).contains("bronze"))
+	    					Utilities.showOnSlot(inventory.inventorySlots.inventorySlots.size(), slot.xDisplayPosition, slot.yDisplayPosition, Color.orange.getRGB());
+	    			}
+    			} catch (Exception ex) {}
     		}	
     			
     		

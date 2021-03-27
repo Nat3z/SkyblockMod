@@ -47,16 +47,16 @@ public class Utilities extends Gui {
 		
 	}
 	
+	public static void drawCenteredString(String text, float x, float y, int color) {
+		Minecraft.getMinecraft().fontRendererObj.drawString(text, x - Minecraft.getMinecraft().fontRendererObj.getStringWidth(text) / 2F, y / 2F, color, true);
+	}
+	
 	
 	/*
 	 * Code Below Is From Danker's Skyblock Mod
 	 */
 	
-	/*
-	* Made the color always green
-	*/
-	
-	public static void showOnSlot(int size, int xSlotPos, int ySlotPos) {
+	public static void showOnSlot(int size, int xSlotPos, int ySlotPos, int color) {
 		ScaledResolution sr = new ScaledResolution(Minecraft.getMinecraft());
 		int guiLeft = (sr.getScaledWidth() - 176) / 2;
 		int guiTop = (sr.getScaledHeight() - 222) / 2;
@@ -67,7 +67,23 @@ public class Utilities extends Gui {
 		if (size != 90) y+= (6 - (size - 36) / 9) * 9;
 		
 		GL11.glTranslated(0, 0, 1);
-		Gui.drawRect(x, y, x + 16, y + 16, Color.green.getRGB());
+		Gui.drawRect(x, y, x + 16, y + 16, color);
+		GL11.glTranslated(0, 0, -1);
+
+	}
+	
+	public static void revealonSlot(int size, int xSlotPos, int ySlotPos, int color) {
+		ScaledResolution sr = new ScaledResolution(Minecraft.getMinecraft());
+		int guiLeft = (sr.getScaledWidth() - 176) / 2;
+		int guiTop = (sr.getScaledHeight() - 222) / 2;
+		
+		int x = guiLeft + xSlotPos;
+		int y = guiTop + ySlotPos;
+		
+		if (size != 90) y+= (6 - (size - 36) / 9) * 9;
+		
+		GL11.glTranslated(0, 0, 1);
+		Gui.drawRect(x, y, x + 16, y + 16, color);
 		GL11.glTranslated(0, 0, -1);
 
 	}

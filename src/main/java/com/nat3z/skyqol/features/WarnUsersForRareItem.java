@@ -15,10 +15,11 @@ import net.minecraftforge.fml.common.gameevent.TickEvent;
 public class WarnUsersForRareItem {
 
 	// The Name of thing is "Chest"
+	@SuppressWarnings("static-access")
 	@SubscribeEvent
 	public void checksifchest(TickEvent.RenderTickEvent event) {
 
-		if (!Main.config.isWarnPeopleForRarerItemInSecretChest() || !Main.config.isModEnabled())
+		if (!Main.config.isWarnPeopleForRarerItemInSecretChest() || !Main.config.isModEnabled() || !Main.config.modules.get("warnpeopleforrareriteminsecretchest"))
 			return;
 		if (!Main.isHypixel())
 			return;

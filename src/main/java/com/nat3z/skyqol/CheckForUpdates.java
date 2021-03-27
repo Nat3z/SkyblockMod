@@ -56,13 +56,10 @@ public class CheckForUpdates {
     				ChatComponentText update = new ChatComponentText(EnumChatFormatting.GREEN + "" + EnumChatFormatting.BOLD + "[UPDATE TO LATEST] ");
     				update.setChatStyle(update.getChatStyle().setChatClickEvent(new ClickEvent(Action.OPEN_URL, releaseURL)));
     					
-    				try {
-						Thread.sleep(2000);
-					} catch (InterruptedException ex) {
-						ex.printStackTrace();
-					}
+	            	CheckIfSupporter.wait(1000);
+	            	
     				updateversion = true;
-    				player.addChatMessage(new ChatComponentText(EnumChatFormatting.DARK_RED + "[" + EnumChatFormatting.RED + "NSM"+ EnumChatFormatting.DARK_RED + "]: " + EnumChatFormatting.RED + " You are currently using an outdated version of Nate's Skyblock Mod. Please update to " + EnumChatFormatting.YELLOW + latestTag + ".\n").appendSibling(update));
+    				player.addChatMessage(new ChatComponentText(EnumChatFormatting.DARK_RED + "[" + EnumChatFormatting.RED + "NSM"+ EnumChatFormatting.DARK_RED + "]: " + EnumChatFormatting.RED + " You are currently using an outdated version of Nate's Secret Mod. Please update to " + EnumChatFormatting.YELLOW + latestTag + ".\n").appendSibling(update));
     			}
     		}).start();
     	}
