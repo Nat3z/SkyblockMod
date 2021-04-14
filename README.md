@@ -34,6 +34,9 @@ Pull requests are ALWAYS welcome! If you have ideas for the mod, please suggest
 If you have major issues, please report them to the "Issues" tab.
 Please make sure you are using the latest version of the repository.
 
+## Song Configurations
+To use the NSM Music Player, you need to first download your music. Once you have downloaded all of the music files, if they are mp3s or oggs, convert them to .mov files. Once you have done that, go to .minecraft\config\nsm_playlist\ then drag all of your songs in. In-game, do /refreshplaylist and that's it!
+
 ## Helpful Sources
 [Sk1er.club](https://sk1er.club/discord)
 
