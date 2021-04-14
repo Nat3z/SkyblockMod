@@ -20,7 +20,11 @@ public class Config {
 	private boolean warnpeopleforrareiteminsecretchest;
 	private boolean copydungeonfail;
 	private boolean dungeonreparty;
-	
+	private boolean maddoxautophone;
+	private boolean musicplayer;
+	private boolean musicplayerhud;
+	private boolean secrethud;
+
 	public static HashMap<String, Boolean> modules = new HashMap<>();
 	
 	public Config(File configDir) {
@@ -29,6 +33,11 @@ public class Config {
 		modules.put("warnpeopleforrareriteminsecretchest", true);
 		modules.put("copydungeonfail", true);
 		modules.put("dungeonreparty", true);
+		modules.put("maddoxautophone", true);
+		modules.put("musicplayer", true);
+		modules.put("secrethud", true);
+
+		
 		this.configValuesFile = new File(configDir.getAbsolutePath() + "/natemodsb.cfg");
 	}
 	
@@ -49,6 +58,10 @@ public class Config {
 				this.warnpeopleforrareiteminsecretchest = valuesObject.has("warnpeopleforrareriteminsecretchest") ? valuesObject.get("warnpeopleforrareriteminsecretchest").getAsBoolean() : false;
 				this.copydungeonfail = valuesObject.has("copydungeonfail") ? valuesObject.get("copydungeonfail").getAsBoolean() : false;
 				this.dungeonreparty = valuesObject.has("dungeonreparty") ? valuesObject.get("dungeonreparty").getAsBoolean() : false;
+				this.maddoxautophone = valuesObject.has("maddoxautophone") ? valuesObject.get("maddoxautophone").getAsBoolean() : false;
+				this.musicplayer = valuesObject.has("musicplayer") ? valuesObject.get("musicplayer").getAsBoolean() : false;
+				this.musicplayerhud = valuesObject.has("musicplayerhud") ? valuesObject.get("musicplayerhud").getAsBoolean() : false;
+				this.secrethud = valuesObject.has("secrethud") ? valuesObject.get("secrethud").getAsBoolean() : false;
 
 			} catch (Exception ex) {
 				System.out.println("Nate's Secret Mod: There was an error while trying to load Configuration values,");
@@ -73,6 +86,10 @@ public class Config {
 			valuesObject.addProperty("warnpeopleforrareriteminsecretchest", this.warnpeopleforrareiteminsecretchest);
 			valuesObject.addProperty("copydungeonfail", this.copydungeonfail);
 			valuesObject.addProperty("dungeonreparty", this.dungeonreparty);
+			valuesObject.addProperty("maddoxautophone", this.maddoxautophone);
+			valuesObject.addProperty("musicplayer", this.musicplayer);
+			valuesObject.addProperty("musicplayerhud", this.musicplayerhud);
+			valuesObject.addProperty("secrethud", this.secrethud);
 
 			bufferedWriter.write(valuesObject.toString());
 			bufferedWriter.close();
@@ -127,6 +144,42 @@ public class Config {
 	}
 	public void setAntiNonEnchantedEnabled(Boolean isItEnabled) {
 		this.antinonenchanted = isItEnabled;
+		saveValues();
+	}
+	
+	public boolean isMaddoxautophone() {
+		return maddoxautophone;
+	}
+	
+	public void setMaddoxautophone(boolean maddoxautophone) {
+		this.maddoxautophone = maddoxautophone;
+		saveValues();
+	}
+	
+	public boolean isMusicplayer() {
+		return musicplayer;
+	}
+	
+	public void setMusicplayer(boolean musicplayer) {
+		this.musicplayer = musicplayer;
+		saveValues();
+	}
+	
+	public boolean isMusicplayerhud() {
+		return musicplayerhud;
+	}
+	
+	public void setMusicplayerhud(boolean musicplayerhud) {
+		this.musicplayerhud = musicplayerhud;
+		saveValues();
+	}
+	
+	public boolean isSecrethud() {
+		return secrethud;
+	}
+	
+	public void setSecrethud(boolean secrethud) {
+		this.secrethud = secrethud;
 		saveValues();
 	}
 

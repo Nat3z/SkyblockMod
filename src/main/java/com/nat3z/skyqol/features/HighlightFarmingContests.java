@@ -3,6 +3,7 @@ package com.nat3z.skyqol.features;
 import java.awt.Color;
 import java.util.List;
 
+import com.nat3z.skyqol.CheckIfSupporter;
 import com.nat3z.skyqol.Main;
 
 import me.nat3z.ItemUtils;
@@ -45,12 +46,20 @@ public class HighlightFarmingContests {
 						ItemStack stack = slot.getStack();
 						List<String> lore = ItemUtils.getItemLore(stack);
 						String medal = EnumChatFormatting.getTextWithoutFormattingCodes(lore.get(11).toLowerCase().replace("you earned a ", "").replace(" medal", ""));
-						if (EnumChatFormatting.getTextWithoutFormattingCodes(medal).contains("gold"))
-	    					Utilities.showOnSlot(inventory.inventorySlots.inventorySlots.size(), slot.xDisplayPosition, slot.yDisplayPosition, Color.yellow.getRGB());
-						else if (EnumChatFormatting.getTextWithoutFormattingCodes(medal).contains("silver"))
-	    					Utilities.showOnSlot(inventory.inventorySlots.inventorySlots.size(), slot.xDisplayPosition, slot.yDisplayPosition, Color.DARK_GRAY.getRGB());
-						else if (EnumChatFormatting.getTextWithoutFormattingCodes(medal).contains("bronze"))
-	    					Utilities.showOnSlot(inventory.inventorySlots.inventorySlots.size(), slot.xDisplayPosition, slot.yDisplayPosition, Color.orange.getRGB());
+						
+						if (CheckIfSupporter.isSupport) {
+							if (EnumChatFormatting.getTextWithoutFormattingCodes(medal).contains("gold"))
+		    					Utilities.showOnSlot(inventory.inventorySlots.inventorySlots.size(), slot.xDisplayPosition, slot.yDisplayPosition, Color.yellow.getRGB());
+							else if (EnumChatFormatting.getTextWithoutFormattingCodes(medal).contains("silver"))
+		    					Utilities.showOnSlot(inventory.inventorySlots.inventorySlots.size(), slot.xDisplayPosition, slot.yDisplayPosition, Color.DARK_GRAY.getRGB());
+							else if (EnumChatFormatting.getTextWithoutFormattingCodes(medal).contains("bronze"))
+		    					Utilities.showOnSlot(inventory.inventorySlots.inventorySlots.size(), slot.xDisplayPosition, slot.yDisplayPosition, Color.orange.getRGB());
+							else if (EnumChatFormatting.getTextWithoutFormattingCodes(medal).equals("You didn't earn a medal."))
+		    					Utilities.showOnSlot(inventory.inventorySlots.inventorySlots.size(), slot.xDisplayPosition, slot.yDisplayPosition, Color.lightGray.getRGB());
+						} else {
+							if (EnumChatFormatting.getTextWithoutFormattingCodes(medal).contains("medal"))
+								Utilities.showOnSlot(inventory.inventorySlots.inventorySlots.size(), slot.xDisplayPosition, slot.yDisplayPosition, Color.green.getRGB());
+						}
 	    			}
     			} catch (Exception ex) {}
     		}	

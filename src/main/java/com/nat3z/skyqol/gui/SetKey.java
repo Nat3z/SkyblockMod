@@ -33,7 +33,7 @@ public class SetKey extends CommandBase {
     		Utilities.sendWarning("Usage: " + getCommandUsage(sender));
     		return;
     	}
-    	Main.persistentValues.setAPI(arg1[0]);
+    	Main.apis.setAPI(arg1[0]);
     	System.out.println("Modified API key");
     	Utilities.sendMessage("Successfully modified API key.");
     }

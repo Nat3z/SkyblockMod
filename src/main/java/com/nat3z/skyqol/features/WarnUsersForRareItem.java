@@ -9,12 +9,16 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiChest;
 import net.minecraft.inventory.ContainerChest;
 import net.minecraft.inventory.IInventory;
+import net.minecraft.util.StringUtils;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class WarnUsersForRareItem {
 
 	// The Name of thing is "Chest"
+	@SideOnly(Side.CLIENT)
 	@SuppressWarnings("static-access")
 	@SubscribeEvent
 	public void checksifchest(TickEvent.RenderTickEvent event) {
@@ -37,7 +41,7 @@ public class WarnUsersForRareItem {
     			if (!nameinv.getDisplayName().getUnformattedText().equals("Chest"))
     				return;
     			
-    			String stripurmomlastnightxdxddxdxdxd = ChatColor.stripColor(inv.getSlot(13).getStack().getDisplayName().toLowerCase());
+    			String stripurmomlastnightxdxddxdxdxd = StringUtils.stripControlCodes(inv.getSlot(13).getStack().getDisplayName().toLowerCase());
     			
     			if (stripurmomlastnightxdxddxdxdxd.contains("treasure") || stripurmomlastnightxdxddxdxdxd.contains("health") || stripurmomlastnightxdxddxdxdxd.contains("key")) {
     				Utilities.sendTitleCentered("Rare Item!");

@@ -8,13 +8,14 @@ import java.net.URLConnection;
 
 import me.nat3z.APIHandler;
 import me.nat3z.Utilities;
+import me.nat3z.api.RequestAPI;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class CheckIfSupporter {
 	private boolean sus = false;
-	private static boolean isSupport = false;
+	public static boolean isSupport = false;
 	@SubscribeEvent
 	public void supportman(EntityJoinWorldEvent event) {
 		if (sus) return;
@@ -22,15 +23,17 @@ public class CheckIfSupporter {
 		new Thread(() -> {
 	    	try {
 		  
-			    String cosmetics1 = APIHandler.getStringFromUrl("https://raw.githubusercontent.com/Nat3z/SkyblockMod/main/SUPPORTERS");
+			    String cosmetics1 = APIHandler.getStringFromUrl("https://raw.githubusercontent.com/Nat3z/SkyblockMod-EssentialData/main/SUPPORTERS");
 			    
-			    if (cosmetics1.contains(Minecraft.getMinecraft().thePlayer.getName())) {
+			    System.out.println(RequestAPI.getUUID(Minecraft.getMinecraft().thePlayer.getName()));
+			    
+			    if (cosmetics1.contains(RequestAPI.getUUID(Minecraft.getMinecraft().thePlayer.getName()))) {
 			    	isSupport = true;
 			    	wait(3000);
 			    	Utilities.sendMessage("Thanks for supporting Nate's Secret Mod! Your help is appreciated!");
 			    }
 	    	} catch (Exception ex) {
-		        Utilities.sendWarning("An error ocurred while getting your Supporter Status.");
+		        Utilities.sendWarning("An error ocurred while getting your string.");
 		    }
 		}).start();
 	}

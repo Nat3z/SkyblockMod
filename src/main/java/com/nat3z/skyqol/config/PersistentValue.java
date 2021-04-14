@@ -13,8 +13,14 @@ import com.google.gson.JsonParser;
 public class PersistentValue {
 
 	private final File persistentValuesFile;
-	private String apikey;
 	
+	private boolean bersdk;
+	private boolean healerdk;
+	private boolean archerdk;
+	private boolean tankdk;
+	private boolean magedk;
+
+
 	public PersistentValue(File configDir) {
 		this.persistentValuesFile = new File(configDir.getAbsolutePath() + "/sbmod_persistent.cfg");
 	}
@@ -29,8 +35,14 @@ public class PersistentValue {
 					throw new JsonParseException("File is Null!");
 				
 				JsonObject valuesObject = fileElement.getAsJsonObject();
+								
+				this.bersdk = valuesObject.has("bersdk") ? valuesObject.get("bersdk").getAsBoolean() : true;
+				this.magedk = valuesObject.has("magedk") ? valuesObject.get("magedk").getAsBoolean() : true;
+				this.healerdk = valuesObject.has("healerdk") ? valuesObject.get("healerdk").getAsBoolean() : true;
+				this.archerdk = valuesObject.has("archerdk") ? valuesObject.get("archerdk").getAsBoolean() : true;
+				this.tankdk = valuesObject.has("tankdk") ? valuesObject.get("tankdk").getAsBoolean() : true;
+
 				
-				this.apikey = valuesObject.has("api") ? valuesObject.get("api").getAsString() : " ";
 				
 			} catch (Exception ex) {
 				System.out.println("Nate's Secret Mod: There was an error while trying to load persistent values,");
@@ -46,22 +58,65 @@ public class PersistentValue {
 	private void saveValues() {
 		JsonObject valuesObject = new JsonObject();
 		try {
+			System.out.println("attempting save");
 			FileWriter writer = new FileWriter(this.persistentValuesFile);
 			BufferedWriter bufferedWriter = new BufferedWriter(writer);
 
-			valuesObject.addProperty("api", this.apikey);
+			valuesObject.addProperty("bersdk", this.bersdk);
+			valuesObject.addProperty("magedk", this.magedk);
+			valuesObject.addProperty("healerdk", this.healerdk);
+			valuesObject.addProperty("archerdk", this.archerdk);
+			valuesObject.addProperty("tankdk", this.tankdk);
+
+			
 			bufferedWriter.write(valuesObject.toString());
 			bufferedWriter.close();
+			System.out.println("save complete");
 		} catch (Exception ex) {
 			System.out.println("Nate's Secret Mod: There was an error while trying to save persistent values,");
 			ex.printStackTrace();
 		}
 	}
-	public String getAPI() {
-		return this.apikey;
+	
+	
+	
+	public boolean isBersdk() {
+		return bersdk;
 	}
-	public void setAPI(String apikey) {
-		this.apikey = apikey;
+	public void setBersdk(boolean bersdk) {
+		this.bersdk = bersdk;
+		saveValues();
+	}
+	
+	public boolean isMagedk() {
+		return magedk;
+	}
+	public void setMagedk(boolean magedk) {
+		this.magedk = magedk;
+		saveValues();
+	}
+	
+	public boolean isHealerdk() {
+		return healerdk;
+	}
+	public void setHealerdk(boolean healerdk) {
+		this.healerdk = healerdk;
+		saveValues();
+	}
+
+	public boolean isArcherdk() {
+		return archerdk;
+	}
+	public void setArcherdk(boolean archerdk) {
+		this.archerdk = archerdk;
+		saveValues();
+	}
+
+	public boolean isTankdk() {
+		return tankdk;
+	}
+	public void setTankdk(boolean tankdk) {
+		this.tankdk = tankdk;
 		saveValues();
 	}
 	

@@ -7,12 +7,12 @@ import me.nat3z.APIHandler;
 
 public class RequestAPI {
 	public static AuctionHouse ah = new AuctionHouse();
-	private static String getUUID(String username) {
+	public static String getUUID(String username) {
 		JsonObject response = APIHandler.getResponse("https://api.mojang.com/users/profiles/minecraft/" + username);
 		return response.get("id").getAsString();
 	}
 	public static JsonObject attemptAPI(String name, String typeofrequest) {
-		JsonObject response = APIHandler.getResponse("https://api.hypixel.net/skyblock/" + typeofrequest + "?key=" + Main.persistentValues.getAPI() + "&player=" + getUUID(name));
+		JsonObject response = APIHandler.getResponse("https://api.hypixel.net/skyblock/" + typeofrequest + "?key=" + Main.apis.getAPI() + "&player=" + getUUID(name));
 		System.out.println(getUUID(name));
 		return response;
 	}

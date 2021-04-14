@@ -13,8 +13,13 @@ import com.google.common.collect.Lists;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
+import net.minecraft.client.gui.GuiIngame;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.ScaledResolution;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.client.renderer.Tessellator;
+import net.minecraft.client.renderer.WorldRenderer;
+import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.scoreboard.Score;
 import net.minecraft.scoreboard.ScoreObjective;
 import net.minecraft.scoreboard.ScorePlayerTeam;
@@ -22,6 +27,7 @@ import net.minecraft.scoreboard.Scoreboard;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.StringUtils;
+import net.minecraftforge.fml.relauncher.ReflectionHelper;
 
 public class Utilities extends Gui {
 	
@@ -66,6 +72,7 @@ public class Utilities extends Gui {
 		
 		if (size != 90) y+= (6 - (size - 36) / 9) * 9;
 		
+		
 		GL11.glTranslated(0, 0, 1);
 		Gui.drawRect(x, y, x + 16, y + 16, color);
 		GL11.glTranslated(0, 0, -1);
@@ -76,11 +83,10 @@ public class Utilities extends Gui {
 		ScaledResolution sr = new ScaledResolution(Minecraft.getMinecraft());
 		int guiLeft = (sr.getScaledWidth() - 176) / 2;
 		int guiTop = (sr.getScaledHeight() - 222) / 2;
-		
 		int x = guiLeft + xSlotPos;
 		int y = guiTop + ySlotPos;
-		
-		if (size != 90) y+= (6 - (size - 36) / 9) * 9;
+		// Move down when chest isn't 6 rows
+		if (size != 90) y += (6 - (size - 36) / 9) * 9;
 		
 		GL11.glTranslated(0, 0, 1);
 		Gui.drawRect(x, y, x + 16, y + 16, color);
@@ -128,6 +134,28 @@ public class Utilities extends Gui {
 		}
 		
 		return cleaned.toString();
+	}
+	
+	/**
+	 * From {@link https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/modification-development/2708552-getting-the-text-from-the-players-actionbar}
+	 */
+	public static String getCurrentActionBar() {
+		try {
+			String actionBar = (String) ReflectionHelper.findField(GuiIngame.class, "displayedActionBar", "recordPlaying").get(Minecraft.getMinecraft().ingameGUI);
+			return actionBar;
+		} catch (Exception e) {
+		}
+		return null;
+	}
+	
+	public static String setCurrentActionBar(String newText) {
+		try {
+			String pasttext = (String) ReflectionHelper.findField(GuiIngame.class, "displayedActionBar", "recordPlaying").get(Minecraft.getMinecraft().ingameGUI);
+			ReflectionHelper.findField(GuiIngame.class, "displayedActionBar", "recordPlaying").set(Minecraft.getMinecraft().ingameGUI, newText);
+			return pasttext;
+		} catch (Exception e) {
+		}
+		return null;
 	}
 	
 }

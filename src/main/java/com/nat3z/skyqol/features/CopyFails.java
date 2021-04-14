@@ -10,8 +10,6 @@ import net.minecraftforge.client.event.ClientChatReceivedEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class CopyFails {
-	public int deathcount = 0;
-	private String person;
 	
 	@SuppressWarnings("static-access")
 	@SubscribeEvent
@@ -22,17 +20,16 @@ public class CopyFails {
 				return;
 			
 			if (Main.isOnSkyblock() && Main.isInDungeons()) {
-				if (message.contains("You were killed by") || message.contains(" was killed by")) {
-					deathcount++;
+				if (message.contains("You were killed by") || message.contains(" was killed by") || message.contains("died to a")) {
 					StringSelection stringSelection = new StringSelection(message);
 					Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
 					clipboard.setContents(stringSelection, null);
 					Utilities.sendMessage("Death Copied!");
-					System.out.println(deathcount);
-				}
-				if (!message.contains(":") && message.contains("Sending to server") && deathcount > 0) {
-					deathcount = 0;
-					person = null;
+				} else if (message.contains("Yikes!")) {
+					StringSelection stringSelection = new StringSelection(message);
+					Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+					clipboard.setContents(stringSelection, null);
+					Utilities.sendMessage("Fail Copied!");
 				}
 			}
 		}
