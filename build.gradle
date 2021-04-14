@@ -24,6 +24,12 @@ version = "1.0.3"
 group= "com.nat3z" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "modid"
 
+apply plugin: 'java'
+compileJava {
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+}
+
 minecraft {
     version = "1.8.9-11.15.1.1722"
     runDir = "run"
@@ -36,7 +42,6 @@ minecraft {
     mappings = "stable_20"
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 }
-
 dependencies {
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
@@ -59,6 +64,12 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
+}
+
+jar {
+    manifest.attributes(
+		'Main-Class': 'SkyInstaller',
+    )
 }
 
 processResources
