@@ -17,17 +17,16 @@ import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.GL11;
 
 import com.nat3z.skyqol.Main;
+import com.nat3z.skyqol.config.Config;
+import com.nat3z.skyqol.config.Feature;
+import com.nat3z.skyqol.utils.Utilities;
 
-import me.nat3z.Utilities;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.GuiTextField;
 import net.minecraft.client.gui.ScaledResolution;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.util.EnumChatFormatting;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.StringUtils;
 
 public class GUIKicker extends GuiScreen {
@@ -58,16 +57,11 @@ public class GUIKicker extends GuiScreen {
 		archer = new GuiButton(0, width / 2 + 30, (int) (height * 0.2), 100, 20, EnumChatFormatting.GRAY + "Archer");
 		healer = new GuiButton(0, width / 2 - 130, (int) (height * 0.2), 100, 20, EnumChatFormatting.GRAY + "Healer");
 		minlvl = new GuiTextField(0, fontRendererObj, width / 2 - 10, (int) (height * 0.3), 20, 20);
-		if (Main.apis.getMincdk() != null)
-			minlvl.setText(Main.apis.getMincdk());
-		else {
-			Main.apis.setMincdk("0");
-			minlvl.setText(Main.apis.getMincdk());
-		}
+		minlvl.setText("" + Feature.minimumClassLevel);
 		
 		minlvl.setFocused(true);
 		minlvl.setMaxStringLength(2);
-		closeGUI = new GuiButton(0, 2, height - 20, 80, 20, "Close");
+		closeGUI = new GuiButton(0, 2, height - 20, 80, 20, "<- Back");
 		
 		
         buttonList.add(closeGUI);
@@ -108,12 +102,17 @@ public class GUIKicker extends GuiScreen {
     			typedChar == '7' || typedChar == '8' || typedChar == '9' || keyCode == Keyboard.KEY_BACK)
     	{
             minlvl.textboxKeyTyped(typedChar, keyCode);
-            Main.apis.setMincdk(minlvl.getText());
     	}
     	else if (keyCode == Keyboard.KEY_RIGHT || keyCode == Keyboard.KEY_LEFT)
             minlvl.textboxKeyTyped(typedChar, keyCode);
-    	else if (keyCode == Keyboard.KEY_ESCAPE)
+    	else if (keyCode == Keyboard.KEY_ESCAPE && minlvl.isFocused())
     		minlvl.setFocused(false);
+    	else if (keyCode == Keyboard.KEY_ESCAPE && !minlvl.isFocused()) {
+			Minecraft.getMinecraft().thePlayer.closeScreen();
+			Main.INSTANCE.pagetoopen = 3;
+			Main.INSTANCE.openGUI();
+    	}
+    		
     }
     @Override
     public void updateScreen() {
@@ -130,45 +129,64 @@ public class GUIKicker extends GuiScreen {
         		Utilities.sendWarning("I'm sorry, this module has been remotely disabled. This only happens if something bad happened in the code or it has been deemed as a bannable offense by the Hypixel Staff.");
         		return;
         	}
+        	        	
         	switch (buttonwithout) {
         	
     			case "Archer":
-    				if (Main.persistentValues.isArcherdk())
-    					Main.persistentValues.setArcherdk(false);
+    				if (!Feature.archer)
+    					Feature.archer = true;
+    				
     				else
-    					Main.persistentValues.setArcherdk(true);
+    					Feature.archer = false;
+    				
+					Config.writeBooleanConfig("dungeonkicker", "archer", Feature.archer);
+
     				break;
     				
     			case "Berserk":
-    				if (Main.persistentValues.isBersdk())
-    					Main.persistentValues.setBersdk(false);
+    				if (!Feature.berserk)
+    					Feature.berserk = true;
+    				
     				else
-    					Main.persistentValues.setBersdk(true);
+    					Feature.berserk = false;
+    				
+					Config.writeBooleanConfig("dungeonkicker", "berserk", Feature.berserk);
     				break;
     				
     			case "Healer":
-    				if (Main.persistentValues.isHealerdk())
-    					Main.persistentValues.setHealerdk(false);
+    				if (!Feature.healer)
+    					Feature.healer = true;
+    				
     				else
-    					Main.persistentValues.setHealerdk(true);
+    					Feature.healer = false;
+    				
+					Config.writeBooleanConfig("dungeonkicker", "healer", Feature.healer);
     				break;
     				
     			case "Tank":
-    				if (Main.persistentValues.isTankdk())
-    					Main.persistentValues.setTankdk(false);
+    				if (!Feature.tank)
+    					Feature.tank = true;
+    				
     				else
-    					Main.persistentValues.setTankdk(true);
+    					Feature.tank = false;
+    				
+					Config.writeBooleanConfig("dungeonkicker", "tank", Feature.tank);
     				break;
     				
     			case "Mage":
-    				if (Main.persistentValues.isMagedk())
-    					Main.persistentValues.setMagedk(false);
+    				if (!Feature.mage)
+    					Feature.mage = true;
+    				
     				else
-    					Main.persistentValues.setMagedk(true);
+    					Feature.mage = false;
+    				
+					Config.writeBooleanConfig("dungeonkicker", "mage", Feature.mage);
     				break;
     				
-    			case "Close": {
+    			case "<- Back": {
     				Minecraft.getMinecraft().thePlayer.closeScreen();
+    				Main.INSTANCE.pagetoopen = 3;
+    				Main.INSTANCE.openGUI();
     				return;
     			}
         	}
@@ -184,30 +202,39 @@ public class GUIKicker extends GuiScreen {
     
 	public void pages() {
 		
-		if (Main.persistentValues.isArcherdk())
+		if (Feature.archer)
 			archer.displayString = EnumChatFormatting.GREEN + "Archer";
 		else
 			archer.displayString = EnumChatFormatting.RED + "Archer";
 		
-		if (Main.persistentValues.isBersdk())
+		if (Feature.berserk)
 			bers.displayString = EnumChatFormatting.GREEN + "Berserk";
 		else
 			bers.displayString = EnumChatFormatting.RED + "Berserk";
 		
-		if (Main.persistentValues.isHealerdk())
+		if (Feature.healer)
 			healer.displayString = EnumChatFormatting.GREEN + "Healer";
 		else
 			healer.displayString = EnumChatFormatting.RED + "Healer";
 		
-		if (Main.persistentValues.isTankdk())
+		if (Feature.tank)
 			tank.displayString = EnumChatFormatting.GREEN + "Tank";
 		else
 			tank.displayString = EnumChatFormatting.RED + "Tank";
 		
-		if (Main.persistentValues.isMagedk())
+		if (Feature.mage)
 			mage.displayString = EnumChatFormatting.GREEN + "Mage";
 		else
 			mage.displayString = EnumChatFormatting.RED + "Mage";
 		
     }
+	
+	@Override
+	public void onGuiClosed() {
+		if (minlvl.getText() == null || minlvl.getText().equals("")) return;
+		
+        Config.writeIntConfig("dungeonkicker", "ClassLevelMin", Integer.parseInt(minlvl.getText()));
+        
+        Feature.minimumClassLevel = Integer.parseInt(minlvl.getText());
+	}
 }

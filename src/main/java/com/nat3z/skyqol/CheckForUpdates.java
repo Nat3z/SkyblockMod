@@ -1,9 +1,9 @@
 package com.nat3z.skyqol;
 
 import com.google.gson.JsonObject;
+import com.nat3z.skyqol.utils.Utilities;
+import com.nat3z.skyqol.utils.api.APIHandler;
 
-import me.nat3z.APIHandler;
-import me.nat3z.Utilities;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.event.ClickEvent;

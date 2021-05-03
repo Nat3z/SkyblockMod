@@ -1,8 +1,9 @@
 package com.nat3z.skyqol.gui;
 
 import com.nat3z.skyqol.Main;
+import com.nat3z.skyqol.config.Config;
+import com.nat3z.skyqol.utils.Utilities;
 
-import me.nat3z.Utilities;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommandSender;
@@ -33,9 +34,11 @@ public class SetKey extends CommandBase {
     		Utilities.sendWarning("Usage: " + getCommandUsage(sender));
     		return;
     	}
-    	Main.apis.setAPI(arg1[0]);
+    	Config.writeStringConfig("api", "apiKey", arg1[0].replaceAll("-", ""));
     	System.out.println("Modified API key");
     	Utilities.sendMessage("Successfully modified API key.");
+    	
+    	Main.config.reloadConfig();
     }
     
     public int getRequiredPermissionLevel() {

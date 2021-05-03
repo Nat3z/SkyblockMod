@@ -3,9 +3,10 @@ package com.nat3z.skyqol.features.playlist;
 import java.awt.Color;
 
 import com.nat3z.skyqol.Main;
+import com.nat3z.skyqol.config.Feature;
 import com.nat3z.skyqol.features.playlist.PlaylistFolder.Song;
+import com.nat3z.skyqol.utils.Utilities;
 
-import me.nat3z.Utilities;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.GuiMainMenu;
@@ -23,29 +24,28 @@ public class PlaylistHUD {
 	
     public static final ResourceLocation Menu = new ResourceLocation("natemodskyblock", "bigo.png");
 	
+	@SuppressWarnings("static-access")
 	@SubscribeEvent
 	public void playlist(RenderTickEvent event) {
-		if (!Main.config.isMusicplayerhud())
+		if (!Feature.MusicHud)
 			return;
 		if (Minecraft.getMinecraft().currentScreen instanceof GuiScreen ) {
 			return;
 		}
 			if (!PlaylistFolder.songName.equals(" ")) {
 		        GlStateManager.enableBlend();
-		        Minecraft.getMinecraft().getTextureManager().bindTexture(Menu);
-		        Gui.drawModalRectWithCustomSizedTexture(Main.guic.SongPlaylistLocationX, Main.guic.SongPlaylistLocationY, 0, 0, 200, 40, 356, 267);
-		        Minecraft.getMinecraft().fontRendererObj.drawString(Main.playlist.songName, Main.guic.SongPlaylistLocationX + 10, Main.guic.SongPlaylistLocationY + 15, Color.white.getRGB(), true);
-		        Minecraft.getMinecraft().fontRendererObj.drawString((Main.playlist.currentSong + 1) + "/" + Main.playlist.songlist.size(), Main.guic.SongPlaylistLocationX + 10, Main.guic.SongPlaylistLocationY + 26, Color.white.getRGB(), true);
+		        Gui.drawRect(Feature.MusicHUD[0], Feature.MusicHUD[1], Feature.MusicHUD[0] + 200, Feature.MusicHUD[1] + 40, new Color(168, 168, 168, 125).getRGB());
+		        Minecraft.getMinecraft().fontRendererObj.drawString(Main.playlist.songName, Feature.MusicHUD[0] + 10, Feature.MusicHUD[1] + 15, Color.white.getRGB(), true);
+		        Minecraft.getMinecraft().fontRendererObj.drawString((Main.playlist.currentSong + 1) + "/" + Main.playlist.songlist.size(), Feature.MusicHUD[0] + 10, Feature.MusicHUD[1] + 26, Color.white.getRGB(), true);
 		        
 		        if (Main.playlist.songlist.get(Main.playlist.currentSong).paused) {
-			        Minecraft.getMinecraft().fontRendererObj.drawString("Paused", Main.guic.SongPlaylistLocationX + 50, Main.guic.SongPlaylistLocationY + 26, Color.yellow.getRGB(), true);
+			        Minecraft.getMinecraft().fontRendererObj.drawString("Paused", Feature.MusicHUD[0] + 50, Feature.MusicHUD[1] + 26, Color.yellow.getRGB(), true);
 		        }
 		        
 			} else {
 		        GlStateManager.enableBlend();
-		        Minecraft.getMinecraft().getTextureManager().bindTexture(Menu);
-		        Gui.drawModalRectWithCustomSizedTexture(Main.guic.SongPlaylistLocationX, Main.guic.SongPlaylistLocationY, 0, 0, 200, 40, 356, 267);
-		        Minecraft.getMinecraft().fontRendererObj.drawString("No Song Selected!", Main.guic.SongPlaylistLocationX + 10, Main.guic.SongPlaylistLocationY + 15, Color.white.getRGB(), true);
+		        Gui.drawRect(Feature.MusicHUD[0], Feature.MusicHUD[1], Feature.MusicHUD[0] + 200, Feature.MusicHUD[1] + 40, new Color(168, 168, 168, 125).getRGB());
+		        Minecraft.getMinecraft().fontRendererObj.drawString("No Song Selected!", Feature.MusicHUD[0] + 10, Feature.MusicHUD[1] + 15, Color.white.getRGB(), true);
 			}
 	}
 	

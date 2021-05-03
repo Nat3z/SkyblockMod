@@ -3,10 +3,11 @@ package com.nat3z.skyqol.features.playlist;
 import org.lwjgl.input.Keyboard;
 
 import com.nat3z.skyqol.Main;
+import com.nat3z.skyqol.config.Feature;
 import com.nat3z.skyqol.events.KeyPressedEvent;
 import com.nat3z.skyqol.features.playlist.PlaylistFolder.Song;
+import com.nat3z.skyqol.utils.Utilities;
 
-import me.nat3z.Utilities;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -20,7 +21,7 @@ public class PressKeyPlay {
 	@SideOnly(Side.CLIENT)
 	@SubscribeEvent
 	public void press(KeyPressedEvent event) {
-		if (!Main.config.isMusicplayer())
+		if (!Feature.MusicPlayer)
 			return;
 		
 		if (Minecraft.getMinecraft().currentScreen instanceof GuiScreen)

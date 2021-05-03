@@ -1,8 +1,11 @@
 package com.nat3z.skyqol.features;
 
-import com.nat3z.skyqol.Main;
+import org.lwjgl.input.Mouse;
 
-import me.nat3z.Utilities;
+import com.nat3z.skyqol.Main;
+import com.nat3z.skyqol.config.Feature;
+import com.nat3z.skyqol.utils.Utilities;
+
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiChat;
 import net.minecraft.client.gui.inventory.GuiContainer;
@@ -21,13 +24,12 @@ public class ClickAnywhereSlayer {
 	@SuppressWarnings("static-access")
 	@SubscribeEvent
 	public void slayerclickany(ClientChatReceivedEvent event) {
-		if (!Main.isHypixel() || !Main.isOnSkyblock() || !Main.config.isMaddoxautophone() || !Main.config.modules.get("maddoxautophone").booleanValue())
+		if (!Main.isHypixel() || !Main.isOnSkyblock() || !Feature.AnywhereSlayer || !Main.config.modules.get("maddoxautophone").booleanValue())
 			return;
 		
 		if (event.message.getUnformattedText().toLowerCase().contains("open menu")) {
 			IChatComponent component = event.message.getSiblings().get(2);
-				if (component.getChatStyle().getChatClickEvent() != null)
-                {
+				if (component.getChatStyle().getChatClickEvent() != null) {
     				cmd = component.getChatStyle().getChatClickEvent().getValue();
     				Utilities.sendMessage("Click Anywhere to open Batphone Menu!");
     			}
@@ -36,8 +38,10 @@ public class ClickAnywhereSlayer {
 	
 	@SubscribeEvent
     public void slayerclickhandler(GuiScreenEvent.MouseInputEvent.Post event) {
-		if (!Main.isHypixel() || !Main.isOnSkyblock() || !Main.config.isMaddoxautophone())
+		if (!Main.isHypixel() || !Main.isOnSkyblock() || !Feature.AnywhereSlayer)
 			return;
+		
+		if (!Mouse.getEventButtonState()) return;
 		
 		if (event.gui != null)
 			if (event.gui instanceof GuiContainer || event.gui instanceof GuiChat || event.gui instanceof GuiInventory) {

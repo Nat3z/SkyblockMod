@@ -4,9 +4,9 @@ import java.awt.Color;
 import java.util.List;
 
 import com.nat3z.skyqol.Main;
+import com.nat3z.skyqol.utils.ItemUtils;
+import com.nat3z.skyqol.utils.Utilities;
 
-import me.nat3z.ItemUtils;
-import me.nat3z.Utilities;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiChest;
 import net.minecraft.client.gui.inventory.GuiInventory;
@@ -35,11 +35,11 @@ public class SearchIt {
         			if (slot != null && slot.getStack() != null) {
         				List<String> lorelmo = ItemUtils.getItemLore(slot.getStack());
         				if (slot.getStack().getDisplayName().contains("Enchanted Book") && StringUtils.stripControlCodes(lorelmo.get(0)).contains(query)) {
-        					Utilities.showOnSlot(inventory.inventorySlots.inventorySlots.size(), slot.xDisplayPosition, slot.yDisplayPosition, Color.yellow.getRGB());
+        					Utilities.showOnSlot(inventory.inventorySlots.inventorySlots.size(), slot.xDisplayPosition, slot.yDisplayPosition, new Color(246, 255, 0).getRGB());
         				} else if (slot.getStack().getDisplayName().toLowerCase().contains(query.toLowerCase())) {
-        					Utilities.showOnSlot(inventory.inventorySlots.inventorySlots.size(), slot.xDisplayPosition, slot.yDisplayPosition, Color.yellow.getRGB());
+        					Utilities.showOnSlot(inventory.inventorySlots.inventorySlots.size(), slot.xDisplayPosition, slot.yDisplayPosition, new Color(246, 255, 0).getRGB());
         	    		} else if (!slot.getStack().getDisplayName().contains("Enchanted Book") || !StringUtils.stripControlCodes(lorelmo.get(0)).contains(query)) {
-        					Utilities.showOnSlot(inventory.inventorySlots.inventorySlots.size(), slot.xDisplayPosition, slot.yDisplayPosition, Color.darkGray.getRGB());
+        					Utilities.showOnSlot(inventory.inventorySlots.inventorySlots.size(), slot.xDisplayPosition, slot.yDisplayPosition, new Color(0, 0, 0, 100).getRGB());
         	    		}
         			}
     			} catch (Exception ex) { /* Handles Exception */}

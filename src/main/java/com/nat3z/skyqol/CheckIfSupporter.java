@@ -6,18 +6,20 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 
-import me.nat3z.APIHandler;
-import me.nat3z.Utilities;
-import me.nat3z.api.RequestAPI;
+import com.nat3z.skyqol.utils.Utilities;
+import com.nat3z.skyqol.utils.api.APIHandler;
+import com.nat3z.skyqol.utils.api.RequestAPI;
+
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class CheckIfSupporter {
-	private boolean sus = false;
+	private static boolean sus = false;
 	public static boolean isSupport = false;
-	@SubscribeEvent
-	public void supportman(EntityJoinWorldEvent event) {
+	
+	
+	public static void checkSupport() {
 		if (sus) return;
     	sus = true;
 		new Thread(() -> {
@@ -36,6 +38,11 @@ public class CheckIfSupporter {
 		        Utilities.sendWarning("An error ocurred while getting your string.");
 		    }
 		}).start();
+	}
+	
+	@SubscribeEvent
+	public void supportman(EntityJoinWorldEvent event) {
+		checkSupport();
 	}
 	public static void wait(int ms) {
 	    try {

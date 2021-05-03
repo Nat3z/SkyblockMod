@@ -6,6 +6,8 @@ import java.util.Arrays;
 import java.util.List;
 
 import com.nat3z.skyqol.Main;
+import com.nat3z.skyqol.config.Feature;
+import com.nat3z.skyqol.utils.Message;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
@@ -24,9 +26,9 @@ public class SecretDisplay {
     public static final ResourceLocation Menu = new ResourceLocation("natemodskyblock", "bigo.png");
 	String secretsoutof = "No";
 	@SuppressWarnings("static-access")
-	@SubscribeEvent(priority = EventPriority.HIGHEST)
+	@SubscribeEvent(priority = EventPriority.HIGH)
 	public void secdisp(ClientChatReceivedEvent event) {
-		if (!Main.config.isSecrethud()) return;
+		if (!Feature.SecretHud) return;
 		if (!Main.config.modules.get("secrethud").booleanValue()) return;
 		if (!Main.isHypixel()) return;
 		if (!Main.isOnSkyblock()) return;
@@ -48,9 +50,10 @@ public class SecretDisplay {
 		} catch (Exception e) {e.printStackTrace();		}
 		
 	}
-	@SubscribeEvent(priority = EventPriority.HIGH)
+	@SuppressWarnings("static-access")
+	@SubscribeEvent(priority = EventPriority.NORMAL)
 	public void render(RenderTickEvent event) {
-		if (!Main.config.isSecrethud()) return;
+		if (!Feature.SecretHud) return;
 		if (!Main.config.modules.get("secrethud").booleanValue()) return;
 		if (!Main.isHypixel()) return;
 		if (!Main.isOnSkyblock()) return;
@@ -58,9 +61,8 @@ public class SecretDisplay {
 		if (Minecraft.getMinecraft().currentScreen instanceof GuiScreen) return;
 		
 		GlStateManager.enableBlend();
-        Minecraft.getMinecraft().getTextureManager().bindTexture(Menu);
-        Gui.drawModalRectWithCustomSizedTexture(Main.guic.SecretsX, Main.guic.SecretsY, 0, 0, 75, 30, 356, 267);
-        drawCenteredString(secretsoutof + " Secrets", Main.guic.SecretsX + 38, Main.guic.SecretsY + 10, Color.white.getRGB(), 1);
+        Gui.drawRect(Feature.CopyFailsHUD[0], Feature.CopyFailsHUD[1], Feature.CopyFailsHUD[0] + 75, Feature.CopyFailsHUD[1] + 30, new Color(168, 168, 168, 125).getRGB());
+        drawCenteredString(secretsoutof + " Secrets", Feature.CopyFailsHUD[0] + 38, Feature.CopyFailsHUD[1] + 10, Color.white.getRGB(), 1);
 	}
 	
 	  static void drawCenteredString(String text, int x, int y, int color, double scale) {

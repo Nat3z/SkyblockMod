@@ -15,7 +15,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.WindowConstants;
 
-import me.nat3z.JFrame.AskLoc;
+import com.nat3z.skyqol.utils.JFrame.AskLoc;
 
 public class SkyInstaller implements ActionListener {
 

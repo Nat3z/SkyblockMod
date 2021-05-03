@@ -5,9 +5,10 @@ import java.util.List;
 
 import com.nat3z.skyqol.CheckIfSupporter;
 import com.nat3z.skyqol.Main;
+import com.nat3z.skyqol.config.Feature;
+import com.nat3z.skyqol.utils.ItemUtils;
+import com.nat3z.skyqol.utils.Utilities;
 
-import me.nat3z.ItemUtils;
-import me.nat3z.Utilities;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiChest;
 import net.minecraft.inventory.ContainerChest;
@@ -23,7 +24,7 @@ public class HighlightFarmingContests {
     @SuppressWarnings("static-access")
 	@SubscribeEvent
     public void stop(GuiScreenEvent.BackgroundDrawnEvent event) {
-    	if (!Main.config.isModEnabled() || !Main.config.isUnclaimedFarmingContest() || !Main.config.modules.get("unclaimedfarmingcontests"))
+    	if (!Feature.FarmingContests || !Main.config.modules.get("unclaimedfarmingcontests"))
     		return;
     	
 		if (!Main.isHypixel())

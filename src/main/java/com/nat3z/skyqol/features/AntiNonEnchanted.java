@@ -1,9 +1,10 @@
 package com.nat3z.skyqol.features;
 
-import com.nat3z.skyqol.Config;
 import com.nat3z.skyqol.Main;
+import com.nat3z.skyqol.config.Config;
+import com.nat3z.skyqol.config.Feature;
+import com.nat3z.skyqol.utils.Utilities;
 
-import me.nat3z.Utilities;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiChest;
 import net.minecraft.client.gui.inventory.GuiContainer;
@@ -20,7 +21,7 @@ public class AntiNonEnchanted {
     @SuppressWarnings("static-access")
 	@SubscribeEvent
     public void containerevent(MouseInputEvent.Pre event) {
-    	if (!Main.config.isModEnabled() || !Main.config.isAntiNonEnchantedEnabled() || !Main.config.modules.get("antinonenchanted"))
+    	if (!Feature.AntiNonEnchanted || !Main.config.modules.get("antinonenchanted"))
     		return;
     	
     	

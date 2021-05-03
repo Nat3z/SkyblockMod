@@ -1,8 +1,8 @@
 package com.nat3z.skyqol.features.playlist;
 
 import com.nat3z.skyqol.Main;
+import com.nat3z.skyqol.utils.Utilities;
 
-import me.nat3z.Utilities;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommandSender;

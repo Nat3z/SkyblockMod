@@ -1,7 +1,9 @@
 package com.nat3z.skyqol.features;
 
 import com.nat3z.skyqol.Main;
-import me.nat3z.Utilities;
+import com.nat3z.skyqol.config.Feature;
+import com.nat3z.skyqol.utils.Utilities;
+
 import java.awt.datatransfer.StringSelection;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
@@ -14,7 +16,7 @@ public class CopyFails {
 	@SuppressWarnings("static-access")
 	@SubscribeEvent
 	public void onFail(ClientChatReceivedEvent event) {
-		if (Main.config.isModEnabled() || Main.config.isCopydungeonfail() || Main.config.modules.get("copydungeonfail")) {
+		if (Feature.CopyFails || Main.config.modules.get("copydungeonfail")) {
 			String message = event.message.getUnformattedText();
 			if (message.contains(": "))
 				return;
