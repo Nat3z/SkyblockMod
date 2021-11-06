@@ -1,12 +1,16 @@
-# Nate's Secret Mod
+# NOTE
+AS OF 11/5/21, **Nate's Skyblock Mod** HAS BEEN DISCONTINUED. PLEASE UPDATE TO THE ***SUPPORTED*** MOD: [Skyblock Secret Mod](https://github.com/Nat3z/SkyblockSecretMod/)
+
+## Nate's Secret Mod
 Nate's Secret Mod is a Quality of Life Mod Created by Nat3zDev.
+
 
 ## Index
 * [Installation](#Installation)
 * [Contributing](#Contributing)
 * [License](#license)
 
-# Installation
+## Installation
 If you want to get the latest STABLE release, go to the releases tab on the right, however if you want the latest Commit Release, do the Following.
 Make sure you have Java installed and you are using JDK build 1.6-1.9
 Download the Code for the repository and open the cmd line and cd into the directory.
